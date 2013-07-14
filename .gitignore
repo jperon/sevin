@@ -1,6 +1,15 @@
+Fait/*
 *.pdf
 *.ps
 *.midi
 *.mid
 *.log
 *~
+*.aux
+*.djvu
+*.idx
+*.ilg
+*.ind
+*.ist
+*.backup
+*.bak
