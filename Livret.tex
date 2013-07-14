@@ -1,0 +1,104 @@
+%Compilation:./livret.sh #
+%Apercu:evince ./Fait/Livret.pdf#
+%Esclaves:./esclaves.sh
+\documentclass[a6paper,latin,french,9pt]{book}
+
+\include{chantsscouts}
+
+\begin{document}
+
+
+\fontsize{8.5pt}{9.5pt}\selectfont
+
+
+\titre{Le Cantique de la Promesse}{Le Cantique de la Promesse}
+
+\lilypondfile[staffsize=14]{ChantDePromesse/ChantDePromesse.ly}
+
+\chanson[position=2col]{../ChantDePromesse/ChantDePromesse}
+
+\clearpage
+
+
+\titre{Va, Scout de France !}{Va, Scout de France !}
+
+\lilypondfile[staffsize=14]{VaScoutDeFrance/VaScoutDeFrance.ly}
+
+\chanson[position=2col,decalage=8em]{../VaScoutDeFrance/VaScoutDeFrance}
+
+\clearpage
+
+
+\titre{Youkaïdi ! Youkaïda !}{Youkaïdi, Youkaïda !}
+
+\lilypondfile[staffsize=14]{YoukaidiYoukaida/YoukaidiYoukaida.ly}
+
+\chanson[position=2col]{../YoukaidiYoukaida/YoukaidiYoukaida}
+
+\clearpage
+
+
+\titre{Ami, rejoins-nous}{Ami, rejoins-nous}
+
+\chanson[position=2col]{../AmiRejoinsNous/AmiRejoinsNous}
+
+%\clearpage
+
+
+\titre{Il était une charrette}{Il était une charrette}
+
+\lilypondfile[staffsize=14]{IlEtaitUneCharrette/IlEtaitUneCharrette.ly}
+
+\chanson[position=2col]{../IlEtaitUneCharrette/IlEtaitUneCharrette}
+
+\clearpage
+
+
+\titre{L'Chef de Patrouille a deux galons}{Chef de Patrouille a deux galons (l')}
+
+\lilypondfile[staffsize=14]{LChefDePatrouilleADeuxGalons/LChefDePatrouilleADeuxGalons.ly}
+
+\chanson[position=2col]{../LChefDePatrouilleADeuxGalons/LChefDePatrouilleADeuxGalons}
+
+\clearpage
+
+
+\titre{Guerre Guerre}{Guerre Guerre}
+
+\chanson[position=2col]{../GuerreGuerre/GuerreGuerre}
+
+%\clearpage
+
+
+\titre{Ô Saint Hubert}{Ô Saint Hubert}
+
+\chanson[position=2col]{../LaSaintHubert/LaSaintHubert}
+
+\clearpage
+
+
+\titre{Saint Georges}{Saint Georges}
+
+\chanson[position=2col]{../SaintGeorges/SaintGeorges}
+
+%\clearpage
+
+
+\titre{Être prêt}{Être prêt}
+
+%\lilypondfile[staffsize=14]{EtrePret/EtrePret.ly}
+
+\setcounter{numerocouplet}{0}
+\couplet{
+	Il faut savoir d'abord afin d'agir après :
+
+	Depuis qu'un jour j'ai dit aux Douze : « Soyez prêts »,
+
+	Rien ne sert l'ignorance et le pas-fait-exprès.
+}
+
+\chanson[position=2col]{../EtrePret/EtrePret}
+
+
+
+\end{document}

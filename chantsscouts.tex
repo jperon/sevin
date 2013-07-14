@@ -1,0 +1,95 @@
+\usepackage{luatextra}
+\usepackage{libertine}
+\usepackage{babel}
+\usepackage{makeidx}
+\usepackage[includefoot,inner=7mm,outer=12mm,top=1cm,bottom=1cm]{geometry}
+\usepackage{needspace}
+\usepackage{ifthen}
+\usepackage{keycommand}
+\usepackage{calc}
+\usepackage{multicol}
+\frenchbsetup{og=«,fg=»}
+\usepackage[pdftex=true,%
+    hypertexnames=false,%
+    bookmarks=true,%
+    bookmarksopen=true%
+    pdfborder=0,%
+    hyperindex=true,%
+    pdfpagelabels=true,%
+    unicode%
+    ]{hyperref}
+
+\catcode`\ =\active
+\def  { }
+
+\parindent=0pt
+
+\let\oldaddcontentsline\addcontentsline
+
+\renewcommand{\addcontentsline}{%
+    \phantomsection
+    \oldaddcontentsline%
+}
+
+\newcounter{chant}
+\setcounter{chant}{0}
+\newcounter{numerocouplet}
+\newlength{\decalage}
+
+\newkeycommand{\chanson}[position=centre,decalage=3cm][1]{%
+  \vspace*{1em plus .2ex minus .2ex}
+
+  \needspace{\baselineskip}
+  \setcounter{numerocouplet}{1}
+  \ifthenelse{\equal{\commandkey{position}}{2col}}{%
+  \begin{multicols}{2}
+  \raggedcolumns
+  \input{#1}
+  \end{multicols}%
+  }{\input{#1}}
+}
+\newcommand{\couplet}[1]{%
+  \stepcounter{numerocouplet}%
+	\ifthenelse{\equal{\commandkey{position}}{centre}}{{%
+	  \parbox{\linewidth}{%
+	  	\centering
+  	  \arabic{numerocouplet}.~#1\par
+  	  \vspace{2ex}
+  	}}%
+  	}{%
+		\setlength{\decalage}{\linewidth - \commandkey{decalage}}%
+    \hspace{\commandkey{decalage}}%
+    \pagebreak[3]\parbox{\decalage}{%
+    		\raggedright%
+			\parindent=-\commandkey{decalage}%
+	  	\arabic{numerocouplet}.~#1\par
+	  	\vspace*{2ex}
+   	}%
+  }%\nopagebreak\vspace{0ex plus .5ex minus .5ex}
+}
+
+\newcommand{\coupletvide}[1]{%
+  \parbox{\linewidth}{%
+    \vspace{#1\baselineskip}%
+  }
+}
+
+\newcommand{\titre}[2]{%
+	\stepcounter{chant}
+	\index{#2}
+	\addcontentsline{toc}{subsection}{#2}
+	\centering\textbf{\Large \arabic{chant}.~#1}\par
+	\vspace{1ex plus .7ex minus .2ex}
+}
+
+\newcommand{\partie}[1]{%
+	\cleardoublepage
+	\vspace*{\stretch{1}}
+	\centering\textbf{\Huge #1}\par
+	\addcontentsline{toc}{section}{#1}
+	\vspace*{\stretch{2}}
+	\thispagestyle{empty}
+	\clearpage
+}
+
+\makeindex
