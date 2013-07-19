@@ -7,8 +7,8 @@
 }                                        
 
 MetriqueArmure = {
-  \tempo 4=100
-  \time 2/4
+  \tempo 4.=90
+  \time 6/8
   \key do \major
 }
 
@@ -17,11 +17,17 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
 MusiqueTheme = \relative do'' {
-  
+  \partial 8 mi8^"Mowgli"
+  do4 re8 mi do mi
+  do4 re8 mi do mi
+  sol4. mi8 do re
+  do4.~ do4 \bar "|."
 }
 
 Paroles = \lyricmode {
-  
+  Shere Khan, prends gar -- de_!
+  Shere Khan, prends gar -- de_!
+  Mow -- gli au -- ra ta peau.
 }
 
 \score{
