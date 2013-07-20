@@ -20,7 +20,7 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
 MusiqueTheme = \relative do' {
-	fa4^\markup{\bold A \italic "Entrée (Bien rhytmé)"} do8 fa4 sol8
+	fa4^\markup{\bold A \italic "Entrée (Bien rythmé)"} do8 fa4 sol8
 	la4. fa4 la8
 	do8([ sib]) la sol4 la8
 	sol4.~ sol4 r8

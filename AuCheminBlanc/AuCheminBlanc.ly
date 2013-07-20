@@ -36,7 +36,7 @@ MusiqueTheme = \relative do' {
 	do4 do do8.[ lab16] sib8. lab16
 	fa2 mib8 r lab8. sib16
 	do4 lab2\marcato sib4
-	\partial 4*3 lab2~ lab4 \bar "|."
+	lab2~ lab4 \bar "|."
 }
 
 Paroles = \lyricmode {
@@ -45,7 +45,7 @@ Paroles = \lyricmode {
 	Mais nous i -- rons jus -- qu'à l'é -- ta -- pe,
 	Sou -- ri -- ant au blanc che -- min.
 	\italique Mar -- chons à la scou -- te,
-	Au bout des sen -- tiers c'est la Rou -- re, vi -- ve la Rou -- te,
+	Au bout des sen -- tiers c'est la Rou -- te, vi -- ve la Rou -- te,
 	La Route et les Rou -- tiers.
 }
 
