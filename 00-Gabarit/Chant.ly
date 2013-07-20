@@ -27,9 +27,9 @@ Paroles = \lyricmode {
 \score{
     \new Staff <<
       \set Staff.midiInstrument = "flute"
+      \set Staff.autoBeaming = ##f
       \new Voice = "theme" {
 	\override Score.PaperColumn #'keep-inside-line = ##t
-	\autoBeamOff
 	\MetriqueArmure
 	\MusiqueTheme
       }

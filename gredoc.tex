@@ -1,0 +1,455 @@
+\newcounter{facteur}
+\setcounter{facteur}{11}
+%%%%%%%%%% Commandes fournies par ce document : %%%%%%%%%%
+
+%Pour l'inclusion de partitions :
+%\partition{Dossier}{Partition}{Mode}
+
+%Pour une rubrique :
+%\rubrique{Rubrique}
+
+%Pour un titre (en italique, au fer à droite) : \titre{Titre}
+
+%Pour la traduction d'une partition, en petit au-dessus de la portée : \traduction{Traduction}
+
+%Pour saisir un texte sur une colonne et sa traduction sur la colonne voisine : \traduire{Texte}{Traduction}
+
+%Pour saisir divers symboles :
+%Petite croix : \+
+%Symbole "verset" : \Vbar
+%Symbole "répons" : \Rbar
+
+
+
+%%%%%%%%%% Début des hostilités (pour ceux qui veulent modifier les commandes) %%%%%%%%%%
+
+%%Paramètres d'exigence
+\widowpenalty=9999
+\clubpenalty=9999
+%\tolerance=7500
+%\pretolerance=500
+
+%%Paquetages indispensables
+
+%Partitions de musique
+\usepackage{gregoriotex}
+\usepackage{gregoriosyms}
+
+%Facteur des dimensions
+\setgrefactor{\value{facteur}}
+
+%Images et couleurs
+\usepackage{graphicx}
+\usepackage{color}
+\definecolor{red}{cmyk}{.05,1,1,.1}
+\newcommand{\red}{}
+\newcommand{\rouge}{%
+\renewcommand{\red}%
+{\color{red}}}
+
+%Mise en page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{microtype}
+
+%Bidouille pour savoir quel est le numéro de ligne
+\usepackage[pagewise]{lineno}
+\makeatletter
+\@addtoreset{linenumber}{page}
+\makeatother
+\renewcommand\linenumberfont{\color{white}}
+
+%Polices
+\newlength{\tailletemp}
+\newlength{\taillepolice}
+\setlength{\tailletemp}{\grefactor pt}
+\setlength{\taillepolice}{1\tailletemp}
+\def\policetitre#1{{\fontseries{b}\fontsize{1.2\taillepolice}{1.44\taillepolice}\selectfont #1}}
+\newcommand{\entete}[1]{{\fontsize{.7\taillepolice}{.84\taillepolice}\selectfont #1}}
+\def\mode#1{{\fontsize{.6\tailletemp}{.8\tailletemp}\selectfont #1}}
+\font\libertine=LinLibertine_RB.otf at 2\taillepolice
+\font\diurnale=Liturgie.ttf at \taillepolice
+\font\diurnaleB=Liturgie.ttf at 1.1\taillepolice
+\font\diurnaleC=Liturgie.ttf at .9\taillepolice
+\font\lettrines=l800.ttf at 1.3\tailletemp
+
+%Caractères spéciaux
+\catcode`\œ=\active
+\def œ{\oe}
+%\catcode`\ǽ=\active
+%\def ǽ{\'æ}
+
+
+%Divers
+\usepackage{longtable}
+\usepackage{parcolumns}
+
+
+%%Définition de divers paramètres
+
+%En-tête
+\fancyhead[RO,LE]{\entete\thepage}
+
+%Espace entre les paragraphes
+\setlength{\parskip}{2pt plus 1pt minus 2pt}
+%\addtolength{\baselineskip}{0pt plus 5pt minus 5pt}
+
+%Espace entre les colonnes
+\newlength{\intercol}
+\setlength{\intercol}{.5cm}
+
+%Propriétés des partitions grégoriennes
+\newcommand{\dimensionsnormales}{%
+\grechangedim{\grespacelinestext}{1.2\taillepolice plus .2\taillepolice}
+\grechangedim{\grespaceabovelines}{.7\taillepolice plus .2\taillepolice minus .1\taillepolice}}
+\dimensionsnormales
+\gresetstafflinefactor{15}
+%\grechangedim{\grespacebeneathtext}{1pt}
+\def\gretextformat#1{{%\fontseries{b}%
+\fontsize{\taillepolice}{\taillepolice}%
+\selectfont #1}}
+\def\greinitialformat#1{{\lettrines #1}}
+\def\grebiginitialformat#1{{%
+\raisebox{0pt}[.7\height][0pt]{\lettrinesB #1}}}
+
+
+%%Commandes personnalisées
+
+%Pour afficher le jour dans l'en-tête :
+%\jour{Jour liturgique}
+\newcommand{\jour}[1]{%
+\newpage
+{\centering \policetitre{#1}\par}
+\fancyhead[RE,LO]{\entete{#1}}%
+\thispagestyle{empty}%
+}
+
+%Pour l'inclusion de partitions :
+%\partition{Dossier}{Partition}{Mode}
+\newcommand{\partition}[3]{%
+%\sloppy
+\widowpenalty=0
+\clubpenalty=0
+\smallskip
+\gresetfirstlineaboveinitial{\raisebox{.2\taillepolice}{\parbox{3\taillepolice}{\centering\textsc{\textbf{\mode{#3}}}}}}%
+{\textsc{\textbf{\mode{#3}}}}
+{\clubpenalty=9999\widowpenalty=9999%
+\includegabcscore{Partitions/Gregorien/#1/#2.gabc}}\par
+\widowpenalty=9999
+\clubpenalty=9999
+%\fussy
+}
+
+%%Pour un titre (en italique) :
+%%\titre{Titre}
+%\newcommand{\titre}[1]{
+%\vspace{\stretch{1}}\pagebreak[0]
+%{\scriptsize\textit{#1}}\\%
+%\nopagebreak%\smallskip\nopagebreak%
+%}
+
+%Pour un commentaire (gras italique) :
+\newcommand{\commentaire}[1]{%
+\smallskip
+\textit{\textbf{#1}}\par
+\nopagebreak\smallskip\nopagebreak
+}
+
+%Pour la traduction d'une partition, en petit au-dessus de la portée :
+%\traduction{Traduction}
+\newcommand{\traduction}[1]{%
+\noindent%\parbox{\textwidth}%
+{\small #1}\par\nopagebreak}
+
+%Pour saisir un texte sur une colonne et sa traduction sur la colonne voisine :
+%\traduire{Texte}{Traduction}
+\newcommand{\traduire}[2]{%
+\begin{parcolumns}[distance=\intercol,colwidths={1=.487\linewidth},nofirstindent]{2}
+\colchunk{\sloppy%
+#1\par}
+\colchunk{\sloppy%
+\small #2\par}
+\end{parcolumns}\par\fussy
+%\selectlanguage{francais}
+%\begin{Parallel}{.47\textwidth}{.48\textwidth}
+%\ParallelLText{\noindent#1\par}
+%\ParallelRText{\noindent\small #2\par}
+%\end{Parallel}
+}
+
+%Pour saisir une rubrique :
+%\rubrique{Rubrique}
+\newcommand{\rubrique}[1]{%
+{\noindent\footnotesize{\red #1}\par\nopagebreak%\smallskip\nopagebreak%
+}}
+
+%%%%Pour les syllabes d'accent et de préparation dans les Psaumes
+%accent
+\newcommand{\ac}[1]{\textbf{#1}}
+%syllabe de préparation
+\newcommand{\pr}[1]{\textit{#1}}
+%survenante anticipée d'accent
+\newcommand{\sac}[1]{\ac{#1}}
+%syllabe de fin, atone
+\newcommand{\point}[1]{\textit{#1}}
+%dernier accent, ses syllabes de préparation et survenante
+\newcommand{\aca}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{8G}
+\OR \equal{\commandkey{ton}}{8c}
+\OR \equal{\commandkey{ton}}{communion-8}
+\OR \equal{\commandkey{ton}}{1D}
+\OR \equal{\commandkey{ton}}{1f}
+\OR \equal{\commandkey{ton}}{1a2}
+\OR \equal{\commandkey{ton}}{3a}
+\OR \equal{\commandkey{ton}}{5a}
+\OR \equal{\commandkey{ton}}{7a}
+\OR \equal{\commandkey{ton}}{7c}
+\OR \equal{\commandkey{ton}}{Requiem}}%
+{\ac{#1}}%
+{#1}%
+}
+\newcommand{\praa}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{8G}
+\OR \equal{\commandkey{ton}}{8c}
+\OR \equal{\commandkey{ton}}{communion-8}
+\OR \equal{\commandkey{ton}}{1D}
+\OR \equal{\commandkey{ton}}{1f}
+\OR \equal{\commandkey{ton}}{3a}
+\OR \equal{\commandkey{ton}}{1a2}
+\OR \equal{\commandkey{ton}}{Requiem}}%
+{\pr{#1}}%
+{#1}%
+}
+\newcommand{\prab}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{8G}
+\OR \equal{\commandkey{ton}}{8c}
+\OR \equal{\commandkey{ton}}{communion-8}
+\OR \equal{\commandkey{ton}}{1D}
+\OR \equal{\commandkey{ton}}{1f}
+\OR \equal{\commandkey{ton}}{1a2}}%
+{\pr{#1}}%
+{#1}%
+}
+\newcommand{\prac}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-8}}%
+{\pr{#1}}%
+{#1}%
+}
+\newcommand{\saca}[1]{#1}
+%avant-dernier accent, sa syllabe de préparation
+\newcommand{\acb}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{5a}
+\OR \equal{\commandkey{ton}}{7a}
+\OR \equal{\commandkey{ton}}{7c}}%
+{\ac{#1}}%
+{#1}%
+}
+\newcommand{\prba}[1]{#1}
+%dernier accent du 1° membre, ses syllabes de préparation et survenante
+\newcommand{\acc}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{8G} \OR \equal{\commandkey{ton}}{8c} \OR \equal{\commandkey{ton}}{communion-8}
+\OR \equal{\commandkey{ton}}{communion-1}
+\OR \equal{\commandkey{ton}}{1a2}
+\OR \equal{\commandkey{ton}}{1D}
+\OR \equal{\commandkey{ton}}{1f}
+\OR \equal{\commandkey{ton}}{3a}
+\OR \equal{\commandkey{ton}}{5a}
+\OR \equal{\commandkey{ton}}{7a}
+\OR \equal{\commandkey{ton}}{7c}
+\OR \equal{\commandkey{ton}}{Requiem}}%
+{\ac{#1}}%
+{#1}%
+}
+\newcommand{\prca}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-8}}%
+{\pr{#1}}%
+{#1}%
+}
+\newcommand{\prcb}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-8}}%
+{\pr{#1}}%
+{#1}%
+}
+\newcommand{\prcc}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-8}}%
+{\pr{#1}}%
+{#1}%
+}
+\newcommand{\sacc}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{3a}}%
+{\sac{#1}}%
+{#1}%
+}
+%avant-dernier accent du 1° membre, sa syllabe de préparation
+\newcommand{\acd}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{1a2}
+\OR \equal{\commandkey{ton}}{communion-1}
+\OR \equal{\commandkey{ton}}{1D}
+\OR \equal{\commandkey{ton}}{1f}
+\OR \equal{\commandkey{ton}}{3a}
+\OR \equal{\commandkey{ton}}{7a}
+\OR \equal{\commandkey{ton}}{7c}}%
+{\ac{#1}}%
+{#1}%
+}
+\newcommand{\prda}[1]{#1}
+%un accent spécial pour les versets notés
+\newcommand{\aci}[1]{\fontsize{1.1\taillepolice}{1.1\taillepolice}%
+%\fontseries{b}%
+\selectfont\textbf{#1}}
+%syllabes de fin
+\newcommand{\pointi}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-1}}%
+{\point{#1}}%
+{#1}%
+}
+\newcommand{\pointii}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-1}}%
+{\point{#1}}%
+{#1}%
+}
+\newcommand{\pointiii}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-1}}%
+{\point{#1}}%
+{#1}%
+}
+\newcommand{\pointiv}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-1}}%
+{\point{#1}}%
+{#1}%
+}
+\newcommand{\pointv}[1]{%
+\ifthenelse%
+{\equal{\commandkey{ton}}{communion-1}}%
+{\point{#1}}%
+{#1}%
+}
+
+%Définition des modes
+
+%Pour saisir un verset de Psaume
+\newcounter{numero}
+
+\setcounter{numero}{2}
+\newcounter{verset}
+\newcounter{dernierverset}
+\newcommand{\verset}[1]{%
+\stepcounter{verset}
+\ifthenelse{%
+\commandkey{premierverset} = \value{verset} \OR \commandkey{premierverset} < \value{verset} \AND \value{dernierverset} > \value{verset}
+}{%
+%\parbox[t][\height+.3ex]{\textwidth}{%
+\noindent\arabic{numero}.\hspace{1ex}#1%
+\par%}%
+%
+\stepcounter{numero}%
+}
+
+}
+\newcommand{\versetgloria}[1]{%
+\stepcounter{verset}
+%\parbox[t][\height+.3ex]{\textwidth}{%
+\noindent\arabic{numero}.\hspace{1ex}#1%
+%}%
+\par%\bigskip
+\stepcounter{numero}%
+}
+
+%Pour appeler un Psaume, un Cantique, le Gloria
+\newkeycommand\psaume[ton=1,premierverset=1,dernierverset,numero=\value{numero}][1]{%
+	\setcounter{verset}{0}%
+	\setcounter{numero}{\commandkey{numero}}%
+	\setcounter{dernierverset}{\commandkey{dernierverset} + 1}%
+	\input{Psaumes/Ps-#1}%
+}
+\newkeycommand\cantique[ton=1,premierverset=1,dernierverset,numero=\value{numero}][1]{%
+	\setcounter{verset}{0}%
+	\setcounter{numero}{\commandkey{numero}}%
+	\setcounter{dernierverset}{\commandkey{dernierverset} + 1}%
+	\input{Psaumes/#1}%
+}
+\newkeycommand{\gloria}[ton=1]{%
+	\setcounter{verset}{\value{dernierverset} - 1}
+	\input{Psaumes/Gloria}
+}
+\newkeycommand{\gloriacommunion}[ton=communion-8]{%
+	\setcounter{verset}{\value{dernierverset} - 1}
+	\bigskip
+	\input{Psaumes/Gloria-communion}
+}
+
+%Pour saisir divers symboles :
+%Petite croix : \+
+%Symbole "verset" : \Vbar
+%Symbole "répons" : \Rbar
+\newcommand{\+}%
+{\makebox[2ex][c]%{\includegraphics[width=2.2mm]{crux.pdf}}}
+{{%\fontencoding{T1}\fontfamily{drnr}\selectfont
+\diurnale{\red †}}}}
+\renewcommand{\Vbar}{{\diurnale{\red\%}}}
+\newcommand{\vbar}{{\diurnaleC{\red\%.}}}
+\renewcommand{\Rbar}{{\diurnale{\red\$}}}
+\newcommand{\rbar}{{\diurnaleC{\red\$.}}}
+\renewcommand{\grestar}{\raisebox{-.2ex}{\red \diurnaleB *}}
+\renewcommand{\gredagger}{{\red \diurnale †}}
+\renewcommand{\*}{\raisebox{-.2ex}{\red \diurnale *}}
+
+%Dialogues
+\newcommand{\dominus}{\Vbar Dóminus vobíscum.\\\Rbar Et cum spíritu tuo.}
+\newcommand{\leseigneur}{Le Seigneur soit avec vous.\\\Rbar Et avec votre esprit.}
+
+%Conclusion des oraisons
+\newcommand{\peromnia}{per ómnia s\'æcula sæculórum}
+\newcommand{\Peromnia}{Per ómnia s\'æcula sæculórum}
+\newcommand{\siecles}{dans tous les siècles des siècles}
+\newcommand{\Siecles}{Dans tous les siècles des siècles}
+\newcommand{\Perdominum}{Per Dóminum nostrum Iesum Christum Fílium tuum}
+\newcommand{\Pereundem}{Per eúndem Dóminum nostrum Iesum Christum Fílium tuum}
+\newcommand{\perdominum}{per Dóminum nostrum Iesum Christum Fílium tuum}
+\newcommand{\pereundem}{per eúndem Dóminum nostrum Iesum Christum Fílium tuum}
+\newcommand{\quitecum}{qui tecum vivit et regnat in unitáte Spíritus Sancti Deus}
+\newcommand{\quitecume}{qui tecum vivit et regnat in unitáte eiúsdem Spíritus Sancti Deus}
+\newcommand{\quivivis}{qui vivis et regnas cum Deo Patre in unitáte Spíritus Sancti Deus}
+\newcommand{\Quivivis}{Qui vivis et regnas cum Deo Patre in unitáte Spíritus Sancti Deus}
+\newcommand{\Parjesus}{Par Notre Seigneur Jésus-Christ votre Fils}
+\newcommand{\Parlememe}{Par le même Jésus-Christ Notre Seigneur, votre Fils}
+\newcommand{\parjesus}{par Notre Seigneur Jésus-Christ votre Fils}
+\newcommand{\parlememe}{par le même Jésus-Christ Notre Seigneur, votre Fils}
+\newcommand{\quietant}{qui étant Dieu vit et règne avec vous en l'unité du Saint-Esprit}
+\newcommand{\quietantm}{qui étant Dieu vit et règne avec vous en l'unité du même Saint-Esprit}
+\newcommand{\vousqui}{vous qui vivez avec Dieu le Père en l'unité du Saint-Esprit}
+\newcommand{\Vousqui}{Vous qui vivez avec Dieu le Père en l'unité du Saint-Esprit}
+\newcommand{\ainsi}{\mbox{Ainsi soit-il}}
+\newcommand{\introprefacetraduite}{%
+\traduire{\dominus}{\leseigneur}
+\traduire{%
+  \Vbar Sursum corda.}{%
+  \Vbar Élevons nos c\oe urs.}
+\traduire{%
+  \Rbar Habémus ad Dóminum.}{%
+  \Rbar Nous les avons vers le Seigneur.}
+\traduire{%
+  \Vbar Grátias agámus Dómino Deo nostro.}{%
+  \Vbar Rendons grâces au Seigneur notre Dieu.}
+\traduire{%
+  \Rbar Dignum et iustum est.}{%
+  \Rbar Cela est juste et raisonnable.}
+\smallskip
+}
