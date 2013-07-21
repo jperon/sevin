@@ -57,7 +57,7 @@
   \stepcounter{numerocouplet}%
 	\ifthenelse{\equal{\commandkey{position}}{centre}}{{%
 	  %\parbox{\linewidth}{%
-	  {\vspace{0ex plus 2\baselineskip}
+	  {\vspace{0ex plus 2\baselineskip minus .5\baselineskip}
 	  \widowpenalty=10000 \clubpenalty=10000\par
   	  \centering\arabic{numerocouplet}.~#1\par}
   	  \vspace{2ex minus 1ex}
