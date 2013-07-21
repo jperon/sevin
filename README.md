@@ -12,6 +12,7 @@ Pré-requis
 
 Pour compiler ce document, il vous faut :
 
+- une machine puissante ou une bonne dose de patience, au choix ;
 - un système Linux installé et fonctionnel ;
 - [texlive](http://www.tug.org/texlive) 2012 ou ultérieur (les versions antérieures n'ont pas été testées) ;
 - [lilypond](http://www.lilypond.org) pour les partitions des chants ;
