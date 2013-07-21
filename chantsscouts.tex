@@ -19,6 +19,11 @@
     unicode%
     ]{hyperref}
 
+\widowpenalty=10000 \clubpenalty=10000
+
+\def\preLilyPondExample{\widowpenalty=0 \clubpenalty=0}
+\def\postLilyPondExample{\par\widowpenalty=10000 \clubpenalty=10000\par}
+
 \catcode`\ =\active
 \def  { }
 
@@ -51,10 +56,12 @@
 \newcommand{\couplet}[1]{%
   \stepcounter{numerocouplet}%
 	\ifthenelse{\equal{\commandkey{position}}{centre}}{{%
-	  \parbox{\linewidth}{%
-	  {\centering\arabic{numerocouplet}.~#1\par}
-  	  \vspace{2ex}
-  	}}%
+	  %\parbox{\linewidth}{%
+	  {\vspace{0ex plus 2\baselineskip}
+	  \widowpenalty=10000 \clubpenalty=10000\par
+  	  \centering\arabic{numerocouplet}.~#1\par}
+  	  \vspace{2ex minus 1ex}
+  	}%}%
   	}{%
 		\setlength{\decalage}{\linewidth - \commandkey{decalage}}%
     \hspace{\commandkey{decalage}}%
@@ -94,7 +101,7 @@
 }
 
 \newcommand{\titre}[2]{%
-	\vspace{1em}\needspace{6\baselineskip}
+	\vspace{1em plus 6\baselineskip}\needspace{6\baselineskip}
 	\stepcounter{chant}
 	\index{#2}
 	\addcontentsline{toc}{subsection}{#2}

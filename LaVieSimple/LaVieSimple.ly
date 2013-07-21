@@ -35,11 +35,11 @@ MusiqueTheme = \relative do'' {
 	si4 la8 re4 do8
 	si4.~ si8 re do
 	si4 si8 la4 la8
-	\partial 4. sol4. \bar "|."
+	sol4. \bar "|."
 }
 
 Paroles = \lyricmode {
-	Les «_Boi- -- Scouts_» sont po -- pu -- lai -- res,
+	Les «_Boi_- Scouts_» sont po -- pu -- lai -- res,
 	On est pour eux aux p'tits soins_:
 	On leur offre un tas d'af -- fai -- res
 	Dont ils n'ont ja -- mais be -- soin_!

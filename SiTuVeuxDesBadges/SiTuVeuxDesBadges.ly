@@ -12,7 +12,7 @@
 MetriqueArmure = {
   \tempo 4.=90
   \time 6/8
-  \key sol \major
+  \key fa \major
 }
 
 italique = { \override Score . LyricText #'font-shape = #'italic }
