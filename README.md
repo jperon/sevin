@@ -13,10 +13,10 @@ Pré-requis
 Pour compiler ce document, il vous faut :
 
 - un système Linux installé et fonctionnel ;
-- texlive 2012 ou ultérieur (les versions antérieures n'ont pas été testées) ;
-- lilypond [http://www.lilypond.org] pour les partitions des chants ;
-- gregorio [http://home.gna.org/gregorio] pour les pièces grégoriennes ;
-- gnu make.
+- [texlive](http://www.tug.org/texlive) 2012 ou ultérieur (les versions antérieures n'ont pas été testées) ;
+- [lilypond](http://www.lilypond.org) pour les partitions des chants ;
+- [gregorio](http://home.gna.org/gregorio) pour les pièces grégoriennes ;
+- [gnu make](http://www.gnu.org/software/make) pour vous permettre de tout faire en une seule commande.
 
 Peut-être y a-t-il moyen de compiler sous Windows avec cygwin, mais ce n'est ni testé ni supporté.
 
