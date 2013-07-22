@@ -35,7 +35,7 @@ Paroles = \lyricmode {
       }
       \new Lyrics \lyricsto theme {
 	\Paroles
-      }                       
+      }
     >>
 \layout{}
 \midi{}
