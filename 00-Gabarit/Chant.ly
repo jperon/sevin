@@ -4,7 +4,7 @@
 \header {
   tagline = ""
   composer = ""
-}                                        
+}
 
 MetriqueArmure = {
   \tempo 4=100

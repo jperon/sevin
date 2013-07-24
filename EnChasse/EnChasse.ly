@@ -102,7 +102,7 @@ MusiqueTheme = \relative do' {
 		sol4 re8 si' la sol
 		re8 sol si, re4.~
 		re4. s8 si re
-		sol4 re8 s do re
+		sol4 re8 s si re
 		sol4 re8 si' la sol
 		re8 si re si4.
 	} >>
