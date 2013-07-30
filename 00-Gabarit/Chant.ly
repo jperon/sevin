@@ -25,18 +25,20 @@ Paroles = \lyricmode {
 }
 
 \score{
+  <<
     \new Staff <<
       \set Staff.midiInstrument = "flute"
       \set Staff.autoBeaming = ##f
       \new Voice = "theme" {
-	\override Score.PaperColumn #'keep-inside-line = ##t
-	\MetriqueArmure
-	\MusiqueTheme
-      }
-      \new Lyrics \lyricsto theme {
-	\Paroles
+        \override Score.PaperColumn #'keep-inside-line = ##t
+        \MetriqueArmure
+        \MusiqueTheme
       }
     >>
-\layout{}
-\midi{}
+    \new Lyrics \lyricsto theme {
+      \Paroles
+    }
+  >>
+  \layout{}
+  \midi{}
 }
