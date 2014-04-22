@@ -70,10 +70,14 @@
 \newcommand{\entete}[1]{{\fontsize{.7\taillepolice}{.84\taillepolice}\selectfont #1}}
 \def\mode#1{{\fontsize{.6\tailletemp}{.8\tailletemp}\selectfont #1}}
 \font\libertine=LinLibertine_RB.otf at 2\taillepolice
-\font\diurnale=Liturgie.ttf at \taillepolice
-\font\diurnaleB=Liturgie.ttf at 1.1\taillepolice
-\font\diurnaleC=Liturgie.ttf at .9\taillepolice
-\font\lettrines=l800.ttf at 1.3\tailletemp
+\newfontfamily\diurnale[Scale=1]{Liturgie}
+\newfontfamily\diurnaleB[Scale=1.1]{Liturgie}
+\newfontfamily\diurnaleC[Scale=.9]{Liturgie}
+\newfontfamily\lettrines[Scale=2.6]{l800}
+%\font\diurnale=Liturgie.ttf at \taillepolice
+%\font\diurnaleB=Liturgie.ttf at 1.1\taillepolice
+%\font\diurnaleC=Liturgie.ttf at .9\taillepolice
+%\font\lettrines=l800.ttf at 1.3\tailletemp
 
 %Caractères spéciaux
 \catcode`\œ=\active

@@ -1,10 +1,11 @@
 %Compilation:./chants-scouts.sh #
 %Apercu:evince ./Carnet.pdf#
 %Esclaves:./esclaves.sh
-\documentclass[a6paper,latin,french,9pt]{scrbook}
+\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
 \include{chantsscouts}
 \include{gredoc}
+\providecommand{\cantus}[4]{\partition{#1}{#2}{#3 #4}}
 
 \begin{document}
 
@@ -1063,7 +1064,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \titre{Ubi caritas}{Ubi Caritas et Amor}
 
-\partition{Antienne}{UbiCaritas}{6.}
+\cantus{Antienne}{UbiCaritas}{6.}{}
 
 \clearpage
 
@@ -1131,38 +1132,38 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \titre{Te lucis ante terminum}{Te lucis ante terminum}
 
-\partition{Hymne}{TeLucis}{8.}
+\cantus{Hymne}{TeLucis}{8.}{}
 
 \needspace{3\baselineskip}
 
-\partition{Hymne}{TeLucis-FR}{8.}
+\cantus{Hymne}{TeLucis-FR}{8.}{}
 
 \clearpage
 
 
 \titre{In manus tuas}{In manus tuas}
 
-\partition{Repons}{InManus}{6.}
+\cantus{Repons}{InManus}{6.}{}
 
-\partition{Verset}{CustodiNos}{}
+\cantus{Verset}{CustodiNos}{}{}
 
 
 \needspace{.6\paperheight}
 
 \titre{Entre vos mains}{Entre vos mains}
 
-\partition{Repons}{InManus-FR}{6.}
+\cantus{Repons}{InManus-FR}{6.}{}
 
-\partition{Verset}{CustodiNos-FR}{}
+\cantus{Verset}{CustodiNos-FR}{}{}
 
 \clearpage
 
 
 \titre{In manus tuas - TP}{In manus tuas - TP}
 
-\partition{Repons}{InManus-TP}{6.}
+\cantus{Repons}{InManus-TP}{6.}{}
 
-\partition{Verset}{CustodiNos-TP}{}
+\cantus{Verset}{CustodiNos-TP}{}{}
 
 
 \titre{C'est la nuit}{C'est la nuit}
