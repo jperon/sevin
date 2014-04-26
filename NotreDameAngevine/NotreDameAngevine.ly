@@ -59,11 +59,30 @@ RefrainII = \relative do' {
 
 Couplet = \relative do' {
   do4^\markup {Couplet (Solo)}
-  
+  fa4 la sib8 la
+  do4 do sib
+  la4. sol8 fa sol
+  fa2 do4
+  fa4 la sib8 la
+  do4 do \breathe sib
+  la4. sol8 fa sol
+  sol2 \bar "|."
 }
 
 Paroles = \lyricmode {
+  Chez nous soy -- ez Rei -- ne,
+  Nous som -- mes à vous,
+  Fon -- dez vo -- tre do -- mai -- ne
+  Chez nous, chez nous,
+  Soy -- ez la Ma -- do -- ne
+  Qu'on prie à ge -- noux,
+  Qui sou -- rit et par -- don -- ne
+  Chez nous, chez nous.
   
+  Nous a -- vons votre im -- ma -- ge
+  Chez nous sur nos au -- tels,
+  Et vo -- tre doux vi -- sa -- ge
+  Est un re -- flet du ciel.
 }
 
 \score{
