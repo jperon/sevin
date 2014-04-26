@@ -30,4 +30,4 @@ Une fois que les pré-requis sont installés, ouvrez un terminal, placez vous da
 
 Puis prenez votre mal en patience…
 
-Si cela ne fonctionne pas, c'est probablement qu'il vous manque un pré-requis (la compilation est systématiquement testée avant la mise en ligne des changements).
+Si cela ne fonctionne pas, c'est probablement qu'il vous manque un pré-requis (la compilation est systématiquement testée sous TeXLive 2013 avant la mise en ligne des changements).
