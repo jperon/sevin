@@ -14,7 +14,7 @@ Pour compiler ce document, il vous faut :
 
 - une machine puissante ou une bonne dose de patience, au choix ; prévoyez même les deux pour la première compilation !
 - un système Linux installé et fonctionnel ;
-- [texlive](http://www.tug.org/texlive) 2012 ou ultérieur (les versions antérieures n'ont pas été testées) ;
+- [texlive](http://www.tug.org/texlive) 2013 ou ultérieur (les versions antérieures n'ont pas été testées) ;
 - [lilypond](http://www.lilypond.org) pour les partitions des chants ;
 - [gregorio](http://home.gna.org/gregorio) pour les pièces grégoriennes ;
 - [gnu make](http://www.gnu.org/software/make) pour vous permettre de tout faire en une seule commande.
