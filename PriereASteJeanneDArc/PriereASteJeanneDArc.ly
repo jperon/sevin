@@ -7,7 +7,7 @@
 }
 
 MetriqueArmure = {
-  \tempo 4=100
+  \tempo 4=90
   \time 2/4
   \key fa \major
 }
