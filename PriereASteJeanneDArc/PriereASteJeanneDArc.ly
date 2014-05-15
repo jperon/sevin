@@ -167,6 +167,11 @@ ParolesBasse = \lyricmode {
       \ParolesBasse
     }
   >>
-  \layout{}
+  \layout {
+    \context { \Staff
+      \RemoveEmptyStaves
+      \override VerticalAxisGroup #'remove-first = ##t
+    }
+  }
   \midi{}
 }
