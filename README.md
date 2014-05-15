@@ -3,6 +3,8 @@ Sevin
 
 Ce projet a pour premier but de rendre accessible le carnet
 *Les chansons des Scouts de France* du Père Sevin.
+Vous pouvez, si vous le désirez, télécharger directement [ce dernier ici](https://raw.githubusercontent.com/jperon/sevin/master/Sevin.pdf).
+
 Par la suite, il s'est développé pour inclure aussi d'autres chants, dans une perspective beaucoup plus vaste.
 
 

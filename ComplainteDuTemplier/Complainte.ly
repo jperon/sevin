@@ -7,7 +7,7 @@
 
 MetriqueArmure = {
   \tempo 4=100
-  \time 2/4
+  \time 6/4
   \key do \major
 }
 
@@ -16,18 +16,13 @@ MusiqueTheme = \relative mi' {
   la la sol la
   si4. si8
   do si la4
-  sol8 la4 mi8
-  la la sol la
-  si4. si8
-  do si do4
-  re8 mi4 do8
-  mi re do re
-  mi re do mi
-  re4 si8 sol~
-  sol si re re
-  do si la la
-  la do si4
-  sol8 la4.\fermata
+  \time 2/4 sol8 la4 mi8
+  \time 6/4 la la sol la si4. si8 do si do4
+  \time 2/4 re8 mi4 do8
+  \time 5/4 mi re do re mi re do mi re4
+  \time 2/4 si8 sol4 si8
+  \time 5/4 re re do si la la la do si4
+  \time 2/4 sol8 la4.\fermata
   \bar "|."}
 
 Paroles = \lyricmode {
