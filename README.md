@@ -1,7 +1,9 @@
 Sevin
 =====
 
-Les chansons des Scouts de France
+Ce projet a pour premier but de rendre accessible le carnet
+*Les chansons des Scouts de France* du Père Sevin.
+Par la suite, il s'est développé pour inclure aussi d'autres chants, dans une perspective beaucoup plus vaste.
 
 
 Compilation
@@ -27,6 +29,8 @@ Compilation
 Une fois que les pré-requis sont installés, ouvrez un terminal, placez vous dans le dossier des sources, et lancez simplement la commande :
 
     make
+
+(Pour ne compiler que le carnet *Les chansons des Scouts de France*, make sevin)
 
 Puis prenez votre mal en patience…
 
