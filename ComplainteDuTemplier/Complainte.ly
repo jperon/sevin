@@ -1,4 +1,4 @@
-\version "2.12.1"
+\version "2.16.2"
 \include "italiano.ly"
 
 \header {
@@ -6,23 +6,29 @@
 }
 
 MetriqueArmure = {
-  \tempo 4=100
-  \time 6/4
+  \tempo 4=80
+  \time 2/4
   \key do \major
 }
 
 MusiqueTheme = \relative mi' {
   \partial 8 mi8
-  la la sol la
-  si4. si8
-  do si la4
-  \time 2/4 sol8 la4 mi8
-  \time 6/4 la la sol la si4. si8 do si do4
-  \time 2/4 re8 mi4 do8
-  \time 5/4 mi re do re mi re do mi re4
-  \time 2/4 si8 sol4 si8
-  \time 5/4 re re do si la la la do si4
-  \time 2/4 sol8 la4.\fermata
+  la8 sold la si
+  do4. si8
+  \time 3/4 si8 la la4 sold4
+  \time 2/4 la4 r8 mi
+  la8 sold la si
+  do4. si8
+  \time 3/4 do8 si do4. re8
+  \time 2/4 mi4 r8 do
+  mi8 mi re do
+  sol8 sol do mi
+  re4. si8
+  sol4 r8 si
+  re8 re do si
+  la8 la la do
+  si4 sol4
+  la4.\fermata
   \bar "|."}
 
 Paroles = \lyricmode {
