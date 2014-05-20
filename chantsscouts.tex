@@ -45,11 +45,16 @@
 \newcounter{numerocouplet}
 \newlength{\decalage}
 
-\newkeycommand{\chanson}[position=centre,decalage=3cm,premiercouplet=1,numero=2][1]{%
+\newkeycommand{\chanson}[%
+                         position=centre%
+                         ,decalage=3cm%
+                         ,premiercouplet=1,numero=2%
+                         ,refrain=oui][1]{%
   \vspace*{1em plus .2ex minus .2ex}
 
   \needspace{\baselineskip}
-  \setcounter{numerocouplet}{\commandkey{numero}-1}
+  \setcounter{numerocouplet}{0}
+  \setcounter{numero}{\commandkey{numero}-1}
   \ifthenelse{\equal{\commandkey{position}}{2col}}{%
     \begin{multicols}{2}
     \raggedcolumns
@@ -61,6 +66,7 @@
 }
 \newcommand{\couplet}[1]{%
   \stepcounter{numerocouplet}%
+  \stepcounter{numero}%
   \ifthenelse{%
     \commandkey{premiercouplet} = \value{numerocouplet}%
     \OR \commandkey{premiercouplet} < \value{numerocouplet}%
@@ -78,7 +84,7 @@
       \pagebreak[3]\parbox{\decalage}{%
     	\raggedright%
 	\parindent=-\commandkey{decalage}%
-	\arabic{numerocouplet}.~#1\par
+	\arabic{numero}.~#1\par
 	\vspace*{2ex}
       }%
     }
@@ -86,23 +92,24 @@
 }
 
 \newcommand{\refrain}[1]{%
+  \ifthenelse{\equal{\commandkey{refrain}}{oui}}{%
 	\ifthenelse{\equal{\commandkey{position}}{centre}}{{%
 	  \parbox{\linewidth}{%
 	  	\centering
   	  \itshape #1\par
   	  \vspace{2ex}
-  	}}%
-  	}{%
-		\setlength{\decalage}{\linewidth - \commandkey{decalage}}%
-    \hspace{\commandkey{decalage}}%
-    \pagebreak[3]\parbox{\decalage}{%
+  	  }%
+  	}}{%
+          \setlength{\decalage}{\linewidth - \commandkey{decalage}}%
+          \hspace{\commandkey{decalage}}%
+          \pagebreak[3]\parbox{\decalage}{%
     		\raggedright%
 			\parindent=-\commandkey{decalage}%
 	  	\itshape #1\par
 	  	\vspace*{2ex}
-   	}%
-  }
-
+   	  }%
+        }
+  }{}
 }
 
 \newcommand{\coupletvide}[1]{%
