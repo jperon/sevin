@@ -3,6 +3,7 @@
 \usepackage{babel}
 %\usepackage{polyglossia}\setmainlanguage{french}
 \usepackage{makeidx}
+\setcounter{tocdepth}{3}
 \usepackage[includeheadfoot,inner=7mm,outer=12mm,top=5mm,bottom=8mm,headsep=3mm,footskip=5mm]{geometry}
 \usepackage{needspace}
 \usepackage{ifthen}
@@ -27,6 +28,8 @@
 
 \catcode`\ =\active
 \def  { }
+\catcode`\’=\active
+\def ’{'}
 
 \parindent=0pt
 
@@ -42,37 +45,44 @@
 \newcounter{numerocouplet}
 \newlength{\decalage}
 
-\newkeycommand{\chanson}[position=centre,decalage=3cm][1]{%
+\newkeycommand{\chanson}[position=centre,decalage=3cm,premiercouplet=1,numero=2][1]{%
   \vspace*{1em plus .2ex minus .2ex}
 
   \needspace{\baselineskip}
-  \setcounter{numerocouplet}{1}
+  \setcounter{numerocouplet}{\commandkey{numero}-1}
   \ifthenelse{\equal{\commandkey{position}}{2col}}{%
-  \begin{multicols}{2}
-  \raggedcolumns
-  {\input{#1}}
-  \end{multicols}%
-  }{{\input{#1}}}
+    \begin{multicols}{2}
+    \raggedcolumns
+    {\input{#1}}
+    \end{multicols}%
+  }{%
+    {\input{#1}}%
+  }
 }
 \newcommand{\couplet}[1]{%
   \stepcounter{numerocouplet}%
-	\ifthenelse{\equal{\commandkey{position}}{centre}}{{%
-	  %\parbox{\linewidth}{%
-	  {\vspace{0ex plus 2\baselineskip minus .5\baselineskip}
-	  \widowpenalty=10000 \clubpenalty=10000\par
-  	  \centering\arabic{numerocouplet}.~#1\par}
-  	  \vspace{2ex minus 1ex}
-  	}%}%
-  	}{%
-		\setlength{\decalage}{\linewidth - \commandkey{decalage}}%
-    \hspace{\commandkey{decalage}}%
-    \pagebreak[3]\parbox{\decalage}{%
-    		\raggedright%
-			\parindent=-\commandkey{decalage}%
-	  	\arabic{numerocouplet}.~#1\par
-	  	\vspace*{2ex}
-   	}%
-  }%\nopagebreak\vspace{0ex plus .5ex minus .5ex}
+  \ifthenelse{%
+    \commandkey{premiercouplet} = \value{numerocouplet}%
+    \OR \commandkey{premiercouplet} < \value{numerocouplet}%
+  }{%
+    \ifthenelse{\equal{\commandkey{position}}{centre}}{%
+      {%
+	 {\vspace{0ex plus 2\baselineskip minus .5\baselineskip}
+	 \widowpenalty=10000 \clubpenalty=10000\par
+  	 \centering\arabic{numerocouplet}.~#1\par}
+  	 \vspace{2ex minus 1ex}
+       }%
+    }{%
+      \setlength{\decalage}{\linewidth - \commandkey{decalage}}%
+      \hspace{\commandkey{decalage}}%
+      \pagebreak[3]\parbox{\decalage}{%
+    	\raggedright%
+	\parindent=-\commandkey{decalage}%
+	\arabic{numerocouplet}.~#1\par
+	\vspace*{2ex}
+      }%
+    }
+  }{}
 }
 
 \newcommand{\refrain}[1]{%
@@ -105,8 +115,8 @@
 	\vspace{1em plus 6\baselineskip}\needspace{6\baselineskip}
 	\stepcounter{chant}
 	\index{#2}
-	\addcontentsline{toc}{subsection}{#2}
-	{\centering\textbf{\Large \arabic{chant}.~#1}\par}
+	\addcontentsline{toc}{subsubsection}{#2}
+	{\centering\textbf{\large \arabic{chant}.~#1}\par}
 	\vspace{1ex plus .7ex minus .2ex}
 }
 
@@ -123,6 +133,12 @@
 	\vspace*{\stretch{2}}
 	\thispagestyle{empty}
 	\clearpage
+}
+
+\newcommand{\souspartie}[1]{%
+	\clearpage
+	{\centering\textbf{\LARGE #1}\par}
+	\addcontentsline{toc}{subsection}{#1}
 }
 
 \makeindex
