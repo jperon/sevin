@@ -9,3 +9,6 @@ sevin:
 	./dependances.sh
 	(cd Fait ; rm Sevin.toc ; lualatex --shell-escape Sevin.tex ; makeindex -s ../manuel.ist Sevin.idx ; lualatex -interaction=nonstopmode --shell-escape Sevin.tex)
 	cp Fait/Sevin.pdf .
+
+todo:
+	grep -R '%TODO' [!Partitions]*[!Fait]* | grep -v \~ | sed s/'%TODO'//g | sed s/'%\\lilypondfile\[staffsize=12\]'/\:/g > TODO
