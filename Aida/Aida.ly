@@ -59,10 +59,10 @@ MusiqueTheme = \relative do'' {
 Paroles = \lyricmode {
   Plus de joie, plus de lu -- miè -- re_!
   Plus de joie, plus de lu -- mière,
-  Et plus de chants, et plus d'ar -- deur_;
+  Et plus de chants, et plus d'ar -- deur_!
   Si nous som -- mes sur la ter -- re,
   Si nous som -- mes sur la terre,
-  Ce n'est pas pour man -- quer d'bon -- heur.
+  Ce n'est pas pour man -- quer d'bon -- heur_!
   
   \italique
   A -- ï -- da_! plus de joie, plus de lu -- miè -- re,
