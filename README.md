@@ -37,3 +37,12 @@ Une fois que les pré-requis sont installés, ouvrez un terminal, placez vous da
 Puis prenez votre mal en patience…
 
 Si cela ne fonctionne pas, c'est probablement qu'il vous manque un pré-requis (la compilation est systématiquement testée sous TeXLive 2013 avant la mise en ligne des changements).
+
+Contribuer
+----------
+
+N'hésitez pas à cloner ce dépôt, et le cas échéant à soumettre une *pull request*.
+
+Le fichier TODO liste les tâches à accomplir ; il peut être mis-à-jour automatiquement grâce à la commande 'make todo'.
+Pour que cela fonctionne, il suffit de respecter la syntaxe suivante :
+%TODO:<tâche>:<éventuels détails>.
