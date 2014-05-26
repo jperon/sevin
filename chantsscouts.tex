@@ -8,7 +8,7 @@
 \usepackage{ifthen}
 \usepackage{keycommand}
 \usepackage{calc}
-\usepackage{multicol}\setlength{\columnsep}{2em}
+\usepackage{multicol}\setlength{\columnsep}{1.8em}
 \usepackage{amsmath}
 %Mise en page
 \usepackage{fancyhdr}
@@ -110,12 +110,13 @@
   }{\strophe{\itshape #1}}{}
 }
 
-\newcommand{\bis}[1]{{%
-	%\setlength{\linewidth}{.9\linewidth}%
-	\settoheight{\htbis}{\parbox{\linewidth}{88.~#1\ ~~}}%
+\newkeycommand{\bis}[texte=bis][][1]{{%
+	\settoheight{\htbis}{\parbox{\linewidth}{\arabic{numero}.~#1}}%
+	\makebox[0cm][l]{%
+		\raisebox{-\height +\depth}[0pt][0pt]{\hspace{\linewidth}\hspace{-\columnsep}\resizebox{\width}{\htbis}{\}}~\raisebox{.2\htbis}{\emph{\footnotesize\commandkey{texte}}}}%
+	}%
 	#1%
 	\nolinebreak\hfill\nolinebreak%
-	\raisebox{\depth}[0pt][0pt]{~~\resizebox{\width}{\htbis}{\}}~\raisebox{.2\htbis}{\emph{bis}}}%
 }}
 
 \newkeycommand{\titre}[espace=10\baselineskip][][2]{%
