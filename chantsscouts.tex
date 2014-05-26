@@ -112,9 +112,10 @@
 
 \newcommand{\bis}[1]{{%
 	%\setlength{\linewidth}{.9\linewidth}%
-	\settoheight{\htbis}{\parbox{\linewidth}{88.~#1}}%
+	\settoheight{\htbis}{\parbox{\linewidth}{88.~#1\ ~~}}%
 	#1%
-	\hfill\raisebox{\depth}[0pt][0pt]{~~\resizebox{\width}{\htbis}{\}}~\raisebox{.2\htbis}{\emph{bis}}}%
+	\nolinebreak\hfill\nolinebreak%
+	\raisebox{\depth}[0pt][0pt]{~~\resizebox{\width}{\htbis}{\}}~\raisebox{.2\htbis}{\emph{bis}}}%
 }}
 
 \newkeycommand{\titre}[espace=10\baselineskip][][2]{%

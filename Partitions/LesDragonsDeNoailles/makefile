@@ -1,0 +1,2 @@
+ly:
+	lilypond *.ly
