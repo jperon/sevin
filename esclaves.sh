@@ -1,22 +1,27 @@
+DossierMaitre="$(pwd)"
 Partitions="Partitions"
-NomFichiers=`zenity --entry --text 'Nom des fichiers :'`
+TitreChant="$(zenity --entry --text 'Titre du chant :')"
+NomFichiers="$(zenity --entry --text 'Nom des fichiers :')"
 
-echo '\lilypondfile[staffsize=12]{'$Partitions/$NomFichiers'/'$NomFichiers.ly'}\n\n\\chanson{'$Partitions'/'$NomFichiers'/'$NomFichiers'}'
+echo -n '\\titre{'$TitreChant'}\n\n%TODO:Partition:'"$TitreChant"':\\lilypondfile[staffsize=12]{'$Partitions/$NomFichiers'/'$NomFichiers.ly'}\n\n\\chanson[numero=1]{'$Partitions'/'$NomFichiers'/'$NomFichiers'}'
 
 
-echo "%Apercu:qpdfview ./tmp.pdf:
-\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
+echo '%Apercu:qpdfview ./tmp.pdf:
+%Cible:tmp:
+\\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
-\include{chantsscouts}
-\include{gredoc}
-\providecommand{\cantus}[4]{\partition{#1}{#2}{#3 #4}}
+\\include{chantsscouts}
+\\include{gredoc}
+\\providecommand{\\cantus}[4]{\\partition{#1}{#2}{#3 #4}}
 
-\begin{document}
+\\begin{document}
 
-\lilypondfile[staffsize=12]{$Partitions/$NomFichiers/$NomFichiers.ly}
-\chanson{$Partitions/$NomFichiers/$NomFichiers}
+\\titre{'"$TitreChant"'}
 
-\end{document}" > tmp.tex
+%TODO:\\lilypondfile[staffsize=12]{'"$Partitions/$NomFichiers/$NomFichiers"'.ly}
+\\chanson[numero=1]{'"$Partitions/$NomFichiers/$NomFichiers"'}
+
+\\end{document}' > tmp.tex
 
 
 if [ ! -d $Partitions/$NomFichiers ] ; then
@@ -33,4 +38,5 @@ frescobaldi $NomFichiers.ly &
 gedit $NomFichiers.tex &
 fi
 
+cd "$DossierMaitre"
 gedit tmp.tex &

@@ -1,4 +1,5 @@
 %Apercu:qpdfview ./tmp.pdf:
+%Cible:tmp:
 \documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
 \include{chantsscouts}
@@ -7,7 +8,9 @@
 
 \begin{document}
 
-\lilypondfile[staffsize=12]{Partitions/AhLesPtitsPotes/AhLesPtitsPotes.ly}
-\chanson{Partitions/AhLesPtitsPotes/AhLesPtitsPotes}
+\titre{La Bohême}
+
+%TODO:\lilypondfile[staffsize=12]{Partitions/LaBoheme/LaBoheme.ly}
+\chanson[numero=1]{Partitions/LaBoheme/LaBoheme}
 
 \end{document}
