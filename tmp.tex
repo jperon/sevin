@@ -1,0 +1,13 @@
+%Apercu:qpdfview ./tmp.pdf:
+\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
+
+\include{chantsscouts}
+\include{gredoc}
+\providecommand{\cantus}[4]{\partition{#1}{#2}{#3 #4}}
+
+\begin{document}
+
+\lilypondfile[staffsize=12]{Partitions/Aida/Aida.ly}
+\chanson{Partitions/Aida/Aida}
+
+\end{document}

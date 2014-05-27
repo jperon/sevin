@@ -1,0 +1,4 @@
+partition:
+	
+ly:
+	lilypond *.ly

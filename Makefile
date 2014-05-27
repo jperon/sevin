@@ -1,3 +1,9 @@
+tmp:
+	lilypond-book -f latex --pdf --latex-program=lualatex --output=Fait/ tmp.tex
+	./dependances.sh
+	(cd Fait ; rm tmp.toc ; lualatex -interaction=nonstopmode --shell-escape tmp.tex)
+	qpdfview Fait/tmp.pdf
+
 carnet:
 	lilypond-book -f latex --pdf --latex-program=lualatex --output=Fait/ Carnet.tex
 	./dependances.sh
