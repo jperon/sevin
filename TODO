@@ -1,46 +1,55 @@
-Carnet.tex::Partition:Ô Croix des scouts:{OCroixDesScouts/OCroixDesScouts.ly}
-Carnet.tex::Partition:Chante au danger:{ChanteAuDanger/ChanteAuDanger.ly}
-Carnet.tex::Partition:L'appel de la route:{LAppelDeLaRoute/LAppelDeLaRoute.ly}
-Carnet.tex::Partition:Chant des couleurs:{ChantDesCouleurs/ChantDesCouleurs.ly}
-Carnet.tex::Partition:Préviens le CP:{PreviensLeCP/PreviensLeCP.ly}
-Carnet.tex::Partition:Alphabet scout:{AlphabetScout/AlphabetScout.ly}
-Carnet.tex::Partition:Ô Saint Hubert:{LaSaintHubert/LaSaintHubert.ly}
-Carnet.tex::Partition:Entendez-vous dans le feu:{EntendezVousDansLeFeu/EntendezVousDansLeFeu.ly}
-Carnet.tex::Partition:Dans les prisons de Nantes:{DansLesPrisonsDeNantes/DansLesPrisonsDeNantes.ly}
-Carnet.tex::Partition:Le Chef:{LeChef/LeChef.ly}
-Carnet.tex::Partition:Le coucou:{LeCoucou/LeCoucou.ly}
-Carnet.tex::Partition:J - O - I - E:{JOIEJoie/JOIEJoie.ly}
-Carnet.tex::Partition:Vent frais:{VentFrais/VentFrais.ly}
-Carnet.tex::Partition:Le petit Grégoire:{LePetitGregoire/LePetitGregoire.ly}
-Carnet.tex::Partition:C'était dans la nuit brune:{CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune.ly}
-Carnet.tex::Partition:Maudit sois-tu, carillonneur:{MauditSoisTuCarillonneur/MauditSoisTuCarillonneur.ly}
-Carnet.tex::Partition:La cloche du vieux manoir:{LaClocheDuVieuxManoir/LaClocheDuVieuxManoir.ly}
-Carnet.tex::Partition:As-tu compté les étoiles:{AsTuCompteLesEtoiles/AsTuCompteLesEtoiles.ly}
-Carnet.tex::Partition:L'espérance:{LEsperance/LEsperance.ly}
-Carnet.tex::Partition:Le chant des marais:{LeChantDesMarais/LeChantDesMarais.ly}
-Carnet.tex::Partition:La cavalcade:{LaCavalcade/LaCavalcade.ly}
-Carnet.tex::Partition:Je veux voir Dieu:{JeVeuxVoirDieu/JeVeuxVoirDieu.ly}
-Carnet.tex::Partition:Voguons au vent de mer:{VoguonsAuVentDeMer/VoguonsAuVentDeMer.ly}
-Carnet.tex::Partition:Ami, rejoins-nous:{AmiRejoinsNous/AmiRejoinsNous.ly}
-Carnet.tex::Partition:Avant d'aller dormir:{AvantDAllerDormir/AvantDAllerDormir.ly}
-Carnet.tex::Partition:Je mets ma confiance:{JeMetsMaConfiance/JeMetsMaConfiance.ly}
-Carnet.tex::Partition:Misere de la mer:{MiserereDeLaMer/MiserereDeLaMer.ly}
-Carnet.tex::Partition:Chant de Monsieur Henri:{ChantDeMonsieurHenri/ChantDeMonsieurHenri.ly}
-Carnet.tex::Partition:Les Bleus sont là:{LesBleusSontLa/LesBleusSontLa.ly}
-Carnet.tex::Partition:La ligue noire:{LaLigueNoire/LaLigueNoire.ly}
-Carnet.tex::Partition:Les partisans blancs:{LesPartisansBlancs/LesPartisansBlancs.ly}
-Carnet.tex::Partition:Les Africains:{LesAfricains/LesAfricains.ly}
-Carnet.tex::Partition:Le combat de demain:{LeCombatDeDemain/LeCombatDeDemain.ly}
-Carnet.tex::Partition:Les commandos:{LesCommandos/LesCommandos.ly}
-Carnet.tex::Partition:Les dragons de Noailles:{LesDragonsDeNoailles/LesDragonsDeNoailles.ly}
-Carnet.tex::Partition:Hé, garçon !:{HeGarcon/HeGarcon.ly}
-Carnet.tex::Partition:Matelots, puisqu'il fait bon vent:{MatelotsPuisquIlFaitBonVent/MatelotsPuisquIlFaitBonVent.ly}
-Carnet.tex::Partition:Guerre guerre:{GuerreGuerre/GuerreGuerre.ly}
-Carnet.tex::Partition:Santiano:{Santiano/Santiano.ly}
-Carnet.tex::Partition:Au 31 du mois d'août:{Au31DuMoisDAout/Au31DuMoisDAout.ly}
-Carnet.tex::Partition:Qui peut faire de la voile sans vent ?:{QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
-Carnet.tex::Partition:Ah ! que nos pères:{AhQueNosPeres/AhQueNosPeres.ly}
-Carnet.tex::Partition:Chevaliers de la table ronde:{ChevaliersDeLaTableRonde/ChevaliersDeLaTableRonde.ly}
-Carnet.tex::Partition:In vino veritas\lilypondfile[staffsize=12]{InVinoVeritas/InVinoVeritas.ly}
-Carnet.tex::Partition:Fanchon:{Fanchon/Fanchon.ly}
-JeMetsMaConfiance/JeMetsMaConfiance.tex::Couplets
+Carnet.tex::Partition:Ô Croix des scouts:{Partitions/OCroixDesScouts/OCroixDesScouts.ly}
+Carnet.tex::Partition:Chante au danger:{Partitions/ChanteAuDanger/ChanteAuDanger.ly}
+Carnet.tex::Partition:L'appel de la route:{Partitions/LAppelDeLaRoute/LAppelDeLaRoute.ly}
+Carnet.tex::Partition:Chant des couleurs:{Partitions/ChantDesCouleurs/ChantDesCouleurs.ly}
+Carnet.tex::Partition:Préviens le CP:{Partitions/PreviensLeCP/PreviensLeCP.ly}
+Carnet.tex::Partition:Alphabet scout:{Partitions/AlphabetScout/AlphabetScout.ly}
+Carnet.tex::Partition:Ô Saint Hubert:{Partitions/LaSaintHubert/LaSaintHubert.ly}
+Carnet.tex::Partition:Entendez-vous dans le feu:{Partitions/EntendezVousDansLeFeu/EntendezVousDansLeFeu.ly}
+Carnet.tex::Partition:Dans les prisons de Nantes:{Partitions/DansLesPrisonsDeNantes/DansLesPrisonsDeNantes.ly}
+Carnet.tex::Partition:Le Chef:{Partitions/LeChef/LeChef.ly}
+Carnet.tex::Partition:Le coucou:{Partitions/LeCoucou/LeCoucou.ly}
+Carnet.tex::Partition:J - O - I - E:{Partitions/JOIEJoie/JOIEJoie.ly}
+Carnet.tex::Partition:Vent frais:{Partitions/VentFrais/VentFrais.ly}
+Carnet.tex::Partition:Ah ! les p'tits potes:{Partitions/AhLesPtitsPotes/AhLesPtitsPotes.ly}
+Carnet.tex::Partition:Le petit Grégoire:{Partitions/LePetitGregoire/LePetitGregoire.ly}
+Carnet.tex::Partition:Le soldat belge:{Partitions/LeSoldatBelge/LeSoldatBelge.ly}
+Carnet.tex::Partition:C'était dans la nuit brune:{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune.ly}
+Carnet.tex::Partition:Maudit sois-tu, carillonneur:{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur.ly}
+Carnet.tex::Partition:La cloche du vieux manoir:{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir.ly}
+Carnet.tex::Partition:As-tu compté les étoiles:{Partitions/AsTuCompteLesEtoiles/AsTuCompteLesEtoiles.ly}
+Carnet.tex::Partition:L'espérance:{Partitions/LEsperance/LEsperance.ly}
+Carnet.tex::Partition:Le chant des marais:{Partitions/LeChantDesMarais/LeChantDesMarais.ly}
+Carnet.tex::Partition:La cavalcade:{Partitions/LaCavalcade/LaCavalcade.ly}
+Carnet.tex::Partition:Je veux voir Dieu:{Partitions/JeVeuxVoirDieu/JeVeuxVoirDieu.ly}
+Carnet.tex::Partition:Voguons au vent de mer:{Partitions/VoguonsAuVentDeMer/VoguonsAuVentDeMer.ly}
+Carnet.tex::Partition:Ami, rejoins-nous:{Partitions/AmiRejoinsNous/AmiRejoinsNous.ly}
+Carnet.tex::Partition:Glory, alleluia !:{Partitions/GloryAlleluia/GloryAlleluia.ly}
+Carnet.tex::Partition:Avant d'aller dormir:{Partitions/AvantDAllerDormir/AvantDAllerDormir.ly}
+Carnet.tex::Partition:Je mets ma confiance:{Partitions/JeMetsMaConfiance/JeMetsMaConfiance.ly}
+Carnet.tex::Partition:Misere de la mer:{Partitions/MiserereDeLaMer/MiserereDeLaMer.ly}
+Carnet.tex::Partition:Chant de Monsieur Henri:{Partitions/ChantDeMonsieurHenri/ChantDeMonsieurHenri.ly}
+Carnet.tex::Partition:Les Bleus sont là:{Partitions/LesBleusSontLa/LesBleusSontLa.ly}
+Carnet.tex::Partition:La ligue noire:{Partitions/LaLigueNoire/LaLigueNoire.ly}
+Carnet.tex::Partition:Les partisans blancs:{Partitions/LesPartisansBlancs/LesPartisansBlancs.ly}
+Carnet.tex::Partition:La France bouge:{Partitions/LaFranceBouge/LaFranceBouge.ly}
+Carnet.tex::Partition:La strasbourgeoise:{Partitions/LEnfantDeStrasbourg/LEnfantDeStrasbourg.ly}
+Carnet.tex::Partition:En passant par la Lorraine:{Partitions/EnPassantParLaLorraine/EnPassantParLaLorraine.ly}
+Carnet.tex::Partition:Le roi Louis\lilypondfile[staffsize=12]{Partitions/LeRoiLouis/LeRoiLouis.ly}
+Carnet.tex::Partition:À la claire fontaine:{Partitions/ALaClaireFontaine/ALaClaireFontaine.ly}
+Carnet.tex::Partition:Les Africains:{Partitions/LesAfricains/LesAfricains.ly}
+Carnet.tex::Partition:Le combat de demain:{Partitions/LeCombatDeDemain/LeCombatDeDemain.ly}
+Carnet.tex::Partition:Les commandos:{Partitions/LesCommandos/LesCommandos.ly}
+Carnet.tex::Partition:En passant par la portière:{Partitions/EnPassantParLaPortiere/EnPassantParLaPortiere.ly}
+Carnet.tex::Partition:Les dragons de Noailles:{Partitions/LesDragonsDeNoailles/LesDragonsDeNoailles.ly}
+Carnet.tex::Partition:Trois jeunes tambours:{Partitions/TroisJeunesTambours/TroisJeunesTambours.ly}
+Carnet.tex::Partition:Hé, garçon !:{Partitions/HeGarcon/HeGarcon.ly}
+Carnet.tex::Partition:Matelots, puisqu'il fait bon vent:{Partitions/MatelotsPuisquIlFaitBonVent/MatelotsPuisquIlFaitBonVent.ly}
+Carnet.tex::Partition:Guerre guerre:{Partitions/GuerreGuerre/GuerreGuerre.ly}
+Carnet.tex::Partition:Santiano:{Partitions/Santiano/Santiano.ly}
+Carnet.tex::Partition:Au 31 du mois d'août:{Partitions/Au31DuMoisDAout/Au31DuMoisDAout.ly}
+Carnet.tex::Partition:Qui peut faire de la voile sans vent ?:{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
+Carnet.tex::Partition:Ah ! que nos pères:{Partitions/AhQueNosPeres/AhQueNosPeres.ly}
+Carnet.tex::Partition:Chevaliers de la table ronde:{Partitions/ChevaliersDeLaTableRonde/ChevaliersDeLaTableRonde.ly}
+Carnet.tex::Partition:In vino veritas\lilypondfile[staffsize=12]{Partitions/InVinoVeritas/InVinoVeritas.ly}
+Carnet.tex::Partition:Fanchon:{Partitions/Fanchon/Fanchon.ly}

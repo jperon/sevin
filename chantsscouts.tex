@@ -101,11 +101,12 @@
 
 \newcommand{\couplet}[1]{%
   \stepcounter{numerocouplet}%
-  \stepcounter{numero}%
   \ifthenelse{%
               \commandkey{premiercouplet} = \value{numerocouplet}%
               \OR \commandkey{premiercouplet} < \value{numerocouplet}%
-  }{\strophe{\arabic{numero}.~#1}}{}
+  }{%
+  	\stepcounter{numero}%
+  	\strophe{\arabic{numero}.~#1}}{}
 }
 
 \newcommand{\refrain}[1]{%
@@ -138,13 +139,18 @@
 	\bis[texte=ter]{#1}%
 }
 
-\newkeycommand{\titre}[espace=10][][2]{%
+\newkeycommand{\titre}[espace=10,table=idem][][1]{%
 	\setlength{\avanttitre}{\baselineskip}
 	\multiply\avanttitre by \commandkey{espace}
 	\vspace{1em plus 6\baselineskip}\needspace{\avanttitre}%
 	\stepcounter{chant}
-	\index{#2}
-	\addcontentsline{toc}{subsubsection}{#2}
+	\ifthenelse{\equal{\commandkey{table}}{idem}}{%
+		\index{#1}
+		\addcontentsline{toc}{subsubsection}{#1}%
+	}{%
+		\index{\commandkey{table}}
+		\addcontentsline{toc}{subsubsection}{\commandkey{table}}%
+	}
 	{\centering\textbf{\large \arabic{chant}.~#1}\par}
 	\vspace{1ex plus .7ex minus .2ex}
 }

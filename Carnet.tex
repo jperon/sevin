@@ -1,5 +1,6 @@
 %Apercu:qpdfview ./Carnet.pdf:
-%Esclaves:./esclaves.sh
+%Esclaves:./esclaves.sh:
+%Cible:carnet:
 \documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
 \include{chantsscouts}
@@ -14,14 +15,14 @@
 \partie{Chants officiels}
 
 
-\titre{Va, Scout de France !}{Va, Scout de France !}
+\titre{Va, Scout de France !}
 
 \lilypondfile[staffsize=12]{Partitions/VaScoutDeFrance/VaScoutDeFrance.ly}
 
 \chanson{Partitions/VaScoutDeFrance/VaScoutDeFrance}
 
 
-\titre{Maud'Huy}{Maud'Huy}
+\titre{Maud'Huy}
 
 \lilypondfile[staffsize=12]{Partitions/MaudHuy/MaudHuy.ly}
 
@@ -29,35 +30,35 @@
 \chanson[position=2col]{Partitions/MaudHuy/MaudHuy}
 
 
-\titre{C'est un Maréchal lorrain}{C'est un Maréchal lorrain}
+\titre{C'est un Maréchal lorrain}
 
 \lilypondfile[staffsize=12]{Partitions/CEstUnMarechalLorrain/CEstUnMarechalLorrain.ly}
 
 \chanson{Partitions/CEstUnMarechalLorrain/CEstUnMarechalLorrain}
 
 
-\titre{Faucon d'Armor}{Faucon d'Armor}
+\titre{Faucon d'Armor}
 
 \lilypondfile[staffsize=12]{Partitions/FauconDArmor/FauconDArmor.ly}
 
 \chanson{Partitions/FauconDArmor/FauconDArmor}
 
 
-\titre{Le Vieux Loup}{Vieux Loup (le)}
+\titre[table=Vieux Loup (le)]{Le Vieux Loup}
 
 \lilypondfile[staffsize=12]{Partitions/LeVieuxLoup/LeVieuxLoup.ly}
 
 \chanson{Partitions/LeVieuxLoup/LeVieuxLoup}
 
 
-\titre{Marche sous l'Étendard}{Marche sous l'Étendard}
+\titre{Marche sous l'Étendard}
 
 \lilypondfile[staffsize=12]{Partitions/MarcheSousLEtendard/MarcheSousLEtendard.ly}
 
 \chanson[position=2col]{Partitions/MarcheSousLEtendard/MarcheSousLEtendard}
 
 
-\titre{Ô ma Troupe !\footnotemark}{Ô ma Troupe !}
+\titre[table=Ô ma Troupe !]{Ô ma Troupe !\footnotemark}
 \footnotetext{Il n'est aucunement désirable d'adapter à la Meute les paroles de ce chant.}
 
 \lilypondfile[staffsize=12]{Partitions/OMaTroupe/OMaTroupe.ly}
@@ -67,29 +68,29 @@
 \partie{L'âme scoute}
 
 
-\titre{La Croix scoute}{Croix scoute (la)}
+\titre[table=Croix scoute (la)]{La Croix scoute}
 
 \lilypondfile[staffsize=12]{Partitions/LaCroixScoute/LaCroixScoute.ly}\needspace{4\baselineskip}
 
 \chanson{Partitions/LaCroixScoute/LaCroixScoute}
 
 
-\titre{Ô Croix des scouts}{Ô Croix des scouts}
+\titre{Ô Croix des scouts}
 
 %TODO:Partition:Ô Croix des scouts%\lilypondfile[staffsize=12]{Partitions/OCroixDesScouts/OCroixDesScouts.ly}
 
-\chanson[premiercouplet=1]{Partitions/OCroixDesScouts/OCroixDesScouts}
+\chanson[numero=1]{Partitions/OCroixDesScouts/OCroixDesScouts}
 
 
 
-\titre{La voix des Petits}{Voix des Petits (la)}
+\titre[table=Voix des Petits (la)]{La voix des Petits}
 
 \lilypondfile[staffsize=12]{Partitions/LaVoixDesPetits/LaVoixDesPetits.ly}
 
 \chanson{Partitions/LaVoixDesPetits/LaVoixDesPetits}
 
 
-\titre{L'Appel scout}{Appel scout (l')}
+\titre[table=Appel scout (l')]{L'Appel scout}
 
 \lilypondfile[staffsize=12]{Partitions/LAppelScout/LAppelScout.ly}
 
@@ -99,21 +100,21 @@
 {\renewcommand{\thefootnote}{}\footnotetext{Le chant est à commencer \emph{pianissimo}, en renforçant graduellement de couplet en couplet pour arriver \emph{forte} au 6\ieme\ et au \emph{fortissimo} à l'avant-dernier couplet. Prendre le dernier \emph{pianissimo}, aller \emph{crescendo} jusqu'au complet épanouissement du 2\ieme\ vers, et retomber ensuite, de façon très douce et très liée, sur les notes de l'appel scout.}}
 
 
-\titre{La Joie scoute}{Joie scoute (la)}
+\titre[table=Joie scoute (la)]{La Joie scoute}
 
 \lilypondfile[staffsize=12]{Partitions/LaJoieScoute/LaJoieScoute.ly}
 
 \chanson{Partitions/LaJoieScoute/LaJoieScoute}
 
 
-\titre{Pourquoi ces tristes mines ?}{Pourquoi ces tristes mines ?}
+\titre{Pourquoi ces tristes mines ?}
 
 \lilypondfile[staffsize=12]{Partitions/PourquoiCesTristesMines/PourquoiCesTristesMines.ly}
 
 \chanson{Partitions/PourquoiCesTristesMines/PourquoiCesTristesMines}
 
 
-\titre{Chante au danger}{Chante au danger}
+\titre{Chante au danger}
 
 %TODO:Partition:Chante au danger%\lilypondfile[staffsize=12]{Partitions/ChanteAuDanger/ChanteAuDanger.ly}
 
@@ -121,21 +122,21 @@
 
 
 
-\titre{Peur ?}{Peur ?}
+\titre{Peur ?}
 
 \lilypondfile[staffsize=12]{Partitions/Peur/Peur.ly}
 
 \chanson{Partitions/Peur/Peur}
 
 
-\titre{Aimons-nous mieux}{Aimons-nous mieux}
+\titre{Aimons-nous mieux}
 
 \lilypondfile[staffsize=12]{Partitions/AimonsNousMieux/AimonsNousMieux.ly}
 
 \chanson{Partitions/AimonsNousMieux/AimonsNousMieux}
 
 
-\titre{Être prêt}{Être prêt}
+\titre{Être prêt}
 
 %\lilypondfile[staffsize=12]{Partitions/EtrePret/EtrePret.ly}
 
@@ -143,14 +144,14 @@
 
 
 
-\titre{Fleurs de France}{Fleurs de France}
+\titre{Fleurs de France}
 
 \lilypondfile[staffsize=12]{Partitions/FleursDeFrance/FleursDeFrance.ly}
 
 \chanson[position=2col]{Partitions/FleursDeFrance/FleursDeFrance}
 
 
-\titre{La Complainte du Templier}{Complainte du Templier (la)}
+\titre[table=Complainte du Templier (la)]{La Complainte du Templier}
 
 \lilypondfile[staffsize=12]{Partitions/ComplainteDuTemplier/Complainte.ly}
 
@@ -159,7 +160,7 @@
 \partie{La vie scoute}
 
 
-\titre{Objections du V.P.}{Objections du V.P.}
+\titre{Objections du V.P.}
 
 \lilypondfile[staffsize=12]{Partitions/ObjectionsDuVP/ObjectionsDuVP.ly}
 
@@ -168,13 +169,13 @@
 %%\separation
 
 
-\titre{Viens avec nous, P'tit Loup\footnotemark}{Viens avec nous, P'tit Loup}
+\titre[table=Viens avec nous, P'tit Loup]{Viens avec nous, P'tit Loup\footnotemark}
 \footnotetext{Cérémonie officielle de montée de la Meute à la Troupe.}
 
 \lilypondfile[staffsize=12]{Partitions/ViensAvecNousPtitLoup/ViensAvecNousPtitLoup.ly}
 
 
-\titre{Fondons la Meute}{Fondons la Meute}
+\titre{Fondons la Meute}
 
 \lilypondfile[staffsize=12]{Partitions/FondonsLaMeute/FondonsLaMeute.ly}
 
@@ -183,7 +184,7 @@
 %%\separation
 
 
-\titre{La vie simple}{Vie simple (la)}
+\titre[table=Vie simple (la)]{La vie simple}
 
 \lilypondfile[staffsize=12]{Partitions/LaVieSimple/LaVieSimple.ly}
 
@@ -192,7 +193,7 @@
 %%\separation
 
 
-\titre{Les Scouts se sont cachés}{Scouts se sont cachés (les)}
+\titre[table=Scouts se sont cachés (les)]{Les Scouts se sont cachés}
 
 \lilypondfile[staffsize=12]{Partitions/LesScoutsSeSontCaches/LesScoutsSeSontCaches.ly}
 
@@ -201,7 +202,7 @@
 %%\separation
 
 
-\titre{Présentation à Monseigneur Saint Louis}{Présentation à Mgr St Louis}
+\titre{Présentation à Monseigneur Saint Louis}
 
 \lilypondfile[staffsize=12]{Partitions/PresentationAMonseigneurSaintLouis/PresentationAMonseigneurSaintLouis.ly}
 
@@ -210,7 +211,7 @@
 %%\separation
 
 
-\titre{Scout terrien, Scout marin}{Scout terrien, Scout marin}
+\titre{Scout terrien, Scout marin}
 
 \lilypondfile[staffsize=12]{Partitions/ScoutTerrienScoutMarin/ScoutTerrienScoutMarin.ly}
 
@@ -219,7 +220,7 @@
 %%\separation
 
 
-\titre{Nous sommes la IX\ieme\ Lille}{Nous sommes la IX\ieme\ Lille}
+\titre{Nous sommes la IX\ieme\ Lille}
 
 \lilypondfile[staffsize=12]{Partitions/Nous_sommes_la_9e_Lille/Nous_sommes_la_9e_Lille.ly}
 
@@ -228,7 +229,7 @@
 %%\separation
 
 
-\titre{La Ronde des bâtons\footnotemark}{Ronde des bâtons (la)}
+\titre[table=Ronde des bâtons (la)]{La Ronde des bâtons\footnotemark}
 \footnotetext{Cette chanson peut servir de thème à un ballet dont la mise en scène est très facile, et qui peut être exécuté autour du feu de camp.
 
 Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.}
@@ -240,14 +241,14 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Voix des Allongés}{Voix des Allongés}
+\titre{Voix des Allongés}
 
 \lilypondfile[staffsize=12]{Partitions/Voix_des_Allonges/Voix_des_Allonges.ly}
 
 \chanson[position=2col]{Partitions/Voix_des_Allonges/Voix_des_Allonges}
 
 
-\titre{Perçant les écharpes de l'aube}{Perçant les écharpes de l'aube}
+\titre{Perçant les écharpes de l'aube}
 
 \lilypondfile[staffsize=12]{Partitions/PercantLesEcharpesDeLAube/PercantLesEcharpesDeLAube.ly}
 
@@ -256,14 +257,14 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Connais-tu la IX\ieme ?}{Connais-tu la IX\ieme ?}
+\titre{Connais-tu la IX\ieme ?}
 
 \lilypondfile[staffsize=12]{Partitions/ConnaisTuLaIXe/ConnaisTuLaIXe.ly}
 
 \chanson{Partitions/ConnaisTuLaIXe/ConnaisTuLaIXe}
 
 
-\titre{La Hutte est un grand magasin\footnotemark}{Hutte est un grand magasin (la)}
+\titre[table=Hutte est un grand magasin (la)]{La Hutte est un grand magasin\footnotemark}
 \footnotetext{Dédié à Maurice \textsc{Barrier}, fondateur de la Hutte, commissaire de Versailles mort au service de ses scouts, le 23 juillet 1923, dans la baie d'Audierne.}
 
 \lilypondfile[staffsize=12]{Partitions/LaHutteEstUnGrandMagasin/LaHutteEstUnGrandMagasin.ly}
@@ -271,7 +272,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/LaHutteEstUnGrandMagasin/LaHutteEstUnGrandMagasin}
 
 
-\titre{Si tu veux des Badges\footnotemark}{Si tu veux des Badges}
+\titre[table=Si tu veux des Badges]{Si tu veux des Badges\footnotemark}
 \footnotetext{Air datant de Louis XIII, au chant duquel les troupes françaises entrèrent à Tananarive en 1895.}
 
 \lilypondfile[staffsize=12]{Partitions/SiTuVeuxDesBadges/SiTuVeuxDesBadges.ly}
@@ -279,28 +280,28 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[position=2col]{Partitions/SiTuVeuxDesBadges/SiTuVeuxDesBadges}
 
 
-\titre{Le Totem de la Patrouille}{Totem de la Patrouille (le)}
+\titre[table=Totem de la Patrouille (le)]{Le Totem de la Patrouille}
 
 \lilypondfile[staffsize=12]{Partitions/LeTotemDeLaPatrouille/LeTotemDeLaPatrouille.ly}
 
 \chanson[position=2col]{Partitions/LeTotemDeLaPatrouille/LeTotemDeLaPatrouille}
 
 
-\titre{Trois Scouts de France}{Trois Scouts de France}
+\titre{Trois Scouts de France}
 
 \lilypondfile[staffsize=12]{Partitions/TroisScoutsDeFrance/TroisScoutsDeFrance.ly}
 
 \chanson[position=2col]{Partitions/TroisScoutsDeFrance/TroisScoutsDeFrance}
 
 
-\titre{Le Chef de troupe a dit}{Chef de troupe a dit (le)}\label{lechefdetroupe}
+\titre[table=Chef de troupe a dit (le)]{Le Chef de troupe a dit}\label{lechefdetroupe}
 
 \lilypondfile[staffsize=12]{Partitions/LeChefDeTroupeADit/LeChefDeTroupeADit.ly}
 
 \chanson{Partitions/LeChefDeTroupeADit/LeChefDeTroupeADit}
 
 
-\titre{L'Chef de Patrouille a deux galons}{Chef de Patrouille a deux galons (l')}
+\titre[table=Chef de Patrouille a deux galons (l')]{L'Chef de Patrouille a deux galons}
 
 \lilypondfile[staffsize=12]{Partitions/LChefDePatrouilleADeuxGalons/LChefDePatrouilleADeuxGalons.ly}
 
@@ -309,7 +310,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{J'ai un' p'tit' B. A. à faire}{J'ai un' p'tit' B. A. à faire}
+\titre{J'ai un' p'tit' B. A. à faire}
 
 \lilypondfile[staffsize=12]{Partitions/JAiUnPtitBAAFaire/JAiUnPtitBAAFaire.ly}
 
@@ -318,21 +319,21 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Les Chamois}{Chamois (les)}
+\titre[table=Chamois (les)]{Les Chamois}
 
 \lilypondfile[staffsize=12]{Partitions/LesChamois/LesChamois.ly}
 
 \chanson{Partitions/LesChamois/LesChamois}
 
 
-\titre{Chant du Routier solitaire}{Chant du Routier solitaire}
+\titre{Chant du Routier solitaire}
 
 \lilypondfile[staffsize=12]{Partitions/ChantDuRoutierSolitaire/ChantDuRoutierSolitaire.ly}
 
 \chanson{Partitions/ChantDuRoutierSolitaire/ChantDuRoutierSolitaire}
 
 
-\titre{L'appel de la route}{Appel de la route (l')}
+\titre[table=Appel de la route (l')]{L'appel de la route}
 
 %TODO:Partition:L'appel de la route%\lilypondfile[staffsize=12]{Partitions/LAppelDeLaRoute/LAppelDeLaRoute.ly}
 
@@ -340,21 +341,21 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 
-\titre{Au Chemin blanc}{Au Chemin blanc}
+\titre{Au Chemin blanc}
 
 \lilypondfile[staffsize=12]{Partitions/AuCheminBlanc/AuCheminBlanc.ly}
 
 \chanson{Partitions/AuCheminBlanc/AuCheminBlanc}
 
 
-\titre{C'étaient trois joyeux Routiers}{C'étaient trois joyeux Routiers}
+\titre{C'étaient trois joyeux Routiers}
 
 \lilypondfile[staffsize=12]{Partitions/CEtaientTroisJoyeuxRoutiers/CEtaientTroisJoyeuxRoutiers.ly}
 
 \chanson[position=2col]{Partitions/CEtaientTroisJoyeuxRoutiers/CEtaientTroisJoyeuxRoutiers}
 
 
-\titre{Gai ! Du Guesclin !}{Gai, Du Guesclin !}
+\titre{Gai ! Du Guesclin !}
 
 \lilypondfile[staffsize=12]{Partitions/GaiDuguesclin/GaiDuguesclin.ly}
 
@@ -368,7 +369,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \souspartie{Couleurs}
 
 \filbreak
-\titre{Couleurs du matin}{Couleurs du matin}
+\titre{Couleurs du matin}
 
 \lilypondfile[staffsize=12]{Partitions/CouleursDuMatin/CouleursDuMatin.ly}
 
@@ -376,7 +377,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 \filbreak
-\titre{Couleurs du soir}{Couleurs du soir}
+\titre{Couleurs du soir}
 
 \lilypondfile[staffsize=12]{Partitions/CouleursDuSoir/CouleursDuSoir.ly}
 
@@ -384,7 +385,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 \filbreak
-\titre{Chant des couleurs}{Chant des couleurs}
+\titre{Chant des couleurs}
 
 %TODO:Partition:Chant des couleurs%\lilypondfile[staffsize=12]{Partitions/ChantDesCouleurs/ChantDesCouleurs.ly}
 
@@ -396,42 +397,42 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \souspartie{Arrivée et départ du camp}
 
-\titre{Voici le camp d'été}{Voici le camp d'été}
+\titre{Voici le camp d'été}
 
 \lilypondfile[staffsize=12]{Partitions/VoiciLeCampDEte/VoiciLeCampDEte.ly}
 
 \chanson[position=2col]{Partitions/VoiciLeCampDEte/VoiciLeCampDEte}
 
 
-\titre{La Marche au Camp}{Marche au Camp (la)}
+\titre[table=Marche au Camp (la)]{La Marche au Camp}
 
 \lilypondfile[staffsize=12]{Partitions/LaMarcheAuCamp/LaMarcheAuCamp.ly}
 
 \chanson{Partitions/LaMarcheAuCamp/LaMarcheAuCamp}
 
 
-\titre{Chanson d'arrivée chez l'hôte}{Chant d'arrivée chez l'hôte}
+\titre{Chanson d'arrivée chez l'hôte}
 
 \lilypondfile[staffsize=12]{Partitions/ChansonDArriveeChezLHote/ChansonDArriveeChezLHote.ly}
 
 \chanson{Partitions/ChansonDArriveeChezLHote/ChansonDArriveeChezLHote}
 
 
-\titre{Merci aux Hôtes}{Merci aux Hôtes}
+\titre{Merci aux Hôtes}
 
 \lilypondfile[staffsize=12]{Partitions/MerciAuxHotes/MerciAuxHotes.ly}
 
 %\chanson{Partitions/MerciAuxHotes/MerciAuxHotes}
 
 
-\titre{Le Camp modèle}{Camp modèle (le)}
+\titre[table=Camp modèle (le)]{Le Camp modèle}
 
 \lilypondfile[staffsize=12]{Partitions/LeCampModele/LeCampModele.ly}
 
 \chanson{Partitions/LeCampModele/LeCampModele}
 
 
-\titre{Retour du Camp}{Retour du Camp}
+\titre{Retour du Camp}
 
 \lilypondfile[staffsize=12]{Partitions/RetourDuCamp/RetourDuCamp.ly}
 
@@ -440,7 +441,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \souspartie{Vie au camp}
 
-\titre{La Chanson du Plein Air}{Chanson du Plein Air (la)}
+\titre[table=Chanson du Plein Air (la)]{La Chanson du Plein Air}
 
 \lilypondfile[staffsize=12]{Partitions/LaChansonDuPleinAir/LaChansonDuPleinAir.ly}
 
@@ -449,28 +450,28 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Youkaïdi ! Youkaïda !}{Youkaïdi, Youkaïda !}
+\titre{Youkaïdi ! Youkaïda !}
 
 \lilypondfile[staffsize=12]{Partitions/YoukaidiYoukaida/YoukaidiYoukaida.ly}
 
 \chanson[position=2col]{Partitions/YoukaidiYoukaida/YoukaidiYoukaida}
 
 
-\titre{Il était une charrette}{Il était une charrette}
+\titre{Il était une charrette}
 
 \lilypondfile[staffsize=12]{Partitions/IlEtaitUneCharrette/IlEtaitUneCharrette.ly}
 
 \chanson{Partitions/IlEtaitUneCharrette/IlEtaitUneCharrette}
 
 
-\titre{Préviens le CP}{Préviens le CP}
+\titre{Préviens le CP}
 
 %TODO:Partition:Préviens le CP%\lilypondfile[staffsize=12]{Partitions/PreviensLeCP/PreviensLeCP.ly}
 
 \chanson[numero=1]{Partitions/PreviensLeCP/PreviensLeCP}
 
 
-\titre{Alphabet scout}{Alphabet scout}
+\titre{Alphabet scout}
 
 %TODO:Partition:Alphabet scout%\lilypondfile[staffsize=12]{Partitions/AlphabetScout/AlphabetScout.ly}
 
@@ -478,56 +479,56 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 
-\titre{Gribouille s'est fait Boy-Scoute}{Gribouille s'est fait Boy-Scoute}
+\titre{Gribouille s'est fait Boy-Scoute}
 
 \lilypondfile[staffsize=12]{Partitions/GribouilleSEstFaitBoyScoute/GribouilleSEstFaitBoyScoute.ly}
 
 \chanson[position=2col]{Partitions/GribouilleSEstFaitBoyScoute/GribouilleSEstFaitBoyScoute}
 
 
-\titre{Mon Ciel est toujours bleu}{Mon Ciel est toujours bleu}
+\titre{Mon Ciel est toujours bleu}
 
 \lilypondfile[staffsize=12]{Partitions/MonCielEstToujoursBleu/MonCielEstToujoursBleu.ly}
 
 \chanson[position=2col]{Partitions/MonCielEstToujoursBleu/MonCielEstToujoursBleu}
 
 
-\titre{La Messe au Camp}{Messe au Camp (la)}
+\titre[table=Messe au Camp (la)]{La Messe au Camp}
 
 \lilypondfile[staffsize=12]{Partitions/LaMesseAuCamp/LaMesseAuCamp.ly}
 
 \chanson{Partitions/LaMesseAuCamp/LaMesseAuCamp}
 
 
-\titre{C'est le Vent}{C'est le Vent}
+\titre{C'est le Vent}
 
 \lilypondfile[staffsize=12]{Partitions/CEstLeVent/CEstLeVent.ly}
 
 \chanson{Partitions/CEstLeVent/CEstLeVent}
 
 
-\titre{En Forêt}{En Forêt}
+\titre{En Forêt}
 
 \lilypondfile[staffsize=12]{Partitions/EnForet/EnForet.ly}
 
 \chanson{Partitions/EnForet/EnForet}
 
 
-\titre{Le Moulin}{Moulin (le)}
+\titre[table=Moulin (le)]{Le Moulin}
 
 \lilypondfile[staffsize=12]{Partitions/LeMoulin/LeMoulin.ly}
 
 \chanson{Partitions/LeMoulin/LeMoulin}
 
 
-\titre{Retraite sur la Montagne}{Retraite sur la Montagne}
+\titre{Retraite sur la Montagne}
 
 \lilypondfile[staffsize=12]{Partitions/RetraiteSurLaMontagne/RetraiteSurLaMontagne.ly}
 
 \chanson{Partitions/RetraiteSurLaMontagne/RetraiteSurLaMontagne}
 
 
-\titre{Chantons nos Montagnes}{Chantons nos Montagnes}
+\titre{Chantons nos Montagnes}
 
 \lilypondfile[staffsize=12]{Partitions/ChantonsNosMontagnes/ChantonsNosMontagnes.ly}
 
@@ -536,35 +537,35 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \souspartie{La nuit au camp}
 
-\titre{La Berceuse du Camp qui chante}{Berceuse du Camp qui chante (la)}
+\titre[table=Berceuse du Camp qui chante (la)]{La Berceuse du Camp qui chante}
 
 \lilypondfile[staffsize=12]{Partitions/LaBerceuseDuCampQuiChante/LaBerceuseDuCampQuiChante.ly}
 
 \chanson[position=2col]{Partitions/LaBerceuseDuCampQuiChante/LaBerceuseDuCampQuiChante}
 
 
-\titre{La Berceuse des Scouts au bois dormants}{Berceuse des Scouts au bois dormants}
+\titre{La Berceuse des Scouts au bois dormants}
 
 \lilypondfile[staffsize=12]{Partitions/LaBerceuseDesScoutsAuBoisDormants/LaBerceuseDesScoutsAuBoisDormants.ly}
 
 \chanson{Partitions/LaBerceuseDesScoutsAuBoisDormants/LaBerceuseDesScoutsAuBoisDormants}
 
 
-\titre{En Sentinelle}{En Sentinelle}
+\titre{En Sentinelle}
 
 \lilypondfile[staffsize=12]{Partitions/EnSentinelle/EnSentinelle.ly}
 
 \chanson{Partitions/EnSentinelle/EnSentinelle}
 
 
-\titre{La Garde au Clair de Lune}{Garde au Clair de Lune (la)}
+\titre[table=Garde au Clair de Lune (la)]{La Garde au Clair de Lune}
 
 \lilypondfile[staffsize=12]{Partitions/LaGardeAuClairDeLune/LaGardeAuClairDeLune.ly}
 
 \chanson{Partitions/LaGardeAuClairDeLune/LaGardeAuClairDeLune}
 
 
-\titre{Le Cor}{Cor (le)}
+\titre[table=Cor (le)]{Le Cor}
 
 \lilypondfile[staffsize=12]{Partitions/LeCor/LeCor.ly}
 
@@ -573,35 +574,35 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \souspartie{Chants de veillée}
 
-\titre{En Chasse}{En Chasse}
+\titre{En Chasse}
 
 \lilypondfile[staffsize=12]{Partitions/EnChasse/EnChasse.ly}
 
 %\chanson{Partitions/EnChasse/EnChasse}
 
 
-\titre{Ô Saint Hubert}{Ô Saint Hubert}
+\titre{Ô Saint Hubert}
 
 %TODO:Partition:Ô Saint Hubert%\lilypondfile[staffsize=12]{Partitions/LaSaintHubert/LaSaintHubert.ly}
 
 \chanson[numero=1]{Partitions/LaSaintHubert/LaSaintHubert}
 
 
-\titre{La Légende du Feu}{Légende du Feu (la)}
+\titre[table=Légende du Feu (la)]{La Légende du Feu}
 
 \lilypondfile[staffsize=12]{Partitions/LaLegendeDuFeu/LaLegendeDuFeu.ly}
 
 \chanson[position=2col]{Partitions/LaLegendeDuFeu/LaLegendeDuFeu}
 
 
-\titre{Entendez-vous dans le feu}{Entendez-vous dans le feu}
+\titre{Entendez-vous dans le feu}
 
 %TODO:Partition:Entendez-vous dans le feu%\lilypondfile[staffsize=12]{Partitions/EntendezVousDansLeFeu/EntendezVousDansLeFeu.ly}
 
 \chanson[numero=1]{Partitions/EntendezVousDansLeFeu/EntendezVousDansLeFeu}
 
 
-\titre{Plus il y a de Scouts ensemble}{Plus il y a de Scouts ensemble}
+\titre{Plus il y a de Scouts ensemble}
 
 \lilypondfile[staffsize=12]{Partitions/PlusIlYADeScoutsEnsemble/PlusIlYADeScoutsEnsemble.ly}
 
@@ -610,14 +611,14 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Qu'il est chic, le commissaire !}{Qu'il est chic, le commissaire !}
+\titre{Qu'il est chic, le commissaire !}
 
 \lilypondfile[staffsize=12]{Partitions/QuIlEstChicLeCommissaire/QuIlEstChicLeCommissaire.ly}
 
 %\chanson{Partitions/QuIlEstChicLeCommissaire/QuIlEstChicLeCommissaire}
 
 
-\titre{Si Jésus revenait au monde}{Si Jésus revenait au monde}
+\titre{Si Jésus revenait au monde}
 
 \lilypondfile[staffsize=12]{Partitions/SiJesusRevenaitAuMonde/SiJesusRevenaitAuMonde.ly}
 
@@ -626,7 +627,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Chant provincial de Flandre}{Chant provincial de Flandre}
+\titre{Chant provincial de Flandre}
 
 \lilypondfile[staffsize=12]{Partitions/ChantProvincialDeFlandre/ChantProvincialDeFlandre.ly}
 
@@ -635,7 +636,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Éloquence scoute}{Éloquence scoute}
+\titre{Éloquence scoute}
 
 \lilypondfile[staffsize=12]{Partitions/EloquenceScoute/EloquenceScoute.ly}
 
@@ -644,7 +645,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{La Verte Aigrette\footnotemark}{Verte Aigrette (la)}
+\titre[table=Verte Aigrette (la)]{La Verte Aigrette\footnotemark}
 \footnotetext{Variante : \emph{Il porte bien} sa verte aigrette.}
 
 \lilypondfile[staffsize=12]{Partitions/LaVerteAigrette/LaVerteAigrette.ly}
@@ -654,7 +655,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Les Rameurs\footnotemark}{Rameurs (les)}
+\titre[table=Rameurs (les)]{Les Rameurs\footnotemark}
 \footnotetext{Canon à quatre voix : chaque voix démarre deux mesures après la précédente.}
 
 \lilypondfile[staffsize=12]{Partitions/LesRameurs/LesRameurs.ly}
@@ -662,7 +663,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %\chanson{Partitions/LesRameurs/LesRameurs}
 
 
-\titre{Dans les prisons de Nantes}{Dans les prisons de Nantes}
+\titre{Dans les prisons de Nantes}
 
 %TODO:Partition:Dans les prisons de Nantes%\lilypondfile[staffsize=12]{Partitions/DansLesPrisonsDeNantes/DansLesPrisonsDeNantes.ly}
 
@@ -670,7 +671,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 \filbreak
-\titre{Le chef}{Le chef}
+\titre[table=Chef (le)]{Le chef}
 
 %TODO:Partition:Le Chef%\lilypondfile[staffsize=12]{Partitions/LeChef/LeChef.ly}
 
@@ -678,7 +679,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 \filbreak
-\titre{Le coucou}{Coucou (le)}
+\titre[table=Coucou (le)]{Le coucou}
 
 %TODO:Partition:Le coucou%\lilypondfile[staffsize=12]{Partitions/LeCoucou/LeCoucou.ly}
 
@@ -686,7 +687,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 \filbreak
-\titre{J - O - I - E}{J - O - I - E}
+\titre{J - O - I - E}
 
 %TODO:Partition:J - O - I - E%\lilypondfile[staffsize=12]{Partitions/JOIEJoie/JOIEJoie.ly}
 
@@ -694,7 +695,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 \filbreak
-\titre{Vent frais}{Vent frais}
+\titre{Vent frais}
 
 %TODO:Partition:Vent frais%\lilypondfile[staffsize=12]{Partitions/VentFrais/VentFrais.ly}
 
@@ -702,7 +703,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \filbreak
 
 
-\titre{Ah ! les p'tits potes}{Ah ! les ptits potes}
+\titre{Ah ! les p'tits potes}
 
 %TODO:Partition:Ah ! les p'tits potes%\lilypondfile[staffsize=12]{Partitions/AhLesPtitsPotes/AhLesPtitsPotes.ly}
 
@@ -710,21 +711,21 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 
-\titre{Le petit Grégoire}{Petit Grégoire (le)}
+\titre[table=Petit Grégoire (le)]{Le petit Grégoire}
 
 %TODO:Partition:Le petit Grégoire%\lilypondfile[staffsize=12]{Partitions/LePetitGregoire/LePetitGregoire.ly}
 
 \chanson[numero=1]{Partitions/LePetitGregoire/LePetitGregoire}
 
 
-\titre{La violette}{Violette (la)}
+\titre[table=Violette (la)]{La violette}
 
 \lilypondfile[staffsize=12]{Partitions/LaViolette/LaViolette.ly}
 
 \chanson{Partitions/LaViolette/LaViolette}
 
 
-\titre{Le soldat belge}{Soldat belge (le)}
+\titre[table=Soldat belge (le)]{Le soldat belge}
 
 %TODO:Partition:Le soldat belge%\lilypondfile[staffsize=12]{Partitions/LeSoldatBelge/LeSoldatBelge.ly}
 
@@ -732,54 +733,54 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 
 
-\titre{Les retrouvailles}{Retrouvailles (les)}
+\titre[table=Retrouvailles (les)]{Les retrouvailles}
 
 \lilypondfile[staffsize=12]{Partitions/LesRetrouvailles/LesRetrouvailles.ly}
 
 \chanson{Partitions/LesRetrouvailles/LesRetrouvailles}
 
 
-\titre{Les cosaques}{Cosaques (les)}
+\titre[table=Cosaques (les)]{Les cosaques}
 
 \lilypondfile[staffsize=12]{Partitions/LesCosaques/LesCosaques.ly}
 
 \chanson{Partitions/LesCosaques/LesCosaques}
 
 
-\titre{C'était dans la nuit brune}{C'était dans la nuit brune}
+\titre{C'était dans la nuit brune}
 
 %TODO:Partition:C'était dans la nuit brune%\lilypondfile[staffsize=12]{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune.ly}
 
 \chanson[numero=1,position=2col]{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune}
 
 
-\titre{Maudit sois-tu, carillonneur}{Maudit sois-tu, carillonneur}
+\titre{Maudit sois-tu, carillonneur}
 
 %TODO:Partition:Maudit sois-tu, carillonneur%\lilypondfile[staffsize=12]{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur.ly}
 
 \chanson[numero=1]{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur}
 
 
-\titre{La cloche du vieux manoir}{Cloche du vieux manoir (la)}
+\titre[table=Cloche du vieux manoir (la)]{La cloche du vieux manoir}
 
 %TODO:Partition:La cloche du vieux manoir%\lilypondfile[staffsize=12]{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir.ly}
 
 \chanson[numero=1]{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir}
 
 
-\titre{Les Excuses de l'Aspirant}{Excuses de l'Aspirant (les)}
+\titre[table=Excuses de l'Aspirant (les)]{Les Excuses de l'Aspirant}
 
 \lilypondfile[staffsize=12]{Partitions/LesExcusesDeLAspirant/LesExcusesDeLAspirant.ly}
 
 \chanson{Partitions/LesExcusesDeLAspirant/LesExcusesDeLAspirant}
 
 
-\titre{Ah ! qu'il fait bon sur la Montagne…}{Ah, qu'il fait bon sur la Montagne}
+\titre[table=Ah, qu'il fait bon sur la Montagne]{Ah ! qu'il fait bon sur la Montagne…}
 
 \lilypondfile[staffsize=12]{Partitions/AhQuIlFaitBonSurLaMontagne/AhQuIlFaitBonSurLaMontagne.ly}
 
 
-\titre{Le Foulard vert}{Foulard vert (le)}\label{foulardvert}
+\titre[table=Foulard vert (le)]{Le Foulard vert}\label{foulardvert}
 
 \lilypondfile[staffsize=12]{Partitions/LeFoulardVert/LeFoulardVert.ly}
 
@@ -788,56 +789,56 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{L'Étoile qui pleure}{Étoile qui pleure (l')}
+\titre[table=Étoile qui pleure (l')]{L'Étoile qui pleure}
 
 \lilypondfile[staffsize=12]{Partitions/LEtoileQuiPleure/LEtoileQuiPleure.ly}
 
 \chanson[position=2col]{Partitions/LEtoileQuiPleure/LEtoileQuiPleure}
 
 
-\titre{Le Cantique des étoiles}{Cantique des étoiles (le)}
+\titre[table=Cantique des étoiles (le)]{Le Cantique des étoiles}
 
 \lilypondfile[staffsize=12]{Partitions/LeCantiqueDesEtoiles/LeCantiqueDesEtoiles.ly}
 
 \chanson{Partitions/LeCantiqueDesEtoiles/LeCantiqueDesEtoiles}
 
 
-\titre{As-tu compté les étoiles}{As-tu compté les étoiles}
+\titre{As-tu compté les étoiles}
 
 %TODO:Partition:As-tu compté les étoiles%\lilypondfile[staffsize=12]{Partitions/AsTuCompteLesEtoiles/AsTuCompteLesEtoiles.ly}
 
 \chanson[numero=1]{Partitions/AsTuCompteLesEtoiles/AsTuCompteLesEtoiles}
 
 
-\titre{L'espérance}{Espérance (l')}
+\titre[table=Espérance (l')]{L'espérance}
 
 %TODO:Partition:L'espérance%\lilypondfile[staffsize=12]{Partitions/LEsperance/LEsperance.ly}
 
 \chanson[numero=1]{Partitions/LEsperance/LEsperance}
 
 
-\titre{Le chant des marais}{Chant des marais (le)}
+\titre[table=Chant des marais (le)]{Le chant des marais}
 
 %TODO:Partition:Le chant des marais%\lilypondfile[staffsize=12]{Partitions/LeChantDesMarais/LeChantDesMarais.ly}
 
 \chanson[numero=1]{Partitions/LeChantDesMarais/LeChantDesMarais}
 
 
-\titre{La cavalcade}{Cavalcade (la)}
+\titre[table=Cavalcade (la)]{La cavalcade}
 
 %TODO:Partition:La cavalcade%\lilypondfile[staffsize=12]{Partitions/LaCavalcade/LaCavalcade.ly}
 
 \chanson[numero=1]{Partitions/LaCavalcade/LaCavalcade}
 
 
-\titre{Je veux voir Dieu}{Je veux voir Dieu}
+\titre{Je veux voir Dieu}
 
 %TODO:Partition:Je veux voir Dieu%\lilypondfile[staffsize=12]{Partitions/JeVeuxVoirDieu/JeVeuxVoirDieu.ly}
 
 \chanson[numero=1]{Partitions/JeVeuxVoirDieu/JeVeuxVoirDieu}
 
 
-\titre{Voguons au vent de mer}{Voguons au vent de mer}
+\titre{Voguons au vent de mer}
 
 %TODO:Partition:Voguons au vent de mer%\lilypondfile[staffsize=12]{Partitions/VoguonsAuVentDeMer/VoguonsAuVentDeMer.ly}
 
@@ -846,21 +847,21 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \souspartie{Chants de marche}
 
-\titre{Aïda !}{Aïda !}
+\titre{Aïda !}
 
 \lilypondfile[staffsize=12]{Partitions/Aida/Aida.ly}
 
 \chanson[premiercouplet=2,refrain=non]{Partitions/Aida/Aida}
 
 
-\titre{Ami, rejoins-nous}{Ami, rejoins-nous}
+\titre{Ami, rejoins-nous}
 
 %TODO:Partition:Ami, rejoins-nous%\lilypondfile[staffsize=12]{Partitions/AmiRejoinsNous/AmiRejoinsNous.ly}
 
 \chanson[numero=1]{Partitions/AmiRejoinsNous/AmiRejoinsNous}
 
 
-\titre{Glory, alleluia !}{Glory, alleluia !}
+\titre{Glory, alleluia !}
 
 %TODO:Partition:Glory, alleluia !%\lilypondfile[staffsize=12]{Partitions/GloryAlleluia/GloryAlleluia.ly}
 
@@ -871,28 +872,28 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \partie{Cycle de Chamarande}
 
-\titre{La Meute de Cham}{Meute de Cham (la)}
+\titre[table=Meute de Cham (la)]{La Meute de Cham}
 
 \lilypondfile[staffsize=12]{Partitions/LaMeuteDeCham/LaMeuteDeCham.ly}
 
 \chanson{Partitions/LaMeuteDeCham/LaMeuteDeCham}
 
 
-\titre{Chamarande ! Chamarande !}{Chamarande, Chamarande}
+\titre[table=Chamarande, Chamarande]{Chamarande ! Chamarande !}
 
 \lilypondfile[staffsize=12]{Partitions/ChamarandeChamarande/ChamarandeChamarande.ly}
 
 \chanson{Partitions/ChamarandeChamarande/ChamarandeChamarande}
 
 
-\titre{Au Camp de Chamarande}{Au Camp de Chamarande}
+\titre{Au Camp de Chamarande}
 
 \lilypondfile[staffsize=12]{Partitions/AuCampDeChamarande/AuCampDeChamarande.ly}
 
 \chanson[position=2col]{Partitions/AuCampDeChamarande/AuCampDeChamarande}
 
 
-\titre{Les Foulards noirs\footnotemark}{Foulards noirs (les)}
+\titre[table=Foulards noirs (les)]{Les Foulards noirs\footnotemark}
 \footnotetext{Équipe fondée en 1930, pour le service du Camp-École durant toute l'année. Elle ne comprenait que des Chevaliers de France.}
 
 \lilypondfile[staffsize=12]{Partitions/LesFoulardsNoirs/LesFoulardsNoirs.ly}
@@ -900,7 +901,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/LesFoulardsNoirs/LesFoulardsNoirs}
 
 
-\titre{La Bûche de Chamarande\footnotemark}{Bûche de Chamarande (la)}
+\titre[table=Bûche de Chamarande (la)]{La Bûche de Chamarande\footnotemark}
 \footnotetext{L'emblême du Camp-École est une bûche au cœur de laquelle est plantée une hachette.}
 
 \lilypondfile[staffsize=12]{Partitions/LaBucheDeChamarande/LaBucheDeChamarande.ly}
@@ -909,7 +910,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[position=2col]{Partitions/LaBucheDeChamarande/LaBucheDeChamarande}
 
 
-\titre{Connaissez-vous la Source ?\footnotemark}{Connaissez-vous la Source ?}
+\titre[table=Connaissez-vous la Source ?]{Connaissez-vous la Source ?\footnotemark}
 \footnotetext{Dédié au 9\ieme\ cours de Louvetisme, juillet 1929.}
 
 \lilypondfile[staffsize=12]{Partitions/ConnaissezVousLaSource/ConnaissezVousLaSource.ly}
@@ -919,7 +920,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Bonsoir, Chamarande}{Bonsoir, Chamarande}
+\titre{Bonsoir, Chamarande}
 
 \lilypondfile[staffsize=12]{Partitions/BonsoirChamarande/BonsoirChamarande.ly}
 
@@ -929,7 +930,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/BonsoirChamarande/BonsoirChamarande-lvtx}
 
 
-\titre{Prière du soir de la Troupe}{Prière du soir de la Troupe}
+\titre{Prière du soir de la Troupe}
 
 \lilypondfile[staffsize=12]{Partitions/PriereDuSoirDeLaTroupe/PriereDuSoirDeLaTroupe.ly}
 {\footnotesize On pourra remplacer le premier couplet par un couplet dédié au Patron de la Troupe.}
@@ -938,13 +939,13 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/PriereDuSoirDeLaTroupe/PriereDuSoirDeLaTroupe}
 
 
-\titre{Bonsoir à Valloires}{Bonsoir à Valloires}
+\titre{Bonsoir à Valloires}
 
 \chanson{Partitions/BonsoirAValloires/BonsoirAValloires-debut}
 \chanson{Partitions/BonsoirAValloires/BonsoirAValloires}
 
 
-\titre{Notre-Dame de Chamarande}{Notre-Dame de Chamarande}
+\titre{Notre-Dame de Chamarande}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDeChamarande/NotreDameDeChamarande.ly}
 
@@ -953,7 +954,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \partie{Chansons pour Mowgli}
 
-\titre{La loi de la jungle}{Loi de la jungle (la)}
+\titre[table=Loi de la jungle (la)]{La loi de la jungle}
 
 \soustitre{Chant officiel des Louveteaux}
 
@@ -964,14 +965,14 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Nous arrivons souplement}{Nous arrivons souplement}
+\titre{Nous arrivons souplement}
 
 \lilypondfile[staffsize=12]{Partitions/NousArrivonsSouplement/NousArrivonsSouplement.ly}
 
 \chanson{Partitions/NousArrivonsSouplement/NousArrivonsSouplement}
 
 
-\titre{Menaces aux Loups\footnotemark}{Menaces aux Loups}
+\titre[table=Menaces aux Loups]{Menaces aux Loups\footnotemark}
 \footnotetext{Chant officiel de la cérémonie de Promesse d'un Louveteau.}
 
 \lilypondfile[staffsize=12]{Partitions/MenacesAuxLoups/MenacesAuxLoups.ly}
@@ -981,14 +982,14 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Le petit Loup bien propre}{Petit Loup bien propre (le)}
+\titre[table=Petit Loup bien propre (le)]{Le petit Loup bien propre}
 
 \lilypondfile[staffsize=12]{Partitions/LePetitLoupBienPropre/LePetitLoupBienPropre.ly}
 
 \chanson{Partitions/LePetitLoupBienPropre/LePetitLoupBienPropre}
 
 
-\titre{La Peau de Shere Khan}{Peau de Shere Khan (la)}
+\titre[table=Peau de Shere Khan (la)]{La Peau de Shere Khan}
 
 {\footnotesize Cette ronde se chante sur l'air de \emph{La Tour, prends garde !} et se mime de façon analogue. D'un côté, Shere Khan, le Tigre, de l'autre, le Roi de la Jungle, entouré de tous les autres animaux mentionnés dans l'Histoire de Mowgli. − Entre les deux, Mowgli qui provoque Shere Khan et demande au Roi de la Jungle l'aide de tous les animaux successivement pour vaincre Shere Khan.\par}
 
@@ -998,75 +999,75 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/LaPeauDeShereKhan/LaPeauDeShereKhan-fin}
 
 
-\titre{La marche des Petits-Lapins}{Marche des Petits-Lapins (la)}
+\titre[table=Marche des Petits-Lapins (la)]{La marche des Petits-Lapins}
 
 \lilypondfile[staffsize=12]{Partitions/LaMarcheDesPetitsLapins/LaMarcheDesPetitsLapins.ly}
 
 
-\titre{Le Chef de Sizaine}{Chef de Sizaine (le)}
+\titre[table=Chef de Sizaine (le)]{Le Chef de Sizaine}
 
 \lilypondfile[staffsize=12]{Partitions/LeChefDeSizaine/LeChefDeSizaine.ly}
 
 \chanson{Partitions/LeChefDeSizaine/LeChefDeSizaine}
 
 
-\titre{Sur le Pont d'Chamarande}{Sur le Pont d'Chamarande}
+\titre{Sur le Pont d'Chamarande}
 
 \lilypondfile[staffsize=12]{Partitions/SurLePontDChamarande/SurLePontDChamarande.ly}
 
 \chanson{Partitions/SurLePontDChamarande/SurLePontDChamarande}
 
 
-\titre{Ô Cheftaine, où sont vos Loups ?}{Ô Cheftaine, où sont vos Loups ?}
+\titre{Ô Cheftaine, où sont vos Loups ?}
 
 \lilypondfile[staffsize=12]{Partitions/OCheftaineOuSontVosLoups/OCheftaineOuSontVosLoups.ly}
 
 \chanson{Partitions/OCheftaineOuSontVosLoups/OCheftaineOuSontVosLoups}
 
 
-\titre{Noël des Louveteaux}{Noël des Louveteaux}
+\titre{Noël des Louveteaux}
 
 \lilypondfile[staffsize=12]{Partitions/NoelDesLouveteaux/NoelDesLouveteaux.ly}
 
 \chanson{Partitions/NoelDesLouveteaux/NoelDesLouveteaux}
 
 
-\titre{Noël de Berck}{Noël de Berck}
+\titre{Noël de Berck}
 
 \lilypondfile[staffsize=12]{Partitions/NoelDeBerck/NoelDeBerck.ly}
 
 \chanson{Partitions/NoelDeBerck/NoelDeBerck}
 
 
-\titre{C'est tout là-bas}{C'est tout là-bas}
+\titre{C'est tout là-bas}
 
 \lilypondfile[staffsize=12]{Partitions/CEstToutLaBas/CEstToutLaBas.ly}
 
 \chanson{Partitions/CEstToutLaBas/CEstToutLaBas}
 
 
-\titre{Berceuse Petits Loups}{Berceuse Petits Loups}
+\titre{Berceuse Petits Loups}
 
 \lilypondfile[staffsize=12]{Partitions/BerceusePetitsLoups/BerceusePetitsLoups.ly}
 
 \chanson[position=2col]{Partitions/BerceusePetitsLoups/BerceusePetitsLoups}
 
 
-\titre{Si Jésus arrivait au Camp}{Si Jésus arrivait au Camp}
+\titre{Si Jésus arrivait au Camp}
 
 \lilypondfile[staffsize=12]{Partitions/SiJesusArrivaitAuCamp/SiJesusArrivaitAuCamp.ly}
 
 \chanson{Partitions/SiJesusArrivaitAuCamp/SiJesusArrivaitAuCamp}
 
 
-\titre{Écoutez-nous, bon Saint François}{Écoutez-nous, bon Saint François}
+\titre{Écoutez-nous, bon Saint François}
 
 \lilypondfile[staffsize=12]{Partitions/EcoutezNousBonSaintFrancois/EcoutezNousBonSaintFrancois.ly}
 
 \chanson{Partitions/EcoutezNousBonSaintFrancois/EcoutezNousBonSaintFrancois}
 
 
-\titre{Salve Regina des Petits Loups}{Salve Regina des Petits Loups}
+\titre{Salve Regina des Petits Loups}
 
 \lilypondfile[staffsize=12]{Partitions/SalveReginaDesPetitsLoups/SalveReginaDesPetitsLoups.ly}
 
@@ -1076,7 +1077,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \partie{Cantiques}
 
-\titre{Le Cantique de la Promesse\footnotemark}{Cantique de la Promesse (le)}
+\titre[table=Cantique de la Promesse (le)]{Le Cantique de la Promesse\footnotemark}
 \footnotetext{Ce chant ne doit pas servir aux Louveteaux, la mélodie même est réservée aux Scouts et aux Guides. \emph{A fortiori}, aucune adaptation à des groupements non scouts ne peut être autorisée.}
 
 \lilypondfile[staffsize=12]{Partitions/ChantDePromesse/ChantDePromesse.ly}
@@ -1086,12 +1087,12 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Sur mon Honneur}{Sur mon Honneur}
+\titre{Sur mon Honneur}
 
 \lilypondfile[staffsize=12]{Partitions/SurMonHonneur/SurMonHonneur.ly}
 
 
-\titre{Prière du Camp au lever du soleil}{Prière du Camp au lever du soleil}
+\titre{Prière du Camp au lever du soleil}
 
 \lilypondfile[staffsize=12]{Partitions/PriereDuCampAuLeverDuSoleil/PriereDuCampAuLeverDuSoleil.ly}
 
@@ -1100,12 +1101,12 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Mon Dieu, voici ma liberté}{Mon Dieu, voici ma liberté}
+\titre{Mon Dieu, voici ma liberté}
 
 \lilypondfile[staffsize=12]{Partitions/MonDieuVoiciMaLiberte/MonDieuVoiciMaLiberte.ly}
 
 
-\titre{Prière du Scout\footnotemark}{Prière du Scout}
+\titre[table=Prière du Scout]{Prière du Scout\footnotemark}
 \footnotetext{À chaque couplet, le refrain est fait de la reprise des deux premiers vers de ce même couplet.}
 
 \lilypondfile[staffsize=12]{Partitions/PriereDuScout/PriereDuScout.ly}
@@ -1113,14 +1114,14 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/PriereDuScout/PriereDuScout}
 
 
-\titre{Comme un enfant}{Comme un enfant}
+\titre{Comme un enfant}
 
 \lilypondfile[staffsize=12]{Partitions/CommeUnEnfant/CommeUnEnfant.ly}
 
 \chanson[position=2col]{Partitions/CommeUnEnfant/CommeUnEnfant}
 
 
-\titre{Jésus à moi}{Jésus à moi}
+\titre{Jésus à moi}
 
 \lilypondfile[staffsize=12]{Partitions/JesusAMoi/JesusAMoi.ly}
 
@@ -1129,40 +1130,40 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Jésus que j'adore en l'Hostie}{Jésus que j'adore en l'Hostie}
+\titre{Jésus que j'adore en l'Hostie}
 
 \lilypondfile[staffsize=12]{Partitions/JesusQueJAdoreEnLHostie/JesusQueJAdoreEnLHostie.ly}
 
 \chanson{Partitions/JesusQueJAdoreEnLHostie/JesusQueJAdoreEnLHostie}
 
 
-\titre{Plus près de toi, mon Dieu}{Plus près de toi, mon Dieu}
+\titre{Plus près de toi, mon Dieu}
 
 \lilypondfile[staffsize=12]{Partitions/PlusPresDeToiMonDieu/PlusPresDeToiMonDieu.ly}
 
 \chanson[position=2col]{Partitions/PlusPresDeToiMonDieu/PlusPresDeToiMonDieu}
 
 
-\titre{Ubi caritas}{Ubi Caritas et Amor}
+\titre{Ubi caritas}
 
 \cantus{Antienne}{UbiCaritas}{6.}{}
 
 
-\titre{Panis Angelicus}{Panis Angelicus}
+\titre{Panis Angelicus}
 
 \lilypondfile[staffsize=12]{Partitions/PanisAngelicus/PanisAngelicus.ly}
 
 
 \souspartie{Avant et après les repas}
 
-\titre{Bénédicité}{Bénédicité}
+\titre{Bénédicité}
 
 \lilypondfile[staffsize=12]{Partitions/Benedicite/Benedicite.ly}
 
 %\chanson{Partitions/Benedicite/Benedicite}
 
 
-\titre{Grâces}{Grâces}
+\titre{Grâces}
 
 \lilypondfile[staffsize=12]{Partitions/Graces/Graces.ly}
 
@@ -1172,49 +1173,49 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \souspartie{Prières du soir}
 
 
-\titre{Prière à la Nuit}{Prière à la Nuit}
+\titre{Prière à la Nuit}
 
 \lilypondfile[staffsize=12]{Partitions/PriereALaNuit/PriereALaNuit.ly}
 
 \chanson{Partitions/PriereALaNuit/PriereALaNuit}
 
 
-\titre{Demeurez avec nous, bon Maître}{Demeurez avec nous, bon Maître}
+\titre{Demeurez avec nous, bon Maître}
 
 \lilypondfile[staffsize=12]{Partitions/DemeurezAvecNousBonMaitre/DemeurezAvecNousBonMaitre.ly}
 
 \chanson{Partitions/DemeurezAvecNousBonMaitre/DemeurezAvecNousBonMaitre}
 
 
-\titre{Les Bergers rentrent leurs troupeaux}{Bergers rentrent leurs troupeaux (les)}
+\titre[table=Bergers rentrent leurs troupeaux (les)]{Les Bergers rentrent leurs troupeaux}
 
 \lilypondfile[staffsize=12]{Partitions/LesBergersRentrentLeursTroupeaux/LesBergersRentrentLeursTroupeaux.ly}
 
 \chanson{Partitions/LesBergersRentrentLeursTroupeaux/LesBergersRentrentLeursTroupeaux}
 
 
-\titre{Le cantique des Patrouilles}{Cantique des Patrouilles (le)}
+\titre[table=Cantique des Patrouilles (le)]{Le cantique des Patrouilles}
 
 \lilypondfile[staffsize=12]{Partitions/LeCantiqueDesPatrouilles/LeCantiqueDesPatrouilles.ly}
 
 \chanson{Partitions/LeCantiqueDesPatrouilles/LeCantiqueDesPatrouilles}
 
 
-\titre{Avant d'aller dormir}{Avant d'aller dormir}
+\titre{Avant d'aller dormir}
 
 %TODO:Partition:Avant d'aller dormir%\lilypondfile[staffsize=12]{Partitions/AvantDAllerDormir/AvantDAllerDormir.ly}
 
 \chanson[numero=1]{Partitions/AvantDAllerDormir/AvantDAllerDormir}
 
 
-\titre{Complies rustiques}{Complies rustiques}
+\titre{Complies rustiques}
 
 \lilypondfile[staffsize=12]{Partitions/CompliesRustiques/CompliesRustiques.ly}
 
 %\chanson{Partitions/CompliesRustiques/CompliesRustiques}
 
 
-\titre{Te lucis ante terminum}{Te lucis ante terminum}
+\titre{Te lucis ante terminum}
 
 \cantus{Hymne}{TeLucis}{8.}{}
 
@@ -1223,7 +1224,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \cantus{Hymne}{TeLucis-FR}{8.}{}
 
 
-\titre{In manus tuas}{In manus tuas}
+\titre{In manus tuas}
 
 \cantus{Repons}{InManus}{6.}{}
 
@@ -1232,84 +1233,84 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \needspace{.6\paperheight}
 
-\titre{Entre vos mains}{Entre vos mains}
+\titre{Entre vos mains}
 
 \cantus{Repons}{InManus-FR}{6.}{}
 
 \cantus{Verset}{CustodiNos-FR}{}{}
 
 
-\titre{In manus tuas - TP}{In manus tuas - TP}
+\titre{In manus tuas - TP}
 
 \cantus{Repons}{InManus-TP}{6.}{}
 
 \cantus{Verset}{CustodiNos-TP}{}{}
 
 
-\titre{C'est la nuit}{C'est la nuit}
+\titre{C'est la nuit}
 
 \lilypondfile[staffsize=12]{Partitions/CEstLaNuit/CEstLaNuit.ly}
 
 
 \souspartie{À la Vierge Marie}
 
-\titre{Notre-Dame du Matin}{Notre-Dame du Matin}
+\titre{Notre-Dame du Matin}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDuMatin/NotreDameDuMatin.ly}
 
 \chanson{Partitions/NotreDameDuMatin/NotreDameDuMatin}
 
 
-\titre{Notre-Dame de Joie}{Notre-Dame de Joie}
+\titre{Notre-Dame de Joie}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDeJoie/NotreDameDeJoie.ly}
 
 \chanson{Partitions/NotreDameDeJoie/NotreDameDeJoie}
 
 
-\titre{Notre-Dame du Chemin}{Notre-Dame du Chemin}
+\titre{Notre-Dame du Chemin}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDuChemin/NotreDameDuChemin.ly}
 
 \chanson{Partitions/NotreDameDuChemin/NotreDameDuChemin}
 
 
-\titre{Notre-Dame de la Paix}{Notre-Dame de la Paix}
+\titre{Notre-Dame de la Paix}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDeLaPaix/NotreDameDeLaPaix.ly}
 
 \chanson{Partitions/NotreDameDeLaPaix/NotreDameDeLaPaix}
 
 
-\titre{Notre-Dame des Bois}{Notre-Dame des Bois}
+\titre{Notre-Dame des Bois}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDesBois/NotreDameDesBois.ly}
 
 \chanson{Partitions/NotreDameDesBois/NotreDameDesBois}
 
 
-\titre{Notre-Dame des Éclaireurs}{Notre-Dame des Éclaireurs}
+\titre{Notre-Dame des Éclaireurs}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDesEclaireurs/NotreDameDesEclaireurs.ly}
 
 \chanson{Partitions/NotreDameDesEclaireurs/NotreDameDesEclaireurs}
 
 
-\titre{Notre-Dame de la Jeunesse}{Notre-Dame de la Jeunesse}
+\titre{Notre-Dame de la Jeunesse}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameDeLaJeunesse/NotreDameDeLaJeunesse.ly}
 
 %\chanson{Partitions/NotreDameDeLaJeunesse/NotreDameDeLaJeunesse}
 
 
-\titre{Notre-Dame Angevine}{Notre-Dame Angevine}
+\titre{Notre-Dame Angevine}
 
 \lilypondfile[staffsize=12]{Partitions/NotreDameAngevine/NotreDameAngevine.ly}
 
 \chanson[position=2col]{Partitions/NotreDameAngevine/NotreDameAngevine}
 
 
-\titre{Bénissez Marie}{Bénissez Marie}
+\titre{Bénissez Marie}
 
 {\renewcommand{\thefootnote}{}\footnotetext{Le refrain a été fait pour être chanté à bouche fermée ; on peut cependant, si l'on préfère, y adapter les paroles \emph{Ave María} comme indiqué sur la partition.}}
 
@@ -1319,19 +1320,19 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[position=2col]{Partitions/BenissezMarie/BenissezMarie}
 
 
-\titre{Venez, venez, Vierge Marie}{Venez, venez, Vierge Marie}
+\titre{Venez, venez, Vierge Marie}
 
 \lilypondfile[staffsize=12]{Partitions/VenezVenezViergeMarie/VenezVenezViergeMarie.ly}
 
 
-\titre{Ô Mère de Jésus-Christ}{Ô Mère de Jésus-Christ}
+\titre{Ô Mère de Jésus-Christ}
 
 \lilypondfile[staffsize=12]{Partitions/OMereDeJesusChrist/OMereDeJesusChrist.ly}
 
 \chanson{Partitions/OMereDeJesusChrist/OMereDeJesusChrist}
 
 
-\titre{Je mets ma confiance}{Je mets ma confiance}
+\titre{Je mets ma confiance}
 
 %TODO:Partition:Je mets ma confiance%\lilypondfile[staffsize=12]{Partitions/JeMetsMaConfiance/JeMetsMaConfiance.ly}
 
@@ -1340,21 +1341,21 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \souspartie{Aux Saints}
 
-\titre{Le bon Guide}{Bon Guide (le)}
+\titre[table=Bon Guide (le)]{Le bon Guide}
 
 \lilypondfile[staffsize=12]{Partitions/LeBonGuide/LeBonGuide.ly}
 
 \chanson[position=2col]{Partitions/LeBonGuide/LeBonGuide}
 
 
-\titre{Le Chemin de Saint-Jacques}{Chemin de Saint-Jacques (le)}
+\titre[table=Chemin de Saint-Jacques (le)]{Le Chemin de Saint-Jacques}
 
 \lilypondfile[staffsize=12]{Partitions/LeCheminDeSaintJacques/LeCheminDeSaintJacques.ly}
 
 \chanson{Partitions/LeCheminDeSaintJacques/LeCheminDeSaintJacques}
 
 
-\titre{Saint Georges des Scouts}{Saint Georges des Scouts}
+\titre{Saint Georges des Scouts}
 
 \lilypondfile[staffsize=12]{Partitions/SaintGeorgesDesScouts/SaintGeorgesDesScouts.ly}
 
@@ -1364,7 +1365,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 }
 
 
-\titre{Saint Louis, Monseigneur de France}{Saint Louis, Monseigneur de France}
+\titre{Saint Louis, Monseigneur de France}
 
 \vspace{0\baselineskip minus 2\baselineskip}
 \lilypondfile[staffsize=12]{Partitions/SaintLouisMonseigneurDeFrance/SaintLouisMonseigneurDeFrance.ly}
@@ -1373,35 +1374,35 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/SaintLouisMonseigneurDeFrance/SaintLouisMonseigneurDeFrance}
 
 
-\titre{Prière à Sainte Jeanne d'Arc}{Prière à Sainte Jeanne d'Arc}
+\titre{Prière à Sainte Jeanne d'Arc}
 
 \lilypondfile[staffsize=12]{Partitions/PriereASteJeanneDArc/PriereASteJeanneDArc.ly}
 
 \chanson{Partitions/PriereASteJeanneDArc/PriereASteJeanneDArc}
 
 
-\titre{Ô petite Sainte bénie}{Ô petite Sainte bénie}
+\titre{Ô petite Sainte bénie}
 
 \lilypondfile[staffsize=12]{Partitions/OPetiteSainteBenie/OPetiteSainteBenie.ly}
 
 \chanson{Partitions/OPetiteSainteBenie/OPetiteSainteBenie}
 
 
-\titre{Miserere de la mer}{Miserere de la mer}
+\titre{Miserere de la mer}
 
 %TODO:Partition:Misere de la mer%\lilypondfile[staffsize=12]{Partitions/MiserereDeLaMer/MiserereDeLaMer.ly}
 
 \chanson[numero=1]{Partitions/MiserereDeLaMer/MiserereDeLaMer}
 
 
-\titre{Rentrés à la Maison}{Rentrés à la Maison}
+\titre{Rentrés à la Maison}
 
 \lilypondfile[staffsize=12]{Partitions/RentresALaMaison/RentresALaMaison.ly}
 
 \chanson{Partitions/RentresALaMaison/RentresALaMaison}
 
 
-\titre{Le joyeux au-revoir\footnotemark}{Joyeux au-revoir (le)}
+\titre[table=Joyeux au-revoir (le)]{Le joyeux au-revoir\footnotemark}
 
 \footnotetext{L'au-revoir scout n'est pas une cérémonie funèbre : éviter de le rendre trop émouvant. Le rythme est joyeux et rapide, plus encore au refrain.
 
@@ -1416,21 +1417,21 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 	et\\\ \\
 	contre-révolutionnaires}
 
-\titre{Chant de Monsieur Henri}{Chant de Monsieur Henri}
+\titre{Chant de Monsieur Henri}
 
 %TODO:Partition:Chant de Monsieur Henri%\lilypondfile[staffsize=12]{Partitions/ChantDeMonsieurHenri/ChantDeMonsieurHenri.ly}
 
 \chanson[numero=1]{Partitions/ChantDeMonsieurHenri/ChantDeMonsieurHenri}
 
 
-\titre{Les Bleus sont là}{Bleus sont là (les)}
+\titre[table=Bleus sont là (les)]{Les Bleus sont là}
 
 %TODO:Partition:Les Bleus sont là%\lilypondfile[staffsize=12]{Partitions/LesBleusSontLa/LesBleusSontLa.ly}
 
 \chanson[numero=1]{Partitions/LesBleusSontLa/LesBleusSontLa}
 
 
-\titre[espace=15]{Les mouchoirs de Cholet\footnotemark}{Mouchoirs de Cholet (les)}
+\titre[table=Mouchoirs de Cholet (les)][espace=15]{Les mouchoirs de Cholet\footnotemark}
 \footnotetext{Voir la mélodie p. \pageref{foulardvert}.}
 
 %\lilypondfile[staffsize=12]{Partitions/LesMouchoirsDeCholet/LesMouchoirsDeCholet.ly}
@@ -1438,21 +1439,21 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 \chanson[numero=1]{Partitions/LesMouchoirsDeCholet/LesMouchoirsDeCholet}
 
 
-\titre{La ligue noire}{Ligue noire (la)}
+\titre[table=Ligue noire (la)]{La ligue noire}
 
 %TODO:Partition:La ligue noire%\lilypondfile[staffsize=12]{Partitions/LaLigueNoire/LaLigueNoire.ly}
 
 \chanson[numero=1]{Partitions/LaLigueNoire/LaLigueNoire}
 
 
-\titre{Les partisans blancs}{Partisans blancs (les)}
+\titre[table=Partisans blancs (les)]{Les partisans blancs}
 
 %TODO:Partition:Les partisans blancs%\lilypondfile[staffsize=12]{Partitions/LesPartisansBlancs/LesPartisansBlancs.ly}
 
 \chanson[numero=1]{Partitions/LesPartisansBlancs/LesPartisansBlancs}
 
 
-\titre[espace=15]{La France bouge}{France bouge (la)}
+\titre[espace=15,table=France bouge (la)]{La France bouge}
 
 %TODO:Partition:La France bouge%\lilypondfile[staffsize=12]{Partitions/LaFranceBouge/LaFranceBouge.ly}
 
@@ -1464,28 +1465,28 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 \partie{Chants de tradition}
 
 
-\titre{La strasbourgeoise}{Strasbourgeoise (la)}
+\titre[table=Strasbourgeoise (la)]{La strasbourgeoise}
 
 %TODO:Partition:La strasbourgeoise%\lilypondfile[staffsize=12]{Partitions/LEnfantDeStrasbourg/LEnfantDeStrasbourg.ly}
 
 \chanson[numero=1]{Partitions/LEnfantDeStrasbourg/LEnfantDeStrasbourg}
 
 
-\titre{En passant par la Lorraine}{En passant par la Lorraine}
+\titre{En passant par la Lorraine}
 
 %TODO:Partition:En passant par la Lorraine%\lilypondfile[staffsize=12]{Partitions/EnPassantParLaLorraine/EnPassantParLaLorraine.ly}
 
 \chanson[numero=1]{Partitions/EnPassantParLaLorraine/EnPassantParLaLorraine}
 
 
-\titre[espace=20]{Le roi Louis}{Roi Louis (le)}
+\titre[table=Roi Louis (le),espace=20]{Le roi Louis}
 
 %TODO:Partition:Le roi Louis\lilypondfile[staffsize=12]{Partitions/LeRoiLouis/LeRoiLouis.ly}
 
 \chanson[numero=1]{Partitions/LeRoiLouis/LeRoiLouis}
 
 
-\titre{À la claire fontaine}{À la claire fontaine}
+\titre{À la claire fontaine}
 
 %TODO:Partition:À la claire fontaine%\lilypondfile[staffsize=12]{Partitions/ALaClaireFontaine/ALaClaireFontaine.ly}
 
@@ -1495,35 +1496,35 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 
 \souspartie{Chants militaires}
 
-\titre{Les Africains}{Africains (les)}
+\titre[table=Africains (les)]{Les Africains}
 
 %TODO:Partition:Les Africains%\lilypondfile[staffsize=12]{Partitions/LesAfricains/LesAfricains.ly}
 
 \chanson[numero=1]{Partitions/LesAfricains/LesAfricains}
 
 
-\titre{Le combat de demain}{Combat de demain (le)}
+\titre[table=Combat de demain (le)]{Le combat de demain}
 
 %TODO:Partition:Le combat de demain%\lilypondfile[staffsize=12]{Partitions/LeCombatDeDemain/LeCombatDeDemain.ly}
 
 \chanson[numero=1]{Partitions/LeCombatDeDemain/LeCombatDeDemain}
 
 
-\titre{Les commandos}{Commandos (les)}
+\titre[table=Commandos (les)]{Les commandos}
 
 %TODO:Partition:Les commandos%\lilypondfile[staffsize=12]{Partitions/LesCommandos/LesCommandos.ly}
 
 \chanson[numero=1]{Partitions/LesCommandos/LesCommandos}
 
 
-\titre{En passant par la portière}{En passant par la portière}
+\titre{En passant par la portière}
 
 %TODO:Partition:En passant par la portière%\lilypondfile[staffsize=12]{Partitions/EnPassantParLaPortiere/EnPassantParLaPortiere.ly}
 
 \chanson[numero=1]{Partitions/EnPassantParLaPortiere/EnPassantParLaPortiere}
 
 
-\titre{Les dragons de Noailles}{Dragons de Noailles (les)}
+\titre[table=Dragons de Noailles (les)]{Les dragons de Noailles}
 
 %TODO:Partition:Les dragons de Noailles%\lilypondfile[staffsize=12]{Partitions/LesDragonsDeNoailles/LesDragonsDeNoailles.ly}
 
@@ -1533,7 +1534,7 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 
 \souspartie{Chants populaires}
 
-\titre{Trois jeunes tambours}{Trois jeunes tambours}
+\titre{Trois jeunes tambours}
 
 %TODO:Partition:Trois jeunes tambours%\lilypondfile[staffsize=12]{Partitions/TroisJeunesTambours/TroisJeunesTambours.ly}
 
@@ -1543,42 +1544,42 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 
 \partie{Chants marins}
 
-\titre{Hé, garçon !}{Hé, garçon !}
+\titre{Hé, garçon !}
 
 %TODO:Partition:Hé, garçon !%\lilypondfile[staffsize=12]{Partitions/HeGarcon/HeGarcon.ly}
 
 \chanson[numero=1]{Partitions/HeGarcon/HeGarcon}
 
 
-\titre{Matelots, puisqu'il fait bon vent}{Matelots, puisqu'il fait bon vent}
+\titre{Matelots, puisqu'il fait bon vent}
 
 %TODO:Partition:Matelots, puisqu'il fait bon vent%\lilypondfile[staffsize=12]{Partitions/MatelotsPuisquIlFaitBonVent/MatelotsPuisquIlFaitBonVent.ly}
 
 \chanson[numero=1]{Partitions/MatelotsPuisquIlFaitBonVent/MatelotsPuisquIlFaitBonVent}
 
 
-\titre{Guerre Guerre}{Guerre Guerre}
+\titre{Guerre Guerre}
 
 %TODO:Partition:Guerre guerre%\lilypondfile[staffsize=12]{Partitions/GuerreGuerre/GuerreGuerre.ly}
 
 \chanson[numero=1,position=2col]{Partitions/GuerreGuerre/GuerreGuerre}
 
 
-\titre{Santiano}{Santiano}
+\titre{Santiano}
 
 %TODO:Partition:Santiano%\lilypondfile[staffsize=12]{Partitions/Santiano/Santiano.ly}
 
 \chanson[numero=1]{Partitions/Santiano/Santiano}
 
 
-\titre{Au 31 du mois d'août}{Au 31 du mois d'août}
+\titre{Au 31 du mois d'août}
 
 %TODO:Partition:Au 31 du mois d'août%\lilypondfile[staffsize=12]{Partitions/Au31DuMoisDAout/Au31DuMoisDAout.ly}
 
 \chanson[numero=1]{Partitions/Au31DuMoisDAout/Au31DuMoisDAout}
 
 
-\titre{Qui peut faire de la voile sans vent ?}{Qui peut faire de la voile sans vent ?}
+\titre{Qui peut faire de la voile sans vent ?}
 
 %TODO:Partition:Qui peut faire de la voile sans vent ?%\lilypondfile[staffsize=12]{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
 
@@ -1587,28 +1588,28 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 
 \partie{Chansons à boire}
 
-\titre{Ah ! que nos pères}{Ah ! que nos pères}
+\titre{Ah ! que nos pères}
 
 %TODO:Partition:Ah ! que nos pères%\lilypondfile[staffsize=12]{Partitions/AhQueNosPeres/AhQueNosPeres.ly}
 
 \chanson[numero=1]{Partitions/AhQueNosPeres/AhQueNosPeres}
 
 
-\titre{Chevaliers de la table ronde}{Chevaliers de la table ronde}
+\titre{Chevaliers de la table ronde}
 
 %TODO:Partition:Chevaliers de la table ronde%\lilypondfile[staffsize=12]{Partitions/ChevaliersDeLaTableRonde/ChevaliersDeLaTableRonde.ly}
 
 \chanson[numero=1]{Partitions/ChevaliersDeLaTableRonde/ChevaliersDeLaTableRonde}
 
 
-\titre{In vino veritas}{In vino veritas}
+\titre{In vino veritas}
 
 %TODO:Partition:In vino veritas\lilypondfile[staffsize=12]{Partitions/InVinoVeritas/InVinoVeritas.ly}
 
 \chanson[numero=1]{Partitions/InVinoVeritas/InVinoVeritas}
 
 
-\titre{Fanchon}{Fanchon}
+\titre{Fanchon}
 
 %TODO:Partition:Fanchon%\lilypondfile[staffsize=12]{Partitions/Fanchon/Fanchon.ly}
 
