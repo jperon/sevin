@@ -24,7 +24,7 @@
     unicode%
     ]{hyperref}
 
-%\raggedbottom
+\raggedbottom
 \tolerance=1500 \pretolerance=500
 \widowpenalty=10000 \clubpenalty=10000
 \setcounter{collectmore}{-1}
@@ -52,6 +52,8 @@
 \newlength{\decalage}
 \newlength{\complement}
 \newlength{\htbis}
+\newlength{\dcbis}
+\newlength{\avanttitre}
 
 \newkeycommand{\chanson}[%
                          position=centre%
@@ -77,15 +79,10 @@
   }
 }
 
-\newcommand{\strophe}[1]{%%
-    \ifthenelse{\equal{\commandkey{position}}{centre}}{%
-      {%
-	 {\vspace{0ex plus 2\baselineskip minus .5\baselineskip}
-	 \widowpenalty=10000 \clubpenalty=10000\par
-  	 \centering #1\par}
-  	 \vspace{2ex plus 2ex minus .5ex}
-      }%
-    }{%
+\newcommand{\strophe}[1]{{%
+    \widowpenalty=10000 \clubpenalty=10000
+    \ifthenelse{\equal{\commandkey{position}}{2col}}{\def\position{2col}}{\def\position{autre}}%
+    \ifthenelse{\equal{\position}{2col}}{%
       \pagebreak[3]%
       \raggedright%
       \everypar = {\parshape=2
@@ -93,8 +90,14 @@
       		   \decalage\complement}
       {#1\par}
       \vspace{1ex plus 2ex}
+    }{%
+      {%
+	 {\vspace{0ex plus 2\baselineskip minus .5\baselineskip}\par
+  	 \centering #1\par}
+  	 \vspace{2ex plus 2ex minus .5ex}
+      }%
     }
-}
+}}
 
 \newcommand{\couplet}[1]{%
   \stepcounter{numerocouplet}%
@@ -110,17 +113,35 @@
   }{\strophe{\itshape #1}}{}
 }
 
-\newkeycommand{\bis}[texte=bis][][1]{{%
-	\settoheight{\htbis}{\parbox{\linewidth}{\arabic{numero}.~#1}}%
-	\makebox[0cm][l]{%
-		\raisebox{-\height +\depth}[0pt][0pt]{\hspace{\linewidth}\hspace{-\columnsep}\resizebox{\width}{\htbis}{\}}~\raisebox{.2\htbis}{\emph{\footnotesize\commandkey{texte}}}}%
+\newkeycommand{\bis}[texte=bis,espace=1.5ex][][1]{{%
+	\settototalheight{\htbis}{\parbox{\linewidth}{\arabic{numero}.~#1}}%
+	\setlength{\htbis}{.8\htbis}%
+	#1\\*
+	\vspace{-\baselineskip}
+	\hfill\makebox[0pt]{%
+		\raisebox{.6\depth}[0pt][0pt]{%
+			\hspace{\commandkey{espace}}%
+			\resizebox{\width}{\htbis}{%
+				\textup{\}}%
+			}%
+			~%
+			\raisebox{.2\htbis}{%
+				\textit{\footnotesize\commandkey{texte}}%
+			}%
+		}%
 	}%
-	#1%
-	\nolinebreak\hfill\nolinebreak%
 }}
 
-\newkeycommand{\titre}[espace=10\baselineskip][][2]{%
-	\vspace{1em plus 6\baselineskip}\needspace{\commandkey{espace}}%
+\newcommand{\vbis}{\textit{\footnotesize (bis)}}
+
+\newcommand{\ter}[1]{%
+	\bis[texte=ter]{#1}%
+}
+
+\newkeycommand{\titre}[espace=10,table=idem][][2]{%
+	\setlength{\avanttitre}{\baselineskip}
+	\multiply\avanttitre by \commandkey{espace}
+	\vspace{1em plus 6\baselineskip}\needspace{\avanttitre}%
 	\stepcounter{chant}
 	\index{#2}
 	\addcontentsline{toc}{subsubsection}{#2}
