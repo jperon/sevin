@@ -132,13 +132,13 @@
 	}%
 }}
 
-\newcommand{\vbis}{\textit{\footnotesize (bis)}}
+\newkeycommand{\vbis}[texte=bis]{\textit{\footnotesize (\commandkey{texte})}}
 
 \newcommand{\ter}[1]{%
 	\bis[texte=ter]{#1}%
 }
 
-\newkeycommand{\titre}[espace=10,table=idem][][2]{%
+\newkeycommand{\titre}[espace=10][][2]{%
 	\setlength{\avanttitre}{\baselineskip}
 	\multiply\avanttitre by \commandkey{espace}
 	\vspace{1em plus 6\baselineskip}\needspace{\avanttitre}%
@@ -154,11 +154,15 @@
 	{\centering\textsc{#1}\par}
 }
 
-\newcommand{\partie}[1]{%
+\newkeycommand{\partie}[table=idem][1]{%
 	\cleardoublepage
 	\vspace*{\stretch{1}}
 	{\centering\textbf{\Huge #1}\par}
-	\addcontentsline{toc}{section}{#1}
+	\ifthenelse{\equal{\commandkey{table}}{idem}}{%
+		\addcontentsline{toc}{section}{#1}%
+	}{%
+		\addcontentsline{toc}{section}{\commandkey{table}}%
+	}	
 	\vspace*{\stretch{2}}
 	\thispagestyle{empty}
 	\clearpage
