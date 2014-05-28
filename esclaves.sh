@@ -6,7 +6,7 @@ NomFichiers="$(zenity --entry --text 'Nom des fichiers :')"
 echo -n '\\titre{'$TitreChant'}\n\n%TODO:Partition:'"$TitreChant"':\\lilypondfile[staffsize=12]{'$Partitions/$NomFichiers'/'$NomFichiers.ly'}\n\n\\chanson[numero=1]{'$Partitions'/'$NomFichiers'/'$NomFichiers'}'
 
 
-echo '%Apercu:qpdfview ./tmp.pdf:
+echo '%Apercu:qpdfview Fait/tmp.pdf:
 %Cible:tmp:
 \\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
@@ -33,7 +33,9 @@ mv Chant.ly $NomFichiers.ly
 
 mv Paroles.tex $NomFichiers.tex
 
-frescobaldi $NomFichiers.ly &
+echo "Titre: $TitreChant" > infos.txt
+
+#frescobaldi $NomFichiers.ly &
 
 gedit $NomFichiers.tex &
 fi

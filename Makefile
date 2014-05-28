@@ -14,7 +14,6 @@ tmp:
 	lilypond-book -f latex --pdf --latex-program=lualatex --output=Fait/ tmp.tex
 	./dependances.sh
 	(cd Fait ; rm tmp.toc ; lualatex -interaction=nonstopmode --shell-escape tmp.tex)
-	qpdfview Fait/tmp.pdf &
 
 sevin:
 	lilypond-book -f latex --pdf --latex-program=lualatex --output=Fait/ Sevin.tex
