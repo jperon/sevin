@@ -1,7 +1,7 @@
 %Apercu:qpdfview ./Carnet.pdf:
 %Esclaves:./esclaves.sh:
 %Cible:carnet:
-\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
+\documentclass[a6paper,french,fontsize=9pt]{scrbook}
 
 \include{chantsscouts}
 \include{gredoc}
@@ -15,7 +15,7 @@
 \partie{Chants officiels}
 
 
-\titre{Va, Scout de France !}
+\titre[table=Va\, Scout de France]{Va, Scout de France !}
 
 \lilypondfile[staffsize=12]{Partitions/VaScoutDeFrance/VaScoutDeFrance.ly}
 
@@ -58,7 +58,7 @@
 \chanson[position=2col]{Partitions/MarcheSousLEtendard/MarcheSousLEtendard}
 
 
-\titre[table=Ô ma Troupe !]{Ô ma Troupe !\footnotemark}
+\titre[table=Ô ma Troupe]{Ô ma Troupe !\footnotemark}
 \footnotetext{Il n'est aucunement désirable d'adapter à la Meute les paroles de ce chant.}
 
 \lilypondfile[staffsize=12]{Partitions/OMaTroupe/OMaTroupe.ly}
@@ -355,11 +355,18 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[position=2col]{Partitions/CEtaientTroisJoyeuxRoutiers/CEtaientTroisJoyeuxRoutiers}
 
 
-\titre{Gai ! Du Guesclin !}
+\titre[table=Gai\, Du Guesclin]{Gai ! Du Guesclin !}
 
 \lilypondfile[staffsize=12]{Partitions/GaiDuguesclin/GaiDuguesclin.ly}
 
 \chanson{Partitions/GaiDuguesclin/GaiDuguesclin}
+
+
+\titre{Ils étaient trois garçons}
+
+%TODO:Partition:Ils étaient trois garçons:\lilypondfile[staffsize=12]{Partitions/IlsEtaientTroisGarcons/IlsEtaientTroisGarcons.ly}
+
+\chanson[numero=1]{Partitions/IlsEtaientTroisGarcons/IlsEtaientTroisGarcons}
 
 
 
@@ -450,7 +457,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Youkaïdi ! Youkaïda !}
+\titre[table=Youkaïdi\, Youkaïda]{Youkaïdi ! Youkaïda !}
 
 \lilypondfile[staffsize=12]{Partitions/YoukaidiYoukaida/YoukaidiYoukaida.ly}
 
@@ -544,7 +551,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[position=2col]{Partitions/LaBerceuseDuCampQuiChante/LaBerceuseDuCampQuiChante}
 
 
-\titre{La Berceuse des Scouts au bois dormants}
+\titre[table=Berceuse des Scouts au bois]{La Berceuse des Scouts au bois dormants}
 
 \lilypondfile[staffsize=12]{Partitions/LaBerceuseDesScoutsAuBoisDormants/LaBerceuseDesScoutsAuBoisDormants.ly}
 
@@ -611,7 +618,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %%\separation
 
 
-\titre{Qu'il est chic, le commissaire !}
+\titre[table=Qu'il est chic\, le commissaire]{Qu'il est chic, le commissaire !}
 
 \lilypondfile[staffsize=12]{Partitions/QuIlEstChicLeCommissaire/QuIlEstChicLeCommissaire.ly}
 
@@ -700,15 +707,69 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 %TODO:Partition:Vent frais%\lilypondfile[staffsize=12]{Partitions/VentFrais/VentFrais.ly}
 
 \chanson[numero=1]{Partitions/VentFrais/VentFrais}
-\filbreak
 
 
-\titre{Ah ! les p'tits potes}
+\titre[table=Debout\, les gars]{Debout, les gars !}
+
+%TODO:Partition:Debout, les gars !:\lilypondfile[staffsize=12]{Partitions/DeboutLesGars/DeboutLesGars.ly}
+
+\chanson[numero=1]{Partitions/DeboutLesGars/DeboutLesGars}
+
+
+\titre{Elle descend de la montagne}
+
+%TODO:Partition:Elle descend de la montagne:\lilypondfile[staffsize=12]{Partitions/ElleDescendDeLaMontagne/ElleDescendDeLaMontagne.ly}
+
+\chanson[numero=1]{Partitions/ElleDescendDeLaMontagne/ElleDescendDeLaMontagne}
+
+
+\titre[table=Ah\, les p'tits potes]{Ah ! les p'tits potes}
 
 %TODO:Partition:Ah ! les p'tits potes%\lilypondfile[staffsize=12]{Partitions/AhLesPtitsPotes/AhLesPtitsPotes.ly}
 
 \chanson[numero=1,position=2col]{Partitions/AhLesPtitsPotes/AhLesPtitsPotes}
 
+
+\titre{Je cherche fortune}
+
+%TODO:Partition:Je cherche fortune:\lilypondfile[staffsize=12]{Partitions/JeChercheFortune/JeChercheFortune.ly}
+
+\chanson[numero=1,position=2col]{Partitions/JeChercheFortune/JeChercheFortune}
+
+
+\titre{L'homme de Cro-Magnon}
+
+%TODO:Partition:L'homme de Cro-Magnon:\lilypondfile[staffsize=12]{Partitions/LHommeDeCroMagnon/LHommeDeCroMagnon.ly}
+
+\chanson[numero=1]{Partitions/LHommeDeCroMagnon/LHommeDeCroMagnon}
+
+
+\titre{Esaü}
+
+%TODO:Partition:Esaü:\lilypondfile[staffsize=12]{Partitions/Esau/Esau.ly}
+
+\chanson[numero=1]{Partitions/Esau/Esau}
+
+
+\titre[table=Chèvre (la)]{La chèvre}
+
+%TODO:Partition:La chèvre:\lilypondfile[staffsize=12]{Partitions/LaChevre/LaChevre.ly}
+
+\chanson[numero=1]{Partitions/LaChevre/LaChevre}
+
+
+\titre[table=Crocodile (le),espace=15]{Le crocodile}
+
+%TODO:Partition:Le crocodile:\lilypondfile[staffsize=12]{Partitions/LeCrocodile/LeCrocodile.ly}
+
+\chanson[numero=1]{Partitions/LeCrocodile/LeCrocodile}
+
+
+\titre{Fleur d'épine}
+
+%TODO:Partition:Fleur d'épine:\lilypondfile[staffsize=12]{Partitions/FleurDEpine/FleurDEpine.ly}
+
+\chanson[numero=1,position=2col]{Partitions/FleurDEpine/FleurDEpine}
 
 
 \titre[table=Petit Grégoire (le),espace=15]{Le petit Grégoire}
@@ -753,6 +814,29 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson{Partitions/LesCosaques/LesCosaques}
 
 
+\titre[table=Crapauds (les)]{Les crapauds}
+
+%TODO:Partition:Les crapauds:\lilypondfile[staffsize=12]{Partitions/LesCrapauds/LesCrapauds.ly}
+
+\chanson[numero=1,position=2col]{Partitions/LesCrapauds/LesCrapauds}
+
+
+\titre{Le feu brille}
+
+%TODO:Partition:Le feu brille:\lilypondfile[staffsize=12]{Partitions/LeFeuBrille/LeFeuBrille.ly}
+
+\chanson[numero=1]{Partitions/LeFeuBrille/LeFeuBrille}
+
+
+\filbreak
+\titre[table=Gai luron des Flandres (un)]{Un gai luron des Flandres}
+
+%TODO:Partition:Un gai luron des Flandres:\lilypondfile[staffsize=12]{Partitions/UnGaiLuronDesFlandres/UnGaiLuronDesFlandres.ly}
+
+\chanson[numero=1,position=2col]{Partitions/UnGaiLuronDesFlandres/UnGaiLuronDesFlandres}
+
+
+\filbreak
 \titre{C'était dans la nuit brune}
 
 %TODO:Partition:C'était dans la nuit brune%\lilypondfile[staffsize=12]{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune.ly}
@@ -760,6 +844,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[numero=1,position=2col]{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune}
 
 
+\filbreak
 \titre{Maudit sois-tu, carillonneur}
 
 %TODO:Partition:Maudit sois-tu, carillonneur%\lilypondfile[staffsize=12]{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur.ly}
@@ -767,18 +852,28 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[numero=1]{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur}
 
 
+\filbreak
 \titre[table=Cloche du vieux manoir (la)]{La cloche du vieux manoir}
 
 %TODO:Partition:La cloche du vieux manoir%\lilypondfile[staffsize=12]{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir.ly}
 
 \chanson[numero=1]{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir}
 
+\filbreak
+\titre{Qui peut faire de la voile sans vent ?}
 
+%TODO:Partition:Qui peut faire de la voile sans vent ?%\lilypondfile[staffsize=12]{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
+
+\chanson{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent}
+
+
+\filbreak
 \titre[table=Ronde de nuit (la)]{La ronde de nuit}
 
 %TODO:Partition:La ronde de nuit:\lilypondfile[staffsize=12]{Partitions/LaRondeDeNuit/LaRondeDeNuit.ly}
 
 \chanson[numero=1]{Partitions/LaRondeDeNuit/LaRondeDeNuit}
+\filbreak
 
 
 \titre[table=Excuses de l'Aspirant (les)]{Les Excuses de l'Aspirant}
@@ -860,7 +955,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 
 \souspartie{Chants de marche}
 
-\titre{Aïda !}
+\titre[table=Aïda]{Aïda !}
 
 \lilypondfile[staffsize=12]{Partitions/Aida/Aida.ly}
 
@@ -874,7 +969,7 @@ Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.
 \chanson[numero=1]{Partitions/AmiRejoinsNous/AmiRejoinsNous}
 
 
-\titre{Glory, alleluia !}
+\titre[table=Glory\, alleluia]{Glory, alleluia !}
 
 %TODO:Partition:Glory, alleluia !%\lilypondfile[staffsize=12]{Partitions/GloryAlleluia/GloryAlleluia.ly}
 
@@ -1450,7 +1545,7 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 \chanson[numero=1]{Partitions/LesBleusSontLa/LesBleusSontLa}
 
 
-\titre[table=Mouchoirs de Cholet (les)][espace=15]{Les mouchoirs de Cholet\footnotemark}
+\titre[table=Mouchoirs de Cholet (les),espace=15]{Les mouchoirs de Cholet\footnotemark}
 \footnotetext{Voir la mélodie p. \pageref{foulardvert}.}
 
 %\lilypondfile[staffsize=12]{Partitions/LesMouchoirsDeCholet/LesMouchoirsDeCholet.ly}
@@ -1472,7 +1567,7 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 \chanson[numero=1]{Partitions/LesPartisansBlancs/LesPartisansBlancs}
 
 
-\titre{Claquez, bannières}
+\titre[espace=15]{Claquez, bannières}
 
 %TODO:Partition:Claquez, bannières:\lilypondfile[staffsize=12]{Partitions/ClaquezBannieres/ClaquezBannieres.ly}
 
@@ -1483,12 +1578,19 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 
 %TODO:Partition:La France bouge%\lilypondfile[staffsize=12]{Partitions/LaFranceBouge/LaFranceBouge.ly}
 
-\chanson[numero=1]{Partitions/LaFranceBouge/LaFranceBouge}
+\chanson[numero=1,position=2col]{Partitions/LaFranceBouge/LaFranceBouge}
 
 
 
 
 \partie{Chants de tradition}
+
+
+\titre{File la laine}
+
+%TODO:Partition:File la laine:\lilypondfile[staffsize=12]{Partitions/FileLaLaine/FileLaLaine.ly}
+
+\chanson[numero=1]{Partitions/FileLaLaine/FileLaLaine}
 
 
 \titre[table=Strasbourgeoise (la)]{La strasbourgeoise}
@@ -1512,52 +1614,18 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 \chanson[numero=1]{Partitions/LeRoiLouis/LeRoiLouis}
 
 
-\titre{À la claire fontaine}
-
-%TODO:Partition:À la claire fontaine%\lilypondfile[staffsize=12]{Partitions/ALaClaireFontaine/ALaClaireFontaine.ly}
-
-\chanson[numero=1]{Partitions/ALaClaireFontaine/ALaClaireFontaine}
-
-
-\titre{Au clair de la lune}
-
-\lilypondfile[staffsize=12]{Partitions/AuClairDeLaLune/AuClairDeLaLune.ly}
-
-\chanson{Partitions/AuClairDeLaLune/AuClairDeLaLune}
-
-
-\titre[espace=15]{Au pied d'un rosier}
-
-%TODO:Partition:Au pied d'un rosier:\lilypondfile[staffsize=12]{Partitions/AuPiedDUnRosier/AuPiedDUnRosier.ly}
-
-\chanson[numero=1]{Partitions/AuPiedDUnRosier/AuPiedDUnRosier}
-
-
-\titre{Auprès de ma blonde}
-
-%TODO:Partition:Auprès de ma blonde:\lilypondfile[staffsize=12]{Partitions/AupresDeMaBlonde/AupresDeMaBlonde.ly}
-
-\chanson[numero=1,position=2col]{Partitions/AupresDeMaBlonde/AupresDeMaBlonde}
-
-
-\titre{Cadet Rousselle}
-
-%TODO:Partition:Cadet Rousselle:\lilypondfile[staffsize=12]{Partitions/CadetRousselle/CadetRousselle.ly}
-
-\chanson[numero=1]{Partitions/CadetRousselle/CadetRousselle}
-
-
-\titre[table=Chèvre (la)]{La chèvre}
-
-%TODO:Partition:La chèvre:\lilypondfile[staffsize=12]{Partitions/LaChevre/LaChevre.ly}
-
-\chanson[numero=1]{Partitions/LaChevre/LaChevre}
-
-
 
 \souspartie{Chants militaires}
 
-\titre[table=Africains (les)]{Les Africains}
+
+\titre[table=Honneur\, Fidélité]{Honneur, Fidélité !}
+
+%TODO:Partition:Honneur, fidélité !:\lilypondfile[staffsize=12]{Partitions/HonneurFidelite/HonneurFidelite.ly}
+
+\chanson[numero=1]{Partitions/HonneurFidelite/HonneurFidelite}
+
+
+\titre[table=Africains (les),espace=15]{Les Africains}
 
 %TODO:Partition:Les Africains%\lilypondfile[staffsize=12]{Partitions/LesAfricains/LesAfricains.ly}
 
@@ -1596,16 +1664,59 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 \souspartie{Chants populaires}
 
 \titre{Trois jeunes tambours}
+\vspace{0\baselineskip minus \baselineskip}
 
 %TODO:Partition:Trois jeunes tambours%\lilypondfile[staffsize=12]{Partitions/TroisJeunesTambours/TroisJeunesTambours.ly}
 
 \chanson[numero=1,position=2col]{Partitions/TroisJeunesTambours/TroisJeunesTambours}
 
 
+\titre{À la claire fontaine}
+
+%TODO:Partition:À la claire fontaine%\lilypondfile[staffsize=12]{Partitions/ALaClaireFontaine/ALaClaireFontaine.ly}
+
+\chanson[numero=1,position=2col]{Partitions/ALaClaireFontaine/ALaClaireFontaine}
+
+
+\titre{Au clair de la lune}
+
+\lilypondfile[staffsize=12]{Partitions/AuClairDeLaLune/AuClairDeLaLune.ly}
+
+\chanson{Partitions/AuClairDeLaLune/AuClairDeLaLune}
+
+
+\titre[espace=15]{Au pied d'un rosier}
+
+%TODO:Partition:Au pied d'un rosier:\lilypondfile[staffsize=12]{Partitions/AuPiedDUnRosier/AuPiedDUnRosier.ly}
+
+\chanson[numero=1]{Partitions/AuPiedDUnRosier/AuPiedDUnRosier}
+
+
+\titre{Auprès de ma blonde}
+
+%TODO:Partition:Auprès de ma blonde:\lilypondfile[staffsize=12]{Partitions/AupresDeMaBlonde/AupresDeMaBlonde.ly}
+
+\chanson[numero=1,position=2col]{Partitions/AupresDeMaBlonde/AupresDeMaBlonde}
+
+
+\titre{Cadet Rousselle}
+
+%TODO:Partition:Cadet Rousselle:\lilypondfile[staffsize=12]{Partitions/CadetRousselle/CadetRousselle.ly}
+
+\chanson[numero=1]{Partitions/CadetRousselle/CadetRousselle}
+
+
+\titre{J'ai perdu le do de ma clarinette}
+
+%TODO:Partition:J'ai perdu le do de ma clarinette:\lilypondfile[staffsize=12]{Partitions/JAiPerduLeDoDeMaClarinette/JAiPerduLeDoDeMaClarinette.ly}
+
+\chanson[numero=1]{Partitions/JAiPerduLeDoDeMaClarinette/JAiPerduLeDoDeMaClarinette}
+
+
 
 \partie{Chants marins}
 
-\titre{Hé, garçon !}
+\titre[table=Hé\, garçon]{Hé, garçon !}
 
 %TODO:Partition:Hé, garçon !%\lilypondfile[staffsize=12]{Partitions/HeGarcon/HeGarcon.ly}
 
@@ -1640,16 +1751,9 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 \chanson[numero=1]{Partitions/Au31DuMoisDAout/Au31DuMoisDAout}
 
 
-\titre{Qui peut faire de la voile sans vent ?}
-
-%TODO:Partition:Qui peut faire de la voile sans vent ?%\lilypondfile[staffsize=12]{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
-
-\chanson{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent}
-
-
 \partie{Chansons à boire}
 
-\titre{Ah ! que nos pères}
+\titre[table=Ah\, que nos pères]{Ah ! que nos pères}
 
 %TODO:Partition:Ah ! que nos pères%\lilypondfile[staffsize=12]{Partitions/AhQueNosPeres/AhQueNosPeres.ly}
 
@@ -1675,7 +1779,6 @@ Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main
 %TODO:Partition:Fanchon%\lilypondfile[staffsize=12]{Partitions/Fanchon/Fanchon.ly}
 
 \chanson[numero=1]{Partitions/Fanchon/Fanchon}
-
 
 
 \printindex
