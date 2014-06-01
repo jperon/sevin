@@ -1,10 +1,9 @@
 DossierMaitre="$(pwd)"
 Partitions="Partitions"
+
 TitreChant="$(zenity --entry --text 'Titre du chant :')"
 NomFichiers="$(zenity --entry --text 'Nom des fichiers :')"
-
 echo -n '\\titre{'$TitreChant'}\n\n%TODO:Partition:'"$TitreChant"':\\lilypondfile[staffsize=12]{'$Partitions/$NomFichiers'/'$NomFichiers.ly'}\n\n\\chanson[numero=1]{'$Partitions'/'$NomFichiers'/'$NomFichiers'}'
-
 
 echo '%Apercu:qpdfview Fait/tmp.pdf:
 %Cible:tmp:
@@ -13,6 +12,8 @@ echo '%Apercu:qpdfview Fait/tmp.pdf:
 \\include{chantsscouts}
 \\include{gredoc}
 \\providecommand{\\cantus}[4]{\\partition{#1}{#2}{#3 #4}}
+\\renewcommand{\\numtitre}{}
+\\pagestyle{empty}
 
 \\begin{document}
 
@@ -34,6 +35,8 @@ mv Chant.ly $NomFichiers.ly
 mv Paroles.tex $NomFichiers.tex
 
 echo "Titre: $TitreChant" > infos.txt
+
+echo "Fichier: $NomFichiers" >> infos.txt
 
 #frescobaldi $NomFichiers.ly &
 

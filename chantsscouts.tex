@@ -139,6 +139,8 @@
 	\bis[texte=ter]{#1}%
 }
 
+\newcommand{\numtitre}{\arabic{chant}.~}
+
 \newkeycommand{\titre}[espace=10,table=idem][][1]{%
 	\setlength{\avanttitre}{\baselineskip}
 	\multiply\avanttitre by \commandkey{espace}
@@ -151,7 +153,7 @@
 		\index{\commandkey{table}}
 		\addcontentsline{toc}{subsubsection}{\commandkey{table}}%
 	}
-	{\centering\textbf{\large \arabic{chant}.~#1}\par}
+	{\centering\textbf{\large \numtitre #1}\par}
 	\vspace{1ex plus .7ex minus .2ex}
 }
 
