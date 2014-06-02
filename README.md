@@ -42,6 +42,8 @@ Si vous voulez la partition d'un chant en particulier, modifiez le fichier *tmp.
 
     make tmp
 
+Ce fichier peut d'ailleurs servir de modèle pour démarrer un nouveau projet ; voyez la cible *tmp* dans le *Makefile* pour voir quelles opérations sont réalisées pour compiler un fichier.
+
 Contribuer
 ----------
 
