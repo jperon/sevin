@@ -1,7 +1,10 @@
 Carnet.tex::Partition:Ô Croix des scouts:{Partitions/OCroixDesScouts/OCroixDesScouts.ly}
 Carnet.tex::Partition:Chante au danger:{Partitions/ChanteAuDanger/ChanteAuDanger.ly}
 Carnet.tex::Partition:L'appel de la route:{Partitions/LAppelDeLaRoute/LAppelDeLaRoute.ly}
+Carnet.tex::Partition:Ils étaient trois garçons:\lilypondfile[staffsize=12]{Partitions/IlsEtaientTroisGarcons/IlsEtaientTroisGarcons.ly}
 Carnet.tex::Partition:Chant des couleurs:{Partitions/ChantDesCouleurs/ChantDesCouleurs.ly}
+Carnet.tex::Partition:On décampe:\lilypondfile[staffsize=12]{Partitions/OnDecampe/OnDecampe.ly}
+Carnet.tex::Partition:Souvenirs qui passent:\lilypondfile[staffsize=12]{Partitions/SouvenirsQuiPassent/SouvenirsQuiPassent.ly}
 Carnet.tex::Partition:Préviens le CP:{Partitions/PreviensLeCP/PreviensLeCP.ly}
 Carnet.tex::Partition:Alphabet scout:{Partitions/AlphabetScout/AlphabetScout.ly}
 Carnet.tex::Partition:Ô Saint Hubert:{Partitions/LaSaintHubert/LaSaintHubert.ly}
@@ -11,12 +14,31 @@ Carnet.tex::Partition:Le Chef:{Partitions/LeChef/LeChef.ly}
 Carnet.tex::Partition:Le coucou:{Partitions/LeCoucou/LeCoucou.ly}
 Carnet.tex::Partition:J - O - I - E:{Partitions/JOIEJoie/JOIEJoie.ly}
 Carnet.tex::Partition:Vent frais:{Partitions/VentFrais/VentFrais.ly}
+Carnet.tex::Partition:Le roi Arthur:\lilypondfile[staffsize=12]{Partitions/LeRoiArthur/LeRoiArthur.ly}
+Carnet.tex::Partition:Red River Valley:\lilypondfile[staffsize=12]{Partitions/RedRiverValley/RedRiverValley.ly}
+Carnet.tex::Partition:Debout, les gars !:\lilypondfile[staffsize=12]{Partitions/DeboutLesGars/DeboutLesGars.ly}
+Carnet.tex::Partition:Elle descend de la montagne:\lilypondfile[staffsize=12]{Partitions/ElleDescendDeLaMontagne/ElleDescendDeLaMontagne.ly}
+Carnet.tex::Partition:Massey Fergusson:\lilypondfile[staffsize=12]{Partitions/MasseyFergusson/MasseyFergusson.ly}
+Carnet.tex::Partition:Je cherche fortune:\lilypondfile[staffsize=12]{Partitions/JeChercheFortune/JeChercheFortune.ly}
 Carnet.tex::Partition:Ah ! les p'tits potes:{Partitions/AhLesPtitsPotes/AhLesPtitsPotes.ly}
+Carnet.tex::Partition:L'homme de Cro-Magnon:\lilypondfile[staffsize=12]{Partitions/LHommeDeCroMagnon/LHommeDeCroMagnon.ly}
+Carnet.tex::Partition:Esaü:\lilypondfile[staffsize=12]{Partitions/Esau/Esau.ly}
+Carnet.tex::Partition:La chèvre:\lilypondfile[staffsize=12]{Partitions/LaChevre/LaChevre.ly}
+Carnet.tex::Partition:Le crocodile:\lilypondfile[staffsize=12]{Partitions/LeCrocodile/LeCrocodile.ly}
+Carnet.tex::Partition:Fleur d'épine:\lilypondfile[staffsize=12]{Partitions/FleurDEpine/FleurDEpine.ly}
 Carnet.tex::Partition:Le petit Grégoire:{Partitions/LePetitGregoire/LePetitGregoire.ly}
 Carnet.tex::Partition:Le soldat belge:{Partitions/LeSoldatBelge/LeSoldatBelge.ly}
+Carnet.tex::Partition:La Bohême:\lilypondfile[staffsize=12]{Partitions/LaBoheme/LaBoheme.ly}
+Carnet.tex::Partition:Les crapauds:\lilypondfile[staffsize=12]{Partitions/LesCrapauds/LesCrapauds.ly}
+Carnet.tex::Partition:Le feu brille:\lilypondfile[staffsize=12]{Partitions/LeFeuBrille/LeFeuBrille.ly}
+Carnet.tex::Partition:Un gai luron des Flandres:\lilypondfile[staffsize=12]{Partitions/UnGaiLuronDesFlandres/UnGaiLuronDesFlandres.ly}
 Carnet.tex::Partition:C'était dans la nuit brune:{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune.ly}
 Carnet.tex::Partition:Maudit sois-tu, carillonneur:{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur.ly}
 Carnet.tex::Partition:La cloche du vieux manoir:{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir.ly}
+Carnet.tex::Partition:Qui peut faire de la voile sans vent ?:{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
+Carnet.tex::Partition:La ronde de nuit:\lilypondfile[staffsize=12]{Partitions/LaRondeDeNuit/LaRondeDeNuit.ly}
+Carnet.tex::Partition:L'enfant au cœur d'or:\lilypondfile[staffsize=12]{Partitions/LEnfantAuCoeurDOr/LEnfantAuCoeurDOr.ly}
+Carnet.tex::Partition:Sur les monts:\lilypondfile[staffsize=12]{Partitions/SurLesMonts/SurLesMonts.ly}
 Carnet.tex::Partition:As-tu compté les étoiles:{Partitions/AsTuCompteLesEtoiles/AsTuCompteLesEtoiles.ly}
 Carnet.tex::Partition:L'espérance:{Partitions/LEsperance/LEsperance.ly}
 Carnet.tex::Partition:Le chant des marais:{Partitions/LeChantDesMarais/LeChantDesMarais.ly}
@@ -25,6 +47,9 @@ Carnet.tex::Partition:Je veux voir Dieu:{Partitions/JeVeuxVoirDieu/JeVeuxVoirDie
 Carnet.tex::Partition:Voguons au vent de mer:{Partitions/VoguonsAuVentDeMer/VoguonsAuVentDeMer.ly}
 Carnet.tex::Partition:Ami, rejoins-nous:{Partitions/AmiRejoinsNous/AmiRejoinsNous.ly}
 Carnet.tex::Partition:Glory, alleluia !:{Partitions/GloryAlleluia/GloryAlleluia.ly}
+Carnet.tex::Partition:Allongeons la jambe:{Partitions/AllongeonsLaJambe/AllongeonsLaJambe.ly}
+Carnet.tex::Partition:Kyrie des gueux:\lilypondfile[staffsize=12]{Partitions/KyrieDesGueux/KyrieDesGueux.ly}
+Carnet.tex::Partition:La route est longue:\lilypondfile[staffsize=12]{Partitions/LaRouteEstLongue/LaRouteEstLongue.ly}
 Carnet.tex::Partition:Avant d'aller dormir:{Partitions/AvantDAllerDormir/AvantDAllerDormir.ly}
 Carnet.tex::Partition:Je mets ma confiance:{Partitions/JeMetsMaConfiance/JeMetsMaConfiance.ly}
 Carnet.tex::Partition:Misere de la mer:{Partitions/MiserereDeLaMer/MiserereDeLaMer.ly}
@@ -32,24 +57,39 @@ Carnet.tex::Partition:Chant de Monsieur Henri:{Partitions/ChantDeMonsieurHenri/C
 Carnet.tex::Partition:Les Bleus sont là:{Partitions/LesBleusSontLa/LesBleusSontLa.ly}
 Carnet.tex::Partition:La ligue noire:{Partitions/LaLigueNoire/LaLigueNoire.ly}
 Carnet.tex::Partition:Les partisans blancs:{Partitions/LesPartisansBlancs/LesPartisansBlancs.ly}
+Carnet.tex::Partition:Claquez, bannières:\lilypondfile[staffsize=12]{Partitions/ClaquezBannieres/ClaquezBannieres.ly}
 Carnet.tex::Partition:La France bouge:{Partitions/LaFranceBouge/LaFranceBouge.ly}
+Carnet.tex::Partition:Les Lansquenets:\lilypondfile[staffsize=12]{Partitions/LesLansquenets/LesLansquenets.ly}
+Carnet.tex::Partition:File la laine:\lilypondfile[staffsize=12]{Partitions/FileLaLaine/FileLaLaine.ly}
 Carnet.tex::Partition:La strasbourgeoise:{Partitions/LEnfantDeStrasbourg/LEnfantDeStrasbourg.ly}
+Carnet.tex::Partition:Je t'aime, ô ma Patrie:\lilypondfile[staffsize=12]{Partitions/JeTAimeOMaPatrie/JeTAimeOMaPatrie.ly}
 Carnet.tex::Partition:En passant par la Lorraine:{Partitions/EnPassantParLaLorraine/EnPassantParLaLorraine.ly}
 Carnet.tex::Partition:Le roi Louis\lilypondfile[staffsize=12]{Partitions/LeRoiLouis/LeRoiLouis.ly}
-Carnet.tex::Partition:À la claire fontaine:{Partitions/ALaClaireFontaine/ALaClaireFontaine.ly}
+Carnet.tex::Partition:Honneur, fidélité !:\lilypondfile[staffsize=12]{Partitions/HonneurFidelite/HonneurFidelite.ly}
 Carnet.tex::Partition:Les Africains:{Partitions/LesAfricains/LesAfricains.ly}
 Carnet.tex::Partition:Le combat de demain:{Partitions/LeCombatDeDemain/LeCombatDeDemain.ly}
 Carnet.tex::Partition:Les commandos:{Partitions/LesCommandos/LesCommandos.ly}
 Carnet.tex::Partition:En passant par la portière:{Partitions/EnPassantParLaPortiere/EnPassantParLaPortiere.ly}
 Carnet.tex::Partition:Les dragons de Noailles:{Partitions/LesDragonsDeNoailles/LesDragonsDeNoailles.ly}
+Carnet.tex::Partition:Malbrough:\lilypondfile[staffsize=12]{Partitions/Malbrough/Malbrough.ly}
 Carnet.tex::Partition:Trois jeunes tambours:{Partitions/TroisJeunesTambours/TroisJeunesTambours.ly}
+Carnet.tex::Partition:À la claire fontaine:{Partitions/ALaClaireFontaine/ALaClaireFontaine.ly}
+Carnet.tex::Partition:Au pied d'un rosier:\lilypondfile[staffsize=12]{Partitions/AuPiedDUnRosier/AuPiedDUnRosier.ly}
+Carnet.tex::Partition:Auprès de ma blonde:\lilypondfile[staffsize=12]{Partitions/AupresDeMaBlonde/AupresDeMaBlonde.ly}
+Carnet.tex::Partition:Cadet Rousselle:\lilypondfile[staffsize=12]{Partitions/CadetRousselle/CadetRousselle.ly}
+Carnet.tex::Partition:J'ai perdu le do de ma clarinette:\lilypondfile[staffsize=12]{Partitions/JAiPerduLeDoDeMaClarinette/JAiPerduLeDoDeMaClarinette.ly}
+Carnet.tex::Partition:La mère Michel:\lilypondfile[staffsize=12]{Partitions/LaMereMichel/LaMereMichel.ly}
+Carnet.tex::Partition:Ne pleure pas, Jeannette:\lilypondfile[staffsize=12]{Partitions/NePleurePasJeannette/NePleurePasJeannette.ly}
+Carnet.tex::Partition:Quand j'étais chez mon père:\lilypondfile[staffsize=12]{Partitions/QuandJEtaisChezMonPere/QuandJEtaisChezMonPere.ly}
+Carnet.tex::Partition:Le vieux chalet:\lilypondfile[staffsize=12]{Partitions/LeVieuxChalet/LeVieuxChalet.ly}
+Carnet.tex::Partition:Se Canto:\lilypondfile[staffsize=12]{Partitions/SeCanto/SeCanto.ly}
 Carnet.tex::Partition:Hé, garçon !:{Partitions/HeGarcon/HeGarcon.ly}
 Carnet.tex::Partition:Matelots, puisqu'il fait bon vent:{Partitions/MatelotsPuisquIlFaitBonVent/MatelotsPuisquIlFaitBonVent.ly}
 Carnet.tex::Partition:Guerre guerre:{Partitions/GuerreGuerre/GuerreGuerre.ly}
 Carnet.tex::Partition:Santiano:{Partitions/Santiano/Santiano.ly}
 Carnet.tex::Partition:Au 31 du mois d'août:{Partitions/Au31DuMoisDAout/Au31DuMoisDAout.ly}
-Carnet.tex::Partition:Qui peut faire de la voile sans vent ?:{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
 Carnet.tex::Partition:Ah ! que nos pères:{Partitions/AhQueNosPeres/AhQueNosPeres.ly}
 Carnet.tex::Partition:Chevaliers de la table ronde:{Partitions/ChevaliersDeLaTableRonde/ChevaliersDeLaTableRonde.ly}
 Carnet.tex::Partition:In vino veritas\lilypondfile[staffsize=12]{Partitions/InVinoVeritas/InVinoVeritas.ly}
 Carnet.tex::Partition:Fanchon:{Partitions/Fanchon/Fanchon.ly}
+tmp.tex::\lilypondfile[staffsize=12]{Partitions/LeVieuxChalet/LeVieuxChalet.ly}

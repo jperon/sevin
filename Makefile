@@ -22,4 +22,4 @@ sevin:
 	cp Fait/Sevin.pdf .
 
 todo:
-	grep -R '%TODO' [!README]*[!Partitions]*[!Fait]* | grep -v \~ | sed s/'%TODO'//g | sed s/'%\\lilypondfile\[staffsize=12\]'/\:/g > TODO
+	grep -R '%TODO' [!README]*[!Fait]*[!.sh] | grep -v \~ | sed s/'%TODO'//g | sed s/'%\\lilypondfile\[staffsize=12\]'/\:/g > TODO
