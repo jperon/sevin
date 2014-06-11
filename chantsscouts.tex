@@ -1,7 +1,7 @@
 \usepackage{fontspec}
 \usepackage{libertine}
-\usepackage{babel}\frenchbsetup{og=«,fg=»}
-%\usepackage{polyglossia}\setmainlanguage{french}
+%\usepackage{babel}\frenchbsetup{og=«,fg=»}
+\usepackage{polyglossia}\setmainlanguage{french}
 \usepackage{makeidx}\setcounter{tocdepth}{3}
 \usepackage[includeheadfoot,inner=7mm,outer=12mm,top=5mm,bottom=8mm,headsep=3mm,footskip=5mm]{geometry}
 \usepackage{needspace}
@@ -33,7 +33,7 @@
 \def\postLilyPondExample{\par\widowpenalty=10000 \clubpenalty=10000\par}
 
 \catcode`\ =\active
-\def  { }
+\def  {~}
 \catcode`\’=\active
 \def ’{'}
 
