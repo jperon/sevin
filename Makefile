@@ -8,6 +8,12 @@ carnet:
 	(cd Fait ; rm Carnet.toc ; lualatex -interaction=batchmode --shell-escape Carnet.tex ; makeindex -s ../manuel.ist Carnet.idx ; lualatex -interaction=batchmode --shell-escape Carnet.tex)
 	cp Fait/Carnet.pdf .
 
+livret:
+	./dependances.sh
+	lilypond-book -P "$(LILY_CMD)" -f latex --pdf --latex-program=lualatex --output=Fait/ Livret.tex
+	(cd Fait ; rm Livret.toc ; lualatex -interaction=batchmode --shell-escape Livret.tex ; makeindex -s ../manuel.ist Livret.idx ; lualatex -interaction=batchmode --shell-escape Livret.tex)
+	cp Fait/Livret.pdf .
+
 debug:
 	./dependances.sh
 	lilypond-book -P "$(LILY_CMD)" -f latex --pdf --latex-program=lualatex --output=Fait/ Carnet.tex
@@ -27,3 +33,6 @@ sevin:
 
 todo:
 	grep -R '%TODO' [!README]*[!Fait]*[!.sh] | grep -v \~ | sed s/'%TODO'//g | sed s/'%\\lilypondfile\[staffsize=12\]'/\:/g > TODO
+
+midi:
+	cd Partitions ; ./midi.sh

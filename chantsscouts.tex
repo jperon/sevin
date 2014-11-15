@@ -2,8 +2,12 @@
 \usepackage{libertine}
 %\usepackage{babel}\frenchbsetup{og=«,fg=»}
 \usepackage{polyglossia}\setmainlanguage{french}
+\def\ier{\raisebox{.5ex}{{\footnotesize \hspace{.1ex}er}}}
+\def\iere{\raisebox{.5ex}{{\footnotesize \hspace{.1ex}re}}}
+\def\ieme{\raisebox{.5ex}{{\footnotesize \hspace{.1ex}e}}}
 \usepackage{makeidx}\setcounter{tocdepth}{3}
 \usepackage[includeheadfoot,inner=7mm,outer=12mm,top=5mm,bottom=8mm,headsep=3mm,footskip=5mm]{geometry}
+%\usepackage[includeheadfoot,inner=17mm,outer=12mm,top=5mm,bottom=8mm,headsep=3mm,footskip=5mm]{geometry}
 \usepackage{needspace}
 \usepackage{ifthen}
 \usepackage{keycommand}
@@ -65,7 +69,8 @@
   \needspace{\baselineskip}
   \setcounter{numerocouplet}{0}
   \setcounter{numero}{\commandkey{numero}-1}
-  \ifthenelse{\equal{\commandkey{position}}{2col}}{%
+  \ifthenelse{\equal{\commandkey{position}}{2col}}{\providecommand{\position}{2col}}{\providecommand{\position}{autre}}%
+  \ifthenelse{\equal{\position}{2col}}{%
     \setlength{\decalage}{2cm}
     \setlength{\complement}{\linewidth-\decalage}
     \begin{multicols}{2}
@@ -81,7 +86,7 @@
 
 \newcommand{\strophe}[1]{{%
     \widowpenalty=10000 \clubpenalty=10000
-    \ifthenelse{\equal{\commandkey{position}}{2col}}{\def\position{2col}}{\def\position{autre}}%
+    \ifthenelse{\equal{\commandkey{position}}{2col}}{\providecommand{\position}{2col}}{\providecommand{\position}{autre}}%
     \ifthenelse{\equal{\position}{2col}}{%
       \pagebreak[3]%
       \raggedright%

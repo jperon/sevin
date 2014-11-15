@@ -1,104 +1,2123 @@
-%Compilation:./livret.sh #
-%Apercu:evince ./Fait/Livret.pdf#
-%Esclaves:./esclaves.sh
-\documentclass[a6paper,latin,french,9pt]{book}
+%Apercu:qpdfview ./Livret.pdf:
+%Esclaves:./esclaves.sh:
+%Cible:livret:
+%\documentclass[a6paper,french,fontsize=9pt]{scrbook}
+\documentclass[a4paper,french,fontsize=9pt]{scrbook}
 
+\newcommand{\position}{autre}
 \include{chantsscouts}
+\geometry{margin=5mm}
+\include{gredoc}
+\providecommand{\cantus}[4]{\partition{#1}{#2}{#3 #4}}
 
 \begin{document}
 
+\pagestyle{empty}
+\begin{multicols}{3}
 
-\fontsize{8.5pt}{9.5pt}\selectfont
+%\fontsize{8.5pt}{9.5pt}\selectfont
 
-
-\titre{Le Cantique de la Promesse}{Le Cantique de la Promesse}
-
-\lilypondfile[staffsize=14]{ChantDePromesse/ChantDePromesse.ly}
-
-\chanson[position=2col]{../ChantDePromesse/ChantDePromesse}
-
-\clearpage
+%\partie{Chants officiels}
 
 
-\titre{Va, Scout de France !}{Va, Scout de France !}
+%\titre[table=Va\, Scout de France]{Va, Scout de France !}
 
-\lilypondfile[staffsize=14]{VaScoutDeFrance/VaScoutDeFrance.ly}
+%\lilypondfile[staffsize=12]{Partitions/VaScoutDeFrance/VaScoutDeFrance.ly}
 
-\chanson[position=2col,decalage=8em]{../VaScoutDeFrance/VaScoutDeFrance}
-
-\clearpage
+%\chanson{Partitions/VaScoutDeFrance/VaScoutDeFrance}
 
 
-\titre{Youkaïdi ! Youkaïda !}{Youkaïdi, Youkaïda !}
+%\titre{Maud'Huy}
 
-\lilypondfile[staffsize=14]{YoukaidiYoukaida/YoukaidiYoukaida.ly}
+%\lilypondfile[staffsize=12]{Partitions/MaudHuy/MaudHuy.ly}
 
-\chanson[position=2col]{../YoukaidiYoukaida/YoukaidiYoukaida}
-
-\clearpage
-
-
-\titre{Ami, rejoins-nous}{Ami, rejoins-nous}
-
-\chanson[position=2col]{../AmiRejoinsNous/AmiRejoinsNous}
-
-%\clearpage
+%\needspace{7\baselineskip}
+%\chanson[position=2col]{Partitions/MaudHuy/MaudHuy}
 
 
-\titre{Il était une charrette}{Il était une charrette}
+%\titre{C'est un Maréchal lorrain}
 
-\lilypondfile[staffsize=14]{IlEtaitUneCharrette/IlEtaitUneCharrette.ly}
+%\lilypondfile[staffsize=12]{Partitions/CEstUnMarechalLorrain/CEstUnMarechalLorrain.ly}
 
-\chanson[position=2col]{../IlEtaitUneCharrette/IlEtaitUneCharrette}
-
-\clearpage
+%\chanson{Partitions/CEstUnMarechalLorrain/CEstUnMarechalLorrain}
 
 
-\titre{L'Chef de Patrouille a deux galons}{Chef de Patrouille a deux galons (l')}
+%\titre{Faucon d'Armor}
 
-\lilypondfile[staffsize=14]{LChefDePatrouilleADeuxGalons/LChefDePatrouilleADeuxGalons.ly}
+%\lilypondfile[staffsize=12]{Partitions/FauconDArmor/FauconDArmor.ly}
 
-\chanson[position=2col]{../LChefDePatrouilleADeuxGalons/LChefDePatrouilleADeuxGalons}
-
-\clearpage
+%\chanson{Partitions/FauconDArmor/FauconDArmor}
 
 
-\titre{Guerre Guerre}{Guerre Guerre}
+%\titre[table=Vieux Loup (le)]{Le Vieux Loup}
 
-\chanson[position=2col]{../GuerreGuerre/GuerreGuerre}
+%\lilypondfile[staffsize=12]{Partitions/LeVieuxLoup/LeVieuxLoup.ly}
 
-%\clearpage
-
-
-\titre{Ô Saint Hubert}{Ô Saint Hubert}
-
-\chanson[position=2col]{../LaSaintHubert/LaSaintHubert}
-
-\clearpage
+%\chanson{Partitions/LeVieuxLoup/LeVieuxLoup}
 
 
-\titre{Saint Georges}{Saint Georges}
+%\titre{Marche sous l'Étendard}
 
-\chanson[position=2col]{../SaintGeorges/SaintGeorges}
+%\lilypondfile[staffsize=12]{Partitions/MarcheSousLEtendard/MarcheSousLEtendard.ly}
 
-%\clearpage
-
-
-\titre{Être prêt}{Être prêt}
-
-%\lilypondfile[staffsize=14]{EtrePret/EtrePret.ly}
-
-\setcounter{numerocouplet}{0}
-\couplet{
-	Il faut savoir d'abord afin d'agir après :
-
-	Depuis qu'un jour j'ai dit aux Douze : « Soyez prêts »,
-
-	Rien ne sert l'ignorance et le pas-fait-exprès.
-}
-
-\chanson[position=2col]{../EtrePret/EtrePret}
+%\chanson[position=2col]{Partitions/MarcheSousLEtendard/MarcheSousLEtendard}
 
 
+%\titre[table=Ô ma Troupe]{Ô ma Troupe !\footnotemark}
+%\footnotetext{Il n'est aucunement désirable d'adapter à la Meute les paroles de ce chant.}
+
+%\lilypondfile[staffsize=12]{Partitions/OMaTroupe/OMaTroupe.ly}
+
+
+
+%\partie{L'âme scoute}
+
+
+%\titre[table=Croix scoute (la)]{La Croix scoute}
+
+%\lilypondfile[staffsize=12]{Partitions/LaCroixScoute/LaCroixScoute.ly}\needspace{4\baselineskip}
+
+%\chanson{Partitions/LaCroixScoute/LaCroixScoute}
+
+
+%\titre{Ô Croix des scouts}
+
+%%TODO:Partition:Ô Croix des scouts%\lilypondfile[staffsize=12]{Partitions/OCroixDesScouts/OCroixDesScouts.ly}
+
+%\chanson[numero=1]{Partitions/OCroixDesScouts/OCroixDesScouts}
+
+
+
+%\titre[table=Voix des Petits (la)]{La voix des Petits}
+
+%\lilypondfile[staffsize=12]{Partitions/LaVoixDesPetits/LaVoixDesPetits.ly}
+
+%\chanson{Partitions/LaVoixDesPetits/LaVoixDesPetits}
+
+
+%\titre[table=Appel scout (l')]{L'Appel scout}
+
+%\lilypondfile[staffsize=12]{Partitions/LAppelScout/LAppelScout.ly}
+
+%\chanson{Partitions/LAppelScout/LAppelScout}
+
+%\vfill
+%{\renewcommand{\thefootnote}{}\footnotetext{Le chant est à commencer \emph{pianissimo}, en renforçant graduellement de couplet en couplet pour arriver \emph{forte} au 6\ieme\ et au \emph{fortissimo} à l'avant-dernier couplet. Prendre le dernier \emph{pianissimo}, aller \emph{crescendo} jusqu'au complet épanouissement du 2\ieme\ vers, et retomber ensuite, de façon très douce et très liée, sur les notes de l'appel scout.}}
+
+
+%\titre[table=Joie scoute (la)]{La Joie scoute}
+
+%\lilypondfile[staffsize=12]{Partitions/LaJoieScoute/LaJoieScoute.ly}
+
+%\chanson{Partitions/LaJoieScoute/LaJoieScoute}
+
+
+%\titre{Pourquoi ces tristes mines ?}
+
+%\lilypondfile[staffsize=12]{Partitions/PourquoiCesTristesMines/PourquoiCesTristesMines.ly}
+
+%\chanson{Partitions/PourquoiCesTristesMines/PourquoiCesTristesMines}
+
+
+%\titre{Chante au danger}
+
+%%TODO:Partition:Chante au danger%\lilypondfile[staffsize=12]{Partitions/ChanteAuDanger/ChanteAuDanger.ly}
+
+%\chanson[numero=1]{Partitions/ChanteAuDanger/ChanteAuDanger}
+
+
+
+%\titre{Peur ?}
+
+%\lilypondfile[staffsize=12]{Partitions/Peur/Peur.ly}
+
+%\chanson{Partitions/Peur/Peur}
+
+
+%\titre{Aimons-nous mieux}
+
+%\lilypondfile[staffsize=12]{Partitions/AimonsNousMieux/AimonsNousMieux.ly}
+
+%\chanson{Partitions/AimonsNousMieux/AimonsNousMieux}
+
+
+%\titre{Être prêt}
+
+%%\lilypondfile[staffsize=12]{Partitions/EtrePret/EtrePret.ly}
+
+%\chanson[numero=1]{Partitions/EtrePret/EtrePret}
+
+
+
+%\titre{Fleurs de France}
+
+%\lilypondfile[staffsize=12]{Partitions/FleursDeFrance/FleursDeFrance.ly}
+
+%\chanson[position=2col]{Partitions/FleursDeFrance/FleursDeFrance}
+
+
+%\titre[table=Complainte du Templier (la)]{La Complainte du Templier}
+
+%\lilypondfile[staffsize=12]{Partitions/ComplainteDuTemplier/Complainte.ly}
+
+%\chanson{Partitions/ComplainteDuTemplier/Complainte}
+
+%\partie{La vie scoute}
+
+
+%\titre{Objections du V.P.}
+
+%\lilypondfile[staffsize=12]{Partitions/ObjectionsDuVP/ObjectionsDuVP.ly}
+
+%\chanson{Partitions/ObjectionsDuVP/ObjectionsDuVP}
+
+%%%\separation
+
+
+%\titre[table=Viens avec nous\, P'tit Loup]{Viens avec nous, P'tit Loup\footnotemark}
+%\footnotetext{Cérémonie officielle de montée de la Meute à la Troupe.}
+
+%\lilypondfile[staffsize=12]{Partitions/ViensAvecNousPtitLoup/ViensAvecNousPtitLoup.ly}
+
+
+%\titre{Fondons la Meute}
+
+%\lilypondfile[staffsize=12]{Partitions/FondonsLaMeute/FondonsLaMeute.ly}
+
+%\chanson{Partitions/FondonsLaMeute/FondonsLaMeute}%
+
+%%%\separation
+
+
+%\titre[table=Vie simple (la)]{La vie simple}
+
+%\lilypondfile[staffsize=12]{Partitions/LaVieSimple/LaVieSimple.ly}
+
+%\chanson{Partitions/LaVieSimple/LaVieSimple}
+
+%%%\separation
+
+
+%\titre[table=Scouts se sont cachés (les)]{Les Scouts se sont cachés}
+
+%\lilypondfile[staffsize=12]{Partitions/LesScoutsSeSontCaches/LesScoutsSeSontCaches.ly}
+
+%\chanson{Partitions/LesScoutsSeSontCaches/LesScoutsSeSontCaches}
+
+%%%\separation
+
+
+%\titre{Présentation à Monseigneur Saint Louis}
+
+%\lilypondfile[staffsize=12]{Partitions/PresentationAMonseigneurSaintLouis/PresentationAMonseigneurSaintLouis.ly}
+
+%\chanson{Partitions/PresentationAMonseigneurSaintLouis/PresentationAMonseigneurSaintLouis}
+
+%%%\separation
+
+
+%\titre{Scout terrien, Scout marin}
+
+%\lilypondfile[staffsize=12]{Partitions/ScoutTerrienScoutMarin/ScoutTerrienScoutMarin.ly}
+
+%\chanson{Partitions/ScoutTerrienScoutMarin/ScoutTerrienScoutMarin}
+
+%%%\separation
+
+
+%\titre{Nous sommes la IX\ieme\ Lille}
+
+%\lilypondfile[staffsize=12]{Partitions/Nous_sommes_la_9e_Lille/Nous_sommes_la_9e_Lille.ly}
+
+%\chanson{Partitions/Nous_sommes_la_9e_Lille/Nous_sommes_la_9e_Lille}
+
+%%%\separation
+
+
+%\titre[table=Ronde des bâtons (la)]{La Ronde des bâtons\footnotemark}
+%\footnotetext{Cette chanson peut servir de thème à un ballet dont la mise en scène est très facile, et qui peut être exécuté autour du feu de camp.
+
+%Sur l'air donné ici ou sur l'air de la \emph{Ronde des Moissonneurs} de Fauré.}
+
+%\lilypondfile[staffsize=12]{Partitions/RondeDesBatons/RondeDesBatons.ly}
+
+%\chanson[position=2col]{Partitions/RondeDesBatons/RondeDesBatons}
+
+%%%\separation
+
+
+%\titre{Voix des Allongés}
+
+%\lilypondfile[staffsize=12]{Partitions/Voix_des_Allonges/Voix_des_Allonges.ly}
+
+%\chanson[position=2col]{Partitions/Voix_des_Allonges/Voix_des_Allonges}
+
+
+%\titre{Perçant les écharpes de l'aube}
+
+%\lilypondfile[staffsize=12]{Partitions/PercantLesEcharpesDeLAube/PercantLesEcharpesDeLAube.ly}
+
+%\chanson{Partitions/PercantLesEcharpesDeLAube/PercantLesEcharpesDeLAube}
+
+%%%\separation
+
+
+%\titre{Connais-tu la IX\ieme ?}
+
+%\lilypondfile[staffsize=12]{Partitions/ConnaisTuLaIXe/ConnaisTuLaIXe.ly}
+
+%\chanson{Partitions/ConnaisTuLaIXe/ConnaisTuLaIXe}
+
+
+%\titre[table=Hutte est un grand magasin (la)]{La Hutte est un grand magasin\footnotemark}
+%\footnotetext{Dédié à Maurice \textsc{Barrier}, fondateur de la Hutte, commissaire de Versailles mort au service de ses scouts, le 23 juillet 1923, dans la baie d'Audierne.}
+
+%\lilypondfile[staffsize=12]{Partitions/LaHutteEstUnGrandMagasin/LaHutteEstUnGrandMagasin.ly}
+
+%\chanson{Partitions/LaHutteEstUnGrandMagasin/LaHutteEstUnGrandMagasin}
+
+
+%\titre[table=Si tu veux des Badges]{Si tu veux des Badges\footnotemark}
+%\footnotetext{Air datant de Louis XIII, au chant duquel les troupes françaises entrèrent à Tananarive en 1895.}
+
+%\lilypondfile[staffsize=12]{Partitions/SiTuVeuxDesBadges/SiTuVeuxDesBadges.ly}
+
+%\chanson[position=2col]{Partitions/SiTuVeuxDesBadges/SiTuVeuxDesBadges}
+
+
+%\titre[table=Totem de la Patrouille (le)]{Le Totem de la Patrouille}
+
+%\lilypondfile[staffsize=12]{Partitions/LeTotemDeLaPatrouille/LeTotemDeLaPatrouille.ly}
+
+%\chanson[position=2col]{Partitions/LeTotemDeLaPatrouille/LeTotemDeLaPatrouille}
+
+
+%\titre{Trois Scouts de France}
+
+%\lilypondfile[staffsize=12]{Partitions/TroisScoutsDeFrance/TroisScoutsDeFrance.ly}
+
+%\chanson[position=2col]{Partitions/TroisScoutsDeFrance/TroisScoutsDeFrance}
+
+
+%\titre[table=Chef de troupe a dit (le)]{Le Chef de troupe a dit}\label{lechefdetroupe}
+
+%\lilypondfile[staffsize=12]{Partitions/LeChefDeTroupeADit/LeChefDeTroupeADit.ly}
+
+%\chanson{Partitions/LeChefDeTroupeADit/LeChefDeTroupeADit}
+
+
+%\titre[table=Chef de Patrouille a deux galons (l')]{L'Chef de Patrouille a deux galons}
+
+%\lilypondfile[staffsize=12]{Partitions/LChefDePatrouilleADeuxGalons/LChefDePatrouilleADeuxGalons.ly}
+
+%\chanson{Partitions/LChefDePatrouilleADeuxGalons/LChefDePatrouilleADeuxGalons}
+
+%%%\separation
+
+
+%\titre{J'ai un' p'tit' B. A. à faire}
+
+%\lilypondfile[staffsize=12]{Partitions/JAiUnPtitBAAFaire/JAiUnPtitBAAFaire.ly}
+
+%\chanson{Partitions/JAiUnPtitBAAFaire/JAiUnPtitBAAFaire}
+
+%%%\separation
+
+
+%\titre[table=Chamois (les)]{Les Chamois}
+
+%\lilypondfile[staffsize=12]{Partitions/LesChamois/LesChamois.ly}
+
+%\chanson{Partitions/LesChamois/LesChamois}
+
+
+%\titre{Chant du Routier solitaire}
+
+%\lilypondfile[staffsize=12]{Partitions/ChantDuRoutierSolitaire/ChantDuRoutierSolitaire.ly}
+
+%\chanson{Partitions/ChantDuRoutierSolitaire/ChantDuRoutierSolitaire}
+
+
+%\titre[table=Appel de la route (l')]{L'appel de la route}
+
+%%TODO:Partition:L'appel de la route%\lilypondfile[staffsize=12]{Partitions/LAppelDeLaRoute/LAppelDeLaRoute.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/LAppelDeLaRoute/LAppelDeLaRoute}
+
+
+
+%\titre{Au Chemin blanc}
+
+%\lilypondfile[staffsize=12]{Partitions/AuCheminBlanc/AuCheminBlanc.ly}
+
+%\chanson{Partitions/AuCheminBlanc/AuCheminBlanc}
+
+
+%\titre{C'étaient trois joyeux Routiers}
+
+%\lilypondfile[staffsize=12]{Partitions/CEtaientTroisJoyeuxRoutiers/CEtaientTroisJoyeuxRoutiers.ly}
+
+%\chanson[position=2col]{Partitions/CEtaientTroisJoyeuxRoutiers/CEtaientTroisJoyeuxRoutiers}
+
+
+%\titre[table=Gai\, Du Guesclin]{Gai ! Du Guesclin !}
+
+%\lilypondfile[staffsize=12]{Partitions/GaiDuguesclin/GaiDuguesclin.ly}
+
+%\chanson{Partitions/GaiDuguesclin/GaiDuguesclin}
+
+
+%\titre{Ils étaient trois garçons}
+
+%%TODO:Partition:Ils étaient trois garçons:\lilypondfile[staffsize=12]{Partitions/IlsEtaientTroisGarcons/IlsEtaientTroisGarcons.ly}
+
+%\chanson[numero=1]{Partitions/IlsEtaientTroisGarcons/IlsEtaientTroisGarcons}
+
+
+
+%\partie{Le camp}
+
+
+%\souspartie{Couleurs}
+
+%\filbreak
+%\titre{Couleurs du matin}
+
+%\lilypondfile[staffsize=12]{Partitions/CouleursDuMatin/CouleursDuMatin.ly}
+
+%%\chanson{Partitions/CouleursDuMatin/CouleursDuMatin}
+
+
+%\filbreak
+%\titre{Couleurs du soir}
+
+%\lilypondfile[staffsize=12]{Partitions/CouleursDuSoir/CouleursDuSoir.ly}
+
+%%\chanson{Partitions/CouleursDuSoir/CouleursDuSoir}
+
+
+%\filbreak
+%\titre{Chant des couleurs}
+
+%%TODO:Partition:Chant des couleurs%\lilypondfile[staffsize=12]{Partitions/ChantDesCouleurs/ChantDesCouleurs.ly}
+
+%\chanson[numero=1]{Partitions/ChantDesCouleurs/ChantDesCouleurs}
+
+%\filbreak
+
+
+
+%\souspartie{Arrivée et départ du camp}
+
+%\titre{Voici le camp d'été}
+
+%\lilypondfile[staffsize=12]{Partitions/VoiciLeCampDEte/VoiciLeCampDEte.ly}
+
+%\chanson[position=2col]{Partitions/VoiciLeCampDEte/VoiciLeCampDEte}
+
+
+%\titre[table=Marche au Camp (la)]{La Marche au Camp}
+
+%\lilypondfile[staffsize=12]{Partitions/LaMarcheAuCamp/LaMarcheAuCamp.ly}
+
+%\chanson{Partitions/LaMarcheAuCamp/LaMarcheAuCamp}
+
+
+%\titre{Chanson d'arrivée chez l'hôte}
+
+%\lilypondfile[staffsize=12]{Partitions/ChansonDArriveeChezLHote/ChansonDArriveeChezLHote.ly}
+
+%\chanson{Partitions/ChansonDArriveeChezLHote/ChansonDArriveeChezLHote}
+
+
+%\titre{Merci aux Hôtes}
+
+%\lilypondfile[staffsize=12]{Partitions/MerciAuxHotes/MerciAuxHotes.ly}
+
+%%\chanson{Partitions/MerciAuxHotes/MerciAuxHotes}
+
+
+%\titre[table=Camp modèle (le)]{Le Camp modèle}
+
+%\lilypondfile[staffsize=12]{Partitions/LeCampModele/LeCampModele.ly}
+
+%\chanson{Partitions/LeCampModele/LeCampModele}
+
+
+%\titre{On décampe}
+
+%%TODO:Partition:On décampe:\lilypondfile[staffsize=12]{Partitions/OnDecampe/OnDecampe.ly}
+
+%\chanson[numero=1]{Partitions/OnDecampe/OnDecampe}
+
+
+%\titre{Retour du Camp}
+
+%\lilypondfile[staffsize=12]{Partitions/RetourDuCamp/RetourDuCamp.ly}
+
+%\chanson{Partitions/RetourDuCamp/RetourDuCamp}
+
+
+%\souspartie{Vie au camp}
+
+%\titre[table=Chanson du Plein Air (la)]{La Chanson du Plein Air}
+
+%\lilypondfile[staffsize=12]{Partitions/LaChansonDuPleinAir/LaChansonDuPleinAir.ly}
+
+%\chanson{Partitions/LaChansonDuPleinAir/LaChansonDuPleinAir}
+
+
+%\titre{Souvenirs qui passent}
+
+%%TODO:Partition:Souvenirs qui passent:\lilypondfile[staffsize=12]{Partitions/SouvenirsQuiPassent/SouvenirsQuiPassent.ly}
+
+%\chanson[numero=1]{Partitions/SouvenirsQuiPassent/SouvenirsQuiPassent}
+
+
+%\titre[table=Youkaïdi\, Youkaïda]{Youkaïdi ! Youkaïda !}
+
+%\lilypondfile[staffsize=12]{Partitions/YoukaidiYoukaida/YoukaidiYoukaida.ly}
+
+%\chanson[position=2col]{Partitions/YoukaidiYoukaida/YoukaidiYoukaida}
+
+
+%\titre{Il était une charrette}
+
+%\lilypondfile[staffsize=12]{Partitions/IlEtaitUneCharrette/IlEtaitUneCharrette.ly}
+
+%\chanson{Partitions/IlEtaitUneCharrette/IlEtaitUneCharrette}
+
+
+%\titre{Préviens le CP}
+
+%%TODO:Partition:Préviens le CP%\lilypondfile[staffsize=12]{Partitions/PreviensLeCP/PreviensLeCP.ly}
+
+%\chanson[numero=1]{Partitions/PreviensLeCP/PreviensLeCP}
+
+
+%\titre{Alphabet scout}
+
+%%TODO:Partition:Alphabet scout%\lilypondfile[staffsize=12]{Partitions/AlphabetScout/AlphabetScout.ly}
+
+%\chanson[numero=1]{Partitions/AlphabetScout/AlphabetScout}
+
+
+
+%\titre{Gribouille s'est fait Boy-Scoute}
+
+%\lilypondfile[staffsize=12]{Partitions/GribouilleSEstFaitBoyScoute/GribouilleSEstFaitBoyScoute.ly}
+
+%\chanson[position=2col]{Partitions/GribouilleSEstFaitBoyScoute/GribouilleSEstFaitBoyScoute}
+
+
+%\titre{Mon Ciel est toujours bleu}
+
+%\lilypondfile[staffsize=12]{Partitions/MonCielEstToujoursBleu/MonCielEstToujoursBleu.ly}
+
+%\chanson[position=2col]{Partitions/MonCielEstToujoursBleu/MonCielEstToujoursBleu}
+
+
+%\titre[table=Messe au Camp (la)]{La Messe au Camp}
+
+%\lilypondfile[staffsize=12]{Partitions/LaMesseAuCamp/LaMesseAuCamp.ly}
+
+%\chanson{Partitions/LaMesseAuCamp/LaMesseAuCamp}
+
+
+%\titre{C'est le Vent}
+
+%\lilypondfile[staffsize=12]{Partitions/CEstLeVent/CEstLeVent.ly}
+
+%\chanson{Partitions/CEstLeVent/CEstLeVent}
+
+
+%\titre{En Forêt}
+
+%\lilypondfile[staffsize=12]{Partitions/EnForet/EnForet.ly}
+
+%\chanson{Partitions/EnForet/EnForet}
+
+
+%\titre[table=Moulin (le)]{Le Moulin}
+
+%\lilypondfile[staffsize=12]{Partitions/LeMoulin/LeMoulin.ly}
+
+%\chanson{Partitions/LeMoulin/LeMoulin}
+
+
+%\titre{Retraite sur la Montagne}
+
+%\lilypondfile[staffsize=12]{Partitions/RetraiteSurLaMontagne/RetraiteSurLaMontagne.ly}
+
+%\chanson{Partitions/RetraiteSurLaMontagne/RetraiteSurLaMontagne}
+
+
+%\titre{Chantons nos Montagnes}
+
+%\lilypondfile[staffsize=12]{Partitions/ChantonsNosMontagnes/ChantonsNosMontagnes.ly}
+
+%\chanson[position=2col]{Partitions/ChantonsNosMontagnes/ChantonsNosMontagnes}
+
+
+%\souspartie{La nuit au camp}
+
+%\titre[table=Berceuse du Camp qui chante (la)]{La Berceuse du Camp qui chante}
+
+%\lilypondfile[staffsize=12]{Partitions/LaBerceuseDuCampQuiChante/LaBerceuseDuCampQuiChante.ly}
+
+%\chanson[position=2col]{Partitions/LaBerceuseDuCampQuiChante/LaBerceuseDuCampQuiChante}
+
+
+%\titre[table=Berceuse des Scouts au bois]{La Berceuse des Scouts au bois dormants}
+
+%\lilypondfile[staffsize=12]{Partitions/LaBerceuseDesScoutsAuBoisDormants/LaBerceuseDesScoutsAuBoisDormants.ly}
+
+%\chanson{Partitions/LaBerceuseDesScoutsAuBoisDormants/LaBerceuseDesScoutsAuBoisDormants}
+
+
+%\titre{En Sentinelle}
+
+%\lilypondfile[staffsize=12]{Partitions/EnSentinelle/EnSentinelle.ly}
+
+%\chanson{Partitions/EnSentinelle/EnSentinelle}
+
+
+%\titre[table=Garde au Clair de Lune (la)]{La Garde au Clair de Lune}
+
+%\lilypondfile[staffsize=12]{Partitions/LaGardeAuClairDeLune/LaGardeAuClairDeLune.ly}
+
+%\chanson{Partitions/LaGardeAuClairDeLune/LaGardeAuClairDeLune}
+
+
+\titre[table=Cor (le)]{Le Cor}
+
+%\lilypondfile[staffsize=12]{Partitions/LeCor/LeCor.ly}
+
+\chanson[premiercouplet=1,numero=1]{Partitions/LeCor/LeCor-nonscout}
+
+
+%\souspartie{Chants de veillée}
+
+%\titre{En Chasse}
+
+%\lilypondfile[staffsize=12]{Partitions/EnChasse/EnChasse.ly}
+
+%%\chanson{Partitions/EnChasse/EnChasse}
+
+
+\titre{Ô Saint Hubert}
+
+%TODO:Partition:Ô Saint Hubert%\lilypondfile[staffsize=12]{Partitions/LaSaintHubert/LaSaintHubert.ly}
+
+\chanson[numero=1]{Partitions/LaSaintHubert/LaSaintHubert}
+
+
+%\titre[table=Légende du Feu (la)]{La Légende du Feu}
+
+%\lilypondfile[staffsize=12]{Partitions/LaLegendeDuFeu/LaLegendeDuFeu.ly}
+
+%\chanson[position=2col]{Partitions/LaLegendeDuFeu/LaLegendeDuFeu}
+
+
+%\titre{Entendez-vous dans le feu}
+
+%%TODO:Partition:Entendez-vous dans le feu%\lilypondfile[staffsize=12]{Partitions/EntendezVousDansLeFeu/EntendezVousDansLeFeu.ly}
+
+%\chanson[numero=1]{Partitions/EntendezVousDansLeFeu/EntendezVousDansLeFeu}
+
+
+%\titre{Plus il y a de Scouts ensemble}
+
+%\lilypondfile[staffsize=12]{Partitions/PlusIlYADeScoutsEnsemble/PlusIlYADeScoutsEnsemble.ly}
+
+%\chanson[position=2col]{Partitions/PlusIlYADeScoutsEnsemble/PlusIlYADeScoutsEnsemble}
+
+%%%\separation
+
+
+%\titre[table=Qu'il est chic\, le commissaire]{Qu'il est chic, le commissaire !}
+
+%\lilypondfile[staffsize=12]{Partitions/QuIlEstChicLeCommissaire/QuIlEstChicLeCommissaire.ly}
+
+%%\chanson{Partitions/QuIlEstChicLeCommissaire/QuIlEstChicLeCommissaire}
+
+
+%\titre{Si Jésus revenait au monde}
+
+%\lilypondfile[staffsize=12]{Partitions/SiJesusRevenaitAuMonde/SiJesusRevenaitAuMonde.ly}
+
+%\chanson{Partitions/SiJesusRevenaitAuMonde/SiJesusRevenaitAuMonde}
+
+%%%\separation
+
+
+%\titre{Chant provincial de Flandre}
+
+%\lilypondfile[staffsize=12]{Partitions/ChantProvincialDeFlandre/ChantProvincialDeFlandre.ly}
+
+%\chanson{Partitions/ChantProvincialDeFlandre/ChantProvincialDeFlandre}
+
+%%%\separation
+
+
+%\titre{Éloquence scoute}
+
+%\lilypondfile[staffsize=12]{Partitions/EloquenceScoute/EloquenceScoute.ly}
+
+%\chanson{Partitions/EloquenceScoute/EloquenceScoute}
+
+%%%\separation
+
+
+%\titre[table=Verte Aigrette (la)]{La Verte Aigrette\footnotemark}
+%\footnotetext{Variante : \emph{Il porte bien} sa verte aigrette.}
+
+%\lilypondfile[staffsize=12]{Partitions/LaVerteAigrette/LaVerteAigrette.ly}
+
+%%\chanson{Partitions/LaVerteAigrette/LaVerteAigrette}
+
+%%%\separation
+
+
+%\titre[table=Rameurs (les)]{Les Rameurs\footnotemark}
+%\footnotetext{Canon à quatre voix : chaque voix démarre deux mesures après la précédente.}
+
+%\lilypondfile[staffsize=12]{Partitions/LesRameurs/LesRameurs.ly}
+
+%%\chanson{Partitions/LesRameurs/LesRameurs}
+
+
+\titre{Dans les prisons de Nantes}
+
+%TODO:Partition:Dans les prisons de Nantes%\lilypondfile[staffsize=12]{Partitions/DansLesPrisonsDeNantes/DansLesPrisonsDeNantes.ly}
+
+\chanson[numero=1]{Partitions/DansLesPrisonsDeNantes/DansLesPrisonsDeNantes}
+
+
+%\filbreak
+%\titre[table=Chef (le)]{Le chef}
+
+%%TODO:Partition:Le Chef%\lilypondfile[staffsize=12]{Partitions/LeChef/LeChef.ly}
+
+%\chanson[numero=1]{Partitions/LeChef/LeChef}
+
+
+%\filbreak
+%\titre[table=Coucou (le)]{Le coucou}
+
+%%TODO:Partition:Le coucou%\lilypondfile[staffsize=12]{Partitions/LeCoucou/LeCoucou.ly}
+
+%\chanson[numero=1]{Partitions/LeCoucou/LeCoucou}
+
+
+%\filbreak
+%\titre{J - O - I - E}
+
+%%TODO:Partition:J - O - I - E%\lilypondfile[staffsize=12]{Partitions/JOIEJoie/JOIEJoie.ly}
+
+%\chanson[numero=1]{Partitions/JOIEJoie/JOIEJoie}
+
+
+%\filbreak
+%\titre{Vent frais}
+
+%%TODO:Partition:Vent frais%\lilypondfile[staffsize=12]{Partitions/VentFrais/VentFrais.ly}
+
+%\chanson[numero=1]{Partitions/VentFrais/VentFrais}
+
+
+%\titre{Le roi Arthur}
+
+%%TODO:Partition:Le roi Arthur:\lilypondfile[staffsize=12]{Partitions/LeRoiArthur/LeRoiArthur.ly}
+
+%\chanson[numero=1]{Partitions/LeRoiArthur/LeRoiArthur}
+
+
+%\titre{Red River Valley}
+
+%%TODO:Partition:Red River Valley:\lilypondfile[staffsize=12]{Partitions/RedRiverValley/RedRiverValley.ly}
+
+%\chanson[numero=1]{Partitions/RedRiverValley/RedRiverValley}
+
+
+%\titre[table=Debout\, les gars]{Debout, les gars !}
+
+%%TODO:Partition:Debout, les gars !:\lilypondfile[staffsize=12]{Partitions/DeboutLesGars/DeboutLesGars.ly}
+
+%\chanson[numero=1]{Partitions/DeboutLesGars/DeboutLesGars}
+
+
+%\titre{Elle descend de la montagne}
+
+%%TODO:Partition:Elle descend de la montagne:\lilypondfile[staffsize=12]{Partitions/ElleDescendDeLaMontagne/ElleDescendDeLaMontagne.ly}
+
+%\chanson[numero=1]{Partitions/ElleDescendDeLaMontagne/ElleDescendDeLaMontagne}
+
+
+%\titre{Massey Fergusson}
+
+%%TODO:Partition:Massey Fergusson:\lilypondfile[staffsize=12]{Partitions/MasseyFergusson/MasseyFergusson.ly}
+
+%\chanson[numero=1]{Partitions/MasseyFergusson/MasseyFergusson}
+
+
+%\titre[espace=15]{Je cherche fortune}
+
+%%TODO:Partition:Je cherche fortune:\lilypondfile[staffsize=12]{Partitions/JeChercheFortune/JeChercheFortune.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/JeChercheFortune/JeChercheFortune}
+
+
+%\titre[table=Ah\, les p'tits potes]{Ah ! les p'tits potes}
+
+%%TODO:Partition:Ah ! les p'tits potes%\lilypondfile[staffsize=12]{Partitions/AhLesPtitsPotes/AhLesPtitsPotes.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/AhLesPtitsPotes/AhLesPtitsPotes}
+
+
+\titre[espace=3]{L'homme de Cro-Magnon}
+
+%TODO:Partition:L'homme de Cro-Magnon:\lilypondfile[staffsize=12]{Partitions/LHommeDeCroMagnon/LHommeDeCroMagnon.ly}
+
+\chanson[numero=1]{Partitions/LHommeDeCroMagnon/LHommeDeCroMagnon}
+
+
+%\titre{Esaü}
+
+%%TODO:Partition:Esaü:\lilypondfile[staffsize=12]{Partitions/Esau/Esau.ly}
+
+%\chanson[numero=1]{Partitions/Esau/Esau}
+
+
+%\titre[table=Chèvre (la)]{La chèvre}
+
+%%TODO:Partition:La chèvre:\lilypondfile[staffsize=12]{Partitions/LaChevre/LaChevre.ly}
+
+%\chanson[numero=1]{Partitions/LaChevre/LaChevre}
+
+
+%\titre[table=Crocodile (le),espace=15]{Le crocodile}
+
+%%TODO:Partition:Le crocodile:\lilypondfile[staffsize=12]{Partitions/LeCrocodile/LeCrocodile.ly}
+
+%\chanson[numero=1]{Partitions/LeCrocodile/LeCrocodile}
+
+
+\titre{Fleur d'épine}
+
+%TODO:Partition:Fleur d'épine:\lilypondfile[staffsize=12]{Partitions/FleurDEpine/FleurDEpine.ly}
+
+\chanson[numero=1,position=2col]{Partitions/FleurDEpine/FleurDEpine}
+
+
+%\titre[table=Petit Grégoire (le),espace=15]{Le petit Grégoire}
+
+%%TODO:Partition:Le petit Grégoire%\lilypondfile[staffsize=12]{Partitions/LePetitGregoire/LePetitGregoire.ly}
+
+%\chanson[numero=1]{Partitions/LePetitGregoire/LePetitGregoire}
+
+
+%\titre[table=Violette (la)]{La violette}
+
+%\lilypondfile[staffsize=12]{Partitions/LaViolette/LaViolette.ly}
+
+%\chanson{Partitions/LaViolette/LaViolette}
+
+
+%\titre[table=Soldat belge (le)]{Le soldat belge}
+
+%%TODO:Partition:Le soldat belge%\lilypondfile[staffsize=12]{Partitions/LeSoldatBelge/LeSoldatBelge.ly}
+
+%\chanson[numero=1]{Partitions/LeSoldatBelge/LeSoldatBelge}
+
+
+%\titre[table=Retrouvailles (les)]{Les retrouvailles}
+
+%\lilypondfile[staffsize=12]{Partitions/LesRetrouvailles/LesRetrouvailles.ly}
+
+%\chanson{Partitions/LesRetrouvailles/LesRetrouvailles}
+
+
+%\filbreak
+\titre[table=Gai luron des Flandres (un)]{Un gai luron des Flandres}
+
+%TODO:Partition:Un gai luron des Flandres:\lilypondfile[staffsize=12]{Partitions/UnGaiLuronDesFlandres/UnGaiLuronDesFlandres.ly}
+
+\chanson[numero=1,position=2col]{Partitions/UnGaiLuronDesFlandres/UnGaiLuronDesFlandres}
+
+
+\columnbreak
+\titre{Voguons au vent de mer}
+
+%TODO:Partition:Voguons au vent de mer%\lilypondfile[staffsize=12]{Partitions/VoguonsAuVentDeMer/VoguonsAuVentDeMer.ly}
+
+\chanson[numero=1]{Partitions/VoguonsAuVentDeMer/VoguonsAuVentDeMer}
+
+
+\titre[table=Cosaques (les)]{Les cosaques}
+
+%\lilypondfile[staffsize=12]{Partitions/LesCosaques/LesCosaques.ly}
+
+\chanson[premiercouplet=1,numero=1]{Partitions/LesCosaques/LesCosaques}
+
+
+\titre[espace=15]{La Bohême}
+
+%TODO:Partition:La Bohême:\lilypondfile[staffsize=12]{Partitions/LaBoheme/LaBoheme.ly}
+
+\chanson[numero=1]{Partitions/LaBoheme/LaBoheme}
+
+
+%\titre[table=Crapauds (les)]{Les crapauds}
+
+%%TODO:Partition:Les crapauds:\lilypondfile[staffsize=12]{Partitions/LesCrapauds/LesCrapauds.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/LesCrapauds/LesCrapauds}
+
+
+%\titre{Le feu brille}
+
+%%TODO:Partition:Le feu brille:\lilypondfile[staffsize=12]{Partitions/LeFeuBrille/LeFeuBrille.ly}
+
+%\chanson[numero=1]{Partitions/LeFeuBrille/LeFeuBrille}
+
+
+%\filbreak
+%\titre{C'était dans la nuit brune}
+
+%%TODO:Partition:C'était dans la nuit brune%\lilypondfile[staffsize=12]{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/CEtaitDansLaNuitBrune/CEtaitDansLaNuitBrune}
+
+
+%\filbreak
+%\titre{Maudit sois-tu, carillonneur}
+
+%%TODO:Partition:Maudit sois-tu, carillonneur%\lilypondfile[staffsize=12]{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur.ly}
+
+%\chanson[numero=1]{Partitions/MauditSoisTuCarillonneur/MauditSoisTuCarillonneur}
+
+
+%\filbreak
+%\titre[table=Cloche du vieux manoir (la)]{La cloche du vieux manoir}
+
+%%TODO:Partition:La cloche du vieux manoir%\lilypondfile[staffsize=12]{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir.ly}
+
+%\chanson[numero=1]{Partitions/LaClocheDuVieuxManoir/LaClocheDuVieuxManoir}
+
+%\filbreak
+%\titre{Qui peut faire de la voile sans vent ?}
+
+%%TODO:Partition:Qui peut faire de la voile sans vent ?%\lilypondfile[staffsize=12]{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent.ly}
+
+%\chanson[numero=1]{Partitions/QuiPeutFaireDeLaVoileSansVent/QuiPeutFaireDeLaVoileSansVent}
+
+
+%\filbreak
+%\titre[table=Ronde de nuit (la)]{La ronde de nuit}
+
+%%TODO:Partition:La ronde de nuit:\lilypondfile[staffsize=12]{Partitions/LaRondeDeNuit/LaRondeDeNuit.ly}
+
+%\chanson[numero=1]{Partitions/LaRondeDeNuit/LaRondeDeNuit}
+%\filbreak
+
+
+%\titre{L'enfant au cœur d'or}
+
+%%TODO:Partition:L'enfant au cœur d'or:\lilypondfile[staffsize=12]{Partitions/LEnfantAuCoeurDOr/LEnfantAuCoeurDOr.ly}
+
+%\chanson[numero=1]{Partitions/LEnfantAuCoeurDOr/LEnfantAuCoeurDOr}
+
+
+%\titre[table=Excuses de l'Aspirant (les)]{Les Excuses de l'Aspirant}
+
+%\lilypondfile[staffsize=12]{Partitions/LesExcusesDeLAspirant/LesExcusesDeLAspirant.ly}
+
+%\chanson{Partitions/LesExcusesDeLAspirant/LesExcusesDeLAspirant}
+
+
+%\titre[table=Ah\, qu'il fait bon sur la Montagne]{Ah ! qu'il fait bon sur la Montagne…}
+
+%\lilypondfile[staffsize=12]{Partitions/AhQuIlFaitBonSurLaMontagne/AhQuIlFaitBonSurLaMontagne.ly}
+
+
+%\titre{Sur les monts}
+
+%%TODO:Partition:Sur les monts:\lilypondfile[staffsize=12]{Partitions/SurLesMonts/SurLesMonts.ly}
+
+%\chanson[numero=1]{Partitions/SurLesMonts/SurLesMonts}
+
+
+%\titre[table=Foulard vert (le)]{Le Foulard vert}\label{foulardvert}
+
+%\lilypondfile[staffsize=12]{Partitions/LeFoulardVert/LeFoulardVert.ly}
+
+%\chanson{Partitions/LeFoulardVert/LeFoulardVert}
+
+%%%\separation
+
+
+%\titre[table=Étoile qui pleure (l')]{L'Étoile qui pleure}
+
+%\lilypondfile[staffsize=12]{Partitions/LEtoileQuiPleure/LEtoileQuiPleure.ly}
+
+%\chanson[position=2col]{Partitions/LEtoileQuiPleure/LEtoileQuiPleure}
+
+
+%\titre[table=Cantique des étoiles (le)]{Le Cantique des étoiles}
+
+%\lilypondfile[staffsize=12]{Partitions/LeCantiqueDesEtoiles/LeCantiqueDesEtoiles.ly}
+
+%\chanson{Partitions/LeCantiqueDesEtoiles/LeCantiqueDesEtoiles}
+
+
+%\titre{As-tu compté les étoiles}
+
+%%TODO:Partition:As-tu compté les étoiles%\lilypondfile[staffsize=12]{Partitions/AsTuCompteLesEtoiles/AsTuCompteLesEtoiles.ly}
+
+%\chanson[numero=1]{Partitions/AsTuCompteLesEtoiles/AsTuCompteLesEtoiles}
+
+
+%\titre[table=Espérance (l')]{L'espérance}
+
+%%TODO:Partition:L'espérance%\lilypondfile[staffsize=12]{Partitions/LEsperance/LEsperance.ly}
+
+%\chanson[numero=1]{Partitions/LEsperance/LEsperance}
+
+
+%\titre[table=Chant des marais (le)]{Le chant des marais}
+
+%%TODO:Partition:Le chant des marais%\lilypondfile[staffsize=12]{Partitions/LeChantDesMarais/LeChantDesMarais.ly}
+
+%\chanson[numero=1]{Partitions/LeChantDesMarais/LeChantDesMarais}
+
+\columnbreak
+\titre[table=Cavalcade (la),espace=15]{La cavalcade}
+
+%TODO:Partition:La cavalcade%\lilypondfile[staffsize=12]{Partitions/LaCavalcade/LaCavalcade.ly}
+
+\chanson[numero=1]{Partitions/LaCavalcade/LaCavalcade}
+
+
+%\titre{Je veux voir Dieu}
+
+%%TODO:Partition:Je veux voir Dieu%\lilypondfile[staffsize=12]{Partitions/JeVeuxVoirDieu/JeVeuxVoirDieu.ly}
+
+%\chanson[numero=1]{Partitions/JeVeuxVoirDieu/JeVeuxVoirDieu}
+
+
+%\souspartie{Chants de marche}
+
+%\titre[table=Aïda]{Aïda !}
+
+%\lilypondfile[staffsize=12]{Partitions/Aida/Aida.ly}
+
+%\chanson[premiercouplet=2,refrain=non]{Partitions/Aida/Aida}
+
+
+%\titre{Ami, rejoins-nous}
+
+%%TODO:Partition:Ami, rejoins-nous%\lilypondfile[staffsize=12]{Partitions/AmiRejoinsNous/AmiRejoinsNous.ly}
+
+%\chanson[numero=1]{Partitions/AmiRejoinsNous/AmiRejoinsNous}
+
+
+%\titre[table=Glory\, alleluia]{Glory, alleluia !}
+
+%%TODO:Partition:Glory, alleluia !%\lilypondfile[staffsize=12]{Partitions/GloryAlleluia/GloryAlleluia.ly}
+
+%\chanson[numero=1]{Partitions/GloryAlleluia/GloryAlleluia}
+
+
+%\titre{Allongeons la jambe}
+
+%%TODO:Partition:Allongeons la jambe%\lilypondfile[staffsize=12]{Partitions/AllongeonsLaJambe/AllongeonsLaJambe.ly}
+
+%\chanson[numero=1]{Partitions/AllongeonsLaJambe/AllongeonsLaJambe}
+
+
+\titre{In vino veritas}
+
+%TODO:Partition:In vino veritas\lilypondfile[staffsize=12]{Partitions/InVinoVeritas/InVinoVeritas.ly}
+
+\chanson[numero=1]{Partitions/InVinoVeritas/InVinoVeritas}
+
+
+\titre{Kyrie des gueux}
+
+%TODO:Partition:Kyrie des gueux:\lilypondfile[staffsize=12]{Partitions/KyrieDesGueux/KyrieDesGueux.ly}
+
+\chanson[numero=1,position=2col]{Partitions/KyrieDesGueux/KyrieDesGueux}
+
+
+%\titre[table=Route est longue (la)]{La route est longue}
+
+%%TODO:Partition:La route est longue:\lilypondfile[staffsize=12]{Partitions/LaRouteEstLongue/LaRouteEstLongue.ly}
+
+%\chanson[numero=1]{Partitions/LaRouteEstLongue/LaRouteEstLongue}
+
+
+
+%\partie{Cycle de Chamarande}
+
+%\titre[table=Meute de Cham (la)]{La Meute de Cham}
+
+%\lilypondfile[staffsize=12]{Partitions/LaMeuteDeCham/LaMeuteDeCham.ly}
+
+%\chanson{Partitions/LaMeuteDeCham/LaMeuteDeCham}
+
+
+%\titre[table=Chamarande\, Chamarande]{Chamarande ! Chamarande !}
+
+%\lilypondfile[staffsize=12]{Partitions/ChamarandeChamarande/ChamarandeChamarande.ly}
+
+%\chanson{Partitions/ChamarandeChamarande/ChamarandeChamarande}
+
+
+%\titre{Au Camp de Chamarande}
+
+%\lilypondfile[staffsize=12]{Partitions/AuCampDeChamarande/AuCampDeChamarande.ly}
+
+%\chanson[position=2col]{Partitions/AuCampDeChamarande/AuCampDeChamarande}
+
+
+%\titre[table=Foulards noirs (les)]{Les Foulards noirs\footnotemark}
+%\footnotetext{Équipe fondée en 1930, pour le service du Camp-École durant toute l'année. Elle ne comprenait que des Chevaliers de France.}
+
+%\lilypondfile[staffsize=12]{Partitions/LesFoulardsNoirs/LesFoulardsNoirs.ly}
+
+%\chanson{Partitions/LesFoulardsNoirs/LesFoulardsNoirs}
+
+
+%\titre[table=Bûche de Chamarande (la)]{La Bûche de Chamarande\footnotemark}
+%\footnotetext{L'emblême du Camp-École est une bûche au cœur de laquelle est plantée une hachette.}
+
+%\lilypondfile[staffsize=12]{Partitions/LaBucheDeChamarande/LaBucheDeChamarande.ly}
+
+%\needspace{9\baselineskip}
+%\chanson[position=2col]{Partitions/LaBucheDeChamarande/LaBucheDeChamarande}
+
+
+%\titre[table=Connaissez-vous la Source ?]{Connaissez-vous la Source ?\footnotemark}
+%\footnotetext{Dédié au 9\ieme\ cours de Louvetisme, juillet 1929.}
+
+%\lilypondfile[staffsize=12]{Partitions/ConnaissezVousLaSource/ConnaissezVousLaSource.ly}
+
+%\chanson[position=2col]{Partitions/ConnaissezVousLaSource/ConnaissezVousLaSource}
+
+%%%\separation
+
+
+%\titre{Bonsoir, Chamarande}
+
+%\lilypondfile[staffsize=12]{Partitions/BonsoirChamarande/BonsoirChamarande.ly}
+
+%\chanson{Partitions/BonsoirChamarande/BonsoirChamarande}
+
+%\soustitre{Pour les cours de louvetisme}
+%\chanson{Partitions/BonsoirChamarande/BonsoirChamarande-lvtx}
+
+
+%\titre{Prière du soir de la Troupe}
+
+%\lilypondfile[staffsize=12]{Partitions/PriereDuSoirDeLaTroupe/PriereDuSoirDeLaTroupe.ly}
+%{\footnotesize On pourra remplacer le premier couplet par un couplet dédié au Patron de la Troupe.}
+
+%%\chanson{Partitions/PriereDuSoirDeLaTroupe/PriereDuSoirDeLaTroupe-debut}
+%\chanson{Partitions/PriereDuSoirDeLaTroupe/PriereDuSoirDeLaTroupe}
+
+
+%\titre{Bonsoir à Valloires}
+
+%\chanson{Partitions/BonsoirAValloires/BonsoirAValloires-debut}
+%\chanson{Partitions/BonsoirAValloires/BonsoirAValloires}
+
+
+%\titre{Notre-Dame de Chamarande}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDeChamarande/NotreDameDeChamarande.ly}
+
+%\chanson{Partitions/NotreDameDeChamarande/NotreDameDeChamarande}
+
+
+%\partie{Chansons pour Mowgli}
+
+%\titre[table=Loi de la jungle (la)]{La loi de la jungle}
+
+%\soustitre{Chant officiel des Louveteaux}
+
+%\lilypondfile[staffsize=12]{Partitions/LaLoiDeLaJungle/LaLoiDeLaJungle.ly}
+
+%\chanson{Partitions/LaLoiDeLaJungle/LaLoiDeLaJungle}
+
+%%%\separation
+
+
+%\titre{Nous arrivons souplement}
+
+%\lilypondfile[staffsize=12]{Partitions/NousArrivonsSouplement/NousArrivonsSouplement.ly}
+
+%\chanson{Partitions/NousArrivonsSouplement/NousArrivonsSouplement}
+
+
+%\titre{Jadis un petit d'homme }
+
+%%TODO:Partition:Jadis un petit d'homme :\lilypondfile[staffsize=12]{Partitions/JadisUnPetitDHomme/JadisUnPetitDHomme.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/JadisUnPetitDHomme/JadisUnPetitDHomme}
+
+
+%\titre{Tiens, tiens, tiens, Akéla qui vient}
+
+%%TODO:Partition:Tiens, tiens, tiens, Akéla qui vient:\lilypondfile[staffsize=12]{Partitions/TiensTiensTiensAkelaQuiVient/TiensTiensTiensAkelaQuiVient.ly}
+
+%\chanson[numero=1]{Partitions/TiensTiensTiensAkelaQuiVient/TiensTiensTiensAkelaQuiVient}
+
+
+%\titre{Accueil du nouveau}
+
+%%TODO:Partition:Accueil du nouveau:\lilypondfile[staffsize=12]{Partitions/AccueilDuNouveau/AccueilDuNouveau.ly}
+
+%\chanson[numero=1]{Partitions/AccueilDuNouveau/AccueilDuNouveau}
+
+
+%\titre[espace=15]{Appel des louveteaux au Conseil}
+
+%%TODO:Partition:Appel des louveteaux au Conseil:\lilypondfile[staffsize=12]{Partitions/AppelDesLouveteauxAuConseil/AppelDesLouveteauxAuConseil.ly}
+
+%\chanson[numero=1]{Partitions/AppelDesLouveteauxAuConseil/AppelDesLouveteauxAuConseil}
+
+
+%\titre{Appel des Vieux-Loups au Conseil}
+
+%%TODO:Partition:Appel des Vieux-Loups au Conseil:\lilypondfile[staffsize=12]{Partitions/AppelDesVieuxLoupsAuConseil/AppelDesVieuxLoupsAuConseil.ly}
+
+%\chanson[numero=1]{Partitions/AppelDesVieuxLoupsAuConseil/AppelDesVieuxLoupsAuConseil}
+
+
+%\titre{Je te l'avais bien dit}
+
+%%TODO:Partition:JeTeLAvaisBienDit:\lilypondfile[staffsize=12]{Partitions/JeTeLAvaisBienDit/JeTeLAvaisBienDit.ly}
+
+%\chanson[numero=1]{Partitions/JeTeLAvaisBienDit/JeTeLAvaisBienDit}
+
+
+%\titre{C'est la meute qui t'appelle}
+
+%%TODO:Partition:C'est la meute qui t'appelle:\lilypondfile[staffsize=12]{Partitions/CEstLaMeuteQuiTAppelle/CEstLaMeuteQuiTAppelle.ly}
+
+%\chanson[numero=1]{Partitions/CEstLaMeuteQuiTAppelle/CEstLaMeuteQuiTAppelle}
+
+
+%\titre[espace=15]{Qui donc rassemblera sa sizaine ?}
+
+%%TODO:Partition:Qui donc rassemblera sa sizaine ?:\lilypondfile[staffsize=12]{Partitions/QuiDoncRassembleraSaSizaine/QuiDoncRassembleraSaSizaine.ly}
+
+%\chanson[numero=1]{Partitions/QuiDoncRassembleraSaSizaine/QuiDoncRassembleraSaSizaine}
+
+
+%\titre[espace=15]{C'est le Rocher du Conseil}
+
+%%TODO:Partition:C'est le Rocher du Conseil:\lilypondfile[staffsize=12]{Partitions/CEstLeRocherDuConseil/CEstLeRocherDuConseil.ly}
+
+%\chanson[numero=1]{Partitions/CEstLeRocherDuConseil/CEstLeRocherDuConseil}
+
+
+%\titre{Chanson de la nuit}
+
+%%TODO:Partition:Chanson de la nuit:\lilypondfile[staffsize=12]{Partitions/ChansonDeLaNuit/ChansonDeLaNuit.ly}
+
+%\chanson[numero=1]{Partitions/ChansonDeLaNuit/ChansonDeLaNuit}
+
+
+%\titre{Dans la jungle profonde}
+
+%%TODO:Partition:Dans la jungle profonde:\lilypondfile[staffsize=12]{Partitions/DansLaJungleProfonde/DansLaJungleProfonde.ly}
+
+%\chanson[numero=1]{Partitions/DansLaJungleProfonde/DansLaJungleProfonde}
+
+
+%\titre{L'édit de la jungle}
+
+%%TODO:Partition:L'édit de la jungle:\lilypondfile[staffsize=12]{Partitions/LEditDeLaJungle/LEditDeLaJungle.ly}
+
+%\chanson[numero=1]{Partitions/LEditDeLaJungle/LEditDeLaJungle}
+
+
+%\titre{Être louveteau}
+
+%%TODO:Partition:EtreLouveteau:\lilypondfile[staffsize=12]{Partitions/EtreLouveteau/EtreLouveteau.ly}
+
+%\chanson[numero=1]{Partitions/EtreLouveteau/EtreLouveteau}
+
+
+%\titre[table=Fête de Baloo (la)]{La fête de Baloo}
+
+%%TODO:Partition:La fête de Baloo:\lilypondfile[staffsize=12]{Partitions/LaFeteDeBaloo/LaFeteDeBaloo.ly}
+
+%\chanson[numero=1]{Partitions/LaFeteDeBaloo/LaFeteDeBaloo}
+
+
+%\titre[table=Histoire de Mowgli (l')]{L'histoire de Mowgli}
+
+%%TODO:Partition:L'histoire de Mowgli:\lilypondfile[staffsize=12]{Partitions/LHistoireDeMowgli/LHistoireDeMowgli.ly}
+
+%\chanson[numero=1]{Partitions/LHistoireDeMowgli/LHistoireDeMowgli}
+
+
+%\titre[table=Loup de Gubbio (le)]{Le loup de Gubbio}
+
+%%TODO:Partition:Le loup de Gubbio:\lilypondfile[staffsize=12]{Partitions/LeLoupDeGubbio/LeLoupDeGubbio.ly}
+
+%\chanson[numero=1]{Partitions/LeLoupDeGubbio/LeLoupDeGubbio}
+
+
+%\titre[table=Louveteau\, souris et chante,espace=15]{Louveteau, souris et chante\footnotemark}
+%\footnotetext{Sur l'air de \emph{Il était une bergère}.}
+
+%%TODO:Partition:Louveteau, souris et chante:\lilypondfile[staffsize=12]{Partitions/LouveteauSourisEtChante/LouveteauSourisEtChante.ly}
+
+%\chanson[numero=1]{Partitions/LouveteauSourisEtChante/LouveteauSourisEtChante}
+
+
+%\titre[table=Meute s'en va-t-en chasse (la)]{La meute s'en va-t-en chasse\footnotemark}
+%\footnotetext{Sur l'air de \emph{Malbrough s'en va-t-en guerre}.}
+
+%%TODO:Partition:La meute s'en va-t-en chasse:\lilypondfile[staffsize=12]{Partitions/LaMeuteSEnVaTEnChasse /LaMeuteSEnVaTEnChasse .ly}
+
+%\chanson[numero=1]{Partitions/LaMeuteSEnVaTEnChasse/LaMeuteSEnVaTEnChasse}
+
+
+%\titre[espace=15]{Nous n'oublierons pas sa promesse}
+
+%%TODO:Partition:Nous n'oublierons pas sa promesse:\lilypondfile[staffsize=12]{Partitions/NousNOublieronsPasSaPromesse/NousNOublieronsPasSaPromesse.ly}
+
+%\chanson[numero=1]{Partitions/NousNOublieronsPasSaPromesse/NousNOublieronsPasSaPromesse}
+
+
+%\titre[table=Ô loup\, entends-tu Akéla ?]{Ô loup, entends-tu Akéla ?\footnotemark}
+%\footnotetext{Sur l'air du \emph{chant des partisans}.}
+
+%%TODO:Partition:Ô loup, entends-tu Akéla ?:\lilypondfile[staffsize=12]{Partitions/OLoupEntendsTuAkela/OLoupEntendsTuAkela.ly}
+
+%\chanson[numero=1]{Partitions/OLoupEntendsTuAkela/OLoupEntendsTuAkela}
+
+
+%\titre[table=Ô loup\, lève-toi \!]{Ô loup, lève-toi !}
+
+%%TODO:Partition:Ô loup, lève-toi !:\lilypondfile[staffsize=12]{Partitions/OLoupLeveToi/OLoupLeveToi.ly}
+
+%\chanson[numero=1]{Partitions/OLoupLeveToi/OLoupLeveToi}
+
+
+%\titre[table=Oui\, c'est nous les louveteaux]{Oui, c'est nous les louveteaux}
+
+%%TODO:Partition:Oui, c'est nous les louveteaux:\lilypondfile[staffsize=12]{Partitions/OuiCEstNousLesLouveteaux/OuiCEstNousLesLouveteaux.ly}
+
+%\chanson[numero=1]{Partitions/OuiCEstNousLesLouveteaux/OuiCEstNousLesLouveteaux}
+
+
+%\titre[table=Petit d'homme (le)]{Le petit d'homme}
+
+%%TODO:Partition:Le petit d'homme:\lilypondfile[staffsize=12]{Partitions/LePetitDHomme/LePetitDHomme.ly}
+
+%\chanson[numero=1]{Partitions/LePetitDHomme/LePetitDHomme}
+
+
+%\titre{Quand de très bon matin}
+
+%%TODO:Partition:Quand de très bon matin:\lilypondfile[staffsize=12]{Partitions/QuandDeTresBonMatin/QuandDeTresBonMatin.ly}
+
+%\chanson[numero=1]{Partitions/QuandDeTresBonMatin/QuandDeTresBonMatin}
+
+
+%\titre[table=Quand Père Loup porta Mowgli,espace=15]{Quand Père Loup porta Mowgli\footnotemark}
+%\footnotetext{Sur l'air de \emph{Mon père m'a donné un mari}.}
+
+%%TODO:Partition:Quand Père Loup porta Mowgli:\lilypondfile[staffsize=12]{Partitions/QuandPereLoupPortaMowgli/QuandPereLoupPortaMowgli.ly}
+
+%\chanson[numero=1]{Partitions/QuandPereLoupPortaMowgli/QuandPereLoupPortaMowgli}
+
+
+%\titre[table=Menaces aux Loups]{Menaces aux Loups\footnotemark}
+%\footnotetext{Chant officiel de la cérémonie de Promesse d'un Louveteau.}
+
+%\lilypondfile[staffsize=12]{Partitions/MenacesAuxLoups/MenacesAuxLoups.ly}
+
+%\chanson{Partitions/MenacesAuxLoups/MenacesAuxLoups}
+
+
+%\titre[table=Petit Loup bien propre (le)]{Le petit Loup bien propre}
+
+%\lilypondfile[staffsize=12]{Partitions/LePetitLoupBienPropre/LePetitLoupBienPropre.ly}
+
+%\chanson{Partitions/LePetitLoupBienPropre/LePetitLoupBienPropre}
+
+
+%\titre[table=Louveteau propre (le)]{Le louveteau propre}
+
+%%TODO:Partition:Le louveteau propre:\lilypondfile[staffsize=12]{Partitions/LeLouveteauPropre/LeLouveteauPropre.ly}
+
+%\chanson[numero=1]{Partitions/LeLouveteauPropre/LeLouveteauPropre}
+
+
+%\titre[table=Peau de Shere Khan (la)]{La Peau de Shere Khan}
+
+%{\footnotesize Cette ronde se chante sur l'air de \emph{La Tour, prends garde !} et se mime de façon analogue. D'un côté, Shere Khan, le Tigre, de l'autre, le Roi de la Jungle, entouré de tous les autres animaux mentionnés dans l'Histoire de Mowgli. − Entre les deux, Mowgli qui provoque Shere Khan et demande au Roi de la Jungle l'aide de tous les animaux successivement pour vaincre Shere Khan.\par}
+
+%\lilypondfile[staffsize=12]{Partitions/LaPeauDeShereKhan/LaPeauDeShereKhan.ly}
+
+%\chanson[position=2col]{Partitions/LaPeauDeShereKhan/LaPeauDeShereKhan}
+%\chanson{Partitions/LaPeauDeShereKhan/LaPeauDeShereKhan-fin}
+
+
+%\titre[table=Marche des Petits-Lapins (la)]{La marche des Petits-Lapins}
+
+%\lilypondfile[staffsize=12]{Partitions/LaMarcheDesPetitsLapins/LaMarcheDesPetitsLapins.ly}
+
+
+%\titre[table=Chef de Sizaine (le)]{Le Chef de Sizaine}
+
+%\lilypondfile[staffsize=12]{Partitions/LeChefDeSizaine/LeChefDeSizaine.ly}
+
+%\chanson{Partitions/LeChefDeSizaine/LeChefDeSizaine}
+
+
+%\titre{Sur le Pont d'Chamarande}
+
+%\lilypondfile[staffsize=12]{Partitions/SurLePontDChamarande/SurLePontDChamarande.ly}
+
+%\chanson{Partitions/SurLePontDChamarande/SurLePontDChamarande}
+
+
+%\titre{Ô Cheftaine, où sont vos Loups ?}
+
+%\lilypondfile[staffsize=12]{Partitions/OCheftaineOuSontVosLoups/OCheftaineOuSontVosLoups.ly}
+
+%\chanson{Partitions/OCheftaineOuSontVosLoups/OCheftaineOuSontVosLoups}
+
+
+%\titre{Faveur de jungle}
+
+%%TODO:Partition:Faveur de jungle:\lilypondfile[staffsize=12]{Partitions/FaveurDeJungle/FaveurDeJungle.ly}
+
+%\chanson[numero=1]{Partitions/FaveurDeJungle/FaveurDeJungle}
+
+
+%\titre[table=Chant d'adieu louveteaux]{Chant d'adieu louveteaux\footnotemark}
+
+%\footnotetext{Pour la mélodie, voir p.~\pageref{AuRevoir}.}
+
+%\chanson[numero=1,position=2col]{Partitions/ChantDAdieuLouveteau/ChantDAdieuLouveteau}
+
+
+%\titre{Noël des Louveteaux}
+
+%\lilypondfile[staffsize=12]{Partitions/NoelDesLouveteaux/NoelDesLouveteaux.ly}
+
+%\chanson{Partitions/NoelDesLouveteaux/NoelDesLouveteaux}
+
+
+%\titre{Noël de Berck}
+
+%\lilypondfile[staffsize=12]{Partitions/NoelDeBerck/NoelDeBerck.ly}
+
+%\chanson{Partitions/NoelDeBerck/NoelDeBerck}
+
+
+%\titre{C'est tout là-bas}
+
+%\lilypondfile[staffsize=12]{Partitions/CEstToutLaBas/CEstToutLaBas.ly}
+
+%\chanson{Partitions/CEstToutLaBas/CEstToutLaBas}
+
+
+%\titre{Berceuse Petits Loups}
+
+%\lilypondfile[staffsize=12]{Partitions/BerceusePetitsLoups/BerceusePetitsLoups.ly}
+
+%\chanson[position=2col]{Partitions/BerceusePetitsLoups/BerceusePetitsLoups}
+
+
+%\titre{Si Jésus arrivait au Camp}
+
+%\lilypondfile[staffsize=12]{Partitions/SiJesusArrivaitAuCamp/SiJesusArrivaitAuCamp.ly}
+
+%\chanson{Partitions/SiJesusArrivaitAuCamp/SiJesusArrivaitAuCamp}
+
+
+%\titre{Écoutez-nous, bon Saint François}
+
+%\lilypondfile[staffsize=12]{Partitions/EcoutezNousBonSaintFrancois/EcoutezNousBonSaintFrancois.ly}
+
+%\chanson{Partitions/EcoutezNousBonSaintFrancois/EcoutezNousBonSaintFrancois}
+
+
+%\titre{Salve Regina des Petits Loups}
+
+%\lilypondfile[staffsize=12]{Partitions/SalveReginaDesPetitsLoups/SalveReginaDesPetitsLoups.ly}
+
+%\chanson[position=2col]{Partitions/SalveReginaDesPetitsLoups/SalveReginaDesPetitsLoups}
+
+
+%\titre[table=Chant de promesse louveteau]{Chant de promesse louveteau\footnotemark}
+
+%\footnotetext{Pour la mélodie, voir p.~\pageref{Promesse}. Voir aussi la note au même endroit…}
+
+%\chanson[numero=1,position=2col]{Partitions/ChantDePromesseLouveteau/ChantDePromesseLouveteau}
+
+
+
+%\partie{Cantiques}
+
+%\titre[table=Cantique de la Promesse (le)]{Le Cantique de la Promesse\footnotemark}\label{Promesse}
+%\footnotetext{Ce chant ne doit pas servir aux Louveteaux, la mélodie même est réservée aux Scouts et aux Guides. \emph{A fortiori}, aucune adaptation à des groupements non scouts ne peut être autorisée.}
+
+%\lilypondfile[staffsize=12]{Partitions/ChantDePromesse/ChantDePromesse.ly}
+
+%\chanson[position=2col]{Partitions/ChantDePromesse/ChantDePromesse}
+
+%%%\separation
+
+
+%\titre{Sur mon Honneur}
+
+%\lilypondfile[staffsize=12]{Partitions/SurMonHonneur/SurMonHonneur.ly}
+
+
+%\titre{Prière du Camp au lever du soleil}
+
+%\lilypondfile[staffsize=12]{Partitions/PriereDuCampAuLeverDuSoleil/PriereDuCampAuLeverDuSoleil.ly}
+
+%\chanson{Partitions/PriereDuCampAuLeverDuSoleil/PriereDuCampAuLeverDuSoleil}
+
+%%%\separation
+
+
+%\titre{Mon Dieu, voici ma liberté}
+
+%\lilypondfile[staffsize=12]{Partitions/MonDieuVoiciMaLiberte/MonDieuVoiciMaLiberte.ly}
+
+
+%\titre[table=Prière du Scout]{Prière du Scout\footnotemark}
+%\footnotetext{À chaque couplet, le refrain est fait de la reprise des deux premiers vers de ce même couplet.}
+
+%\lilypondfile[staffsize=12]{Partitions/PriereDuScout/PriereDuScout.ly}
+
+%\chanson{Partitions/PriereDuScout/PriereDuScout}
+
+
+%\titre{Comme un enfant}
+
+%\lilypondfile[staffsize=12]{Partitions/CommeUnEnfant/CommeUnEnfant.ly}
+
+%\chanson[position=2col]{Partitions/CommeUnEnfant/CommeUnEnfant}
+
+
+%\titre{Jésus à moi}
+
+%\lilypondfile[staffsize=12]{Partitions/JesusAMoi/JesusAMoi.ly}
+
+%\chanson{Partitions/JesusAMoi/JesusAMoi}
+
+%%%\separation
+
+
+%\titre{Jésus que j'adore en l'Hostie}
+
+%\lilypondfile[staffsize=12]{Partitions/JesusQueJAdoreEnLHostie/JesusQueJAdoreEnLHostie.ly}
+
+%\chanson{Partitions/JesusQueJAdoreEnLHostie/JesusQueJAdoreEnLHostie}
+
+
+%\titre{Plus près de toi, mon Dieu}
+
+%\lilypondfile[staffsize=12]{Partitions/PlusPresDeToiMonDieu/PlusPresDeToiMonDieu.ly}
+
+%\chanson[position=2col]{Partitions/PlusPresDeToiMonDieu/PlusPresDeToiMonDieu}
+
+
+%\titre{Ubi caritas}
+
+%\cantus{Antienne}{UbiCaritas}{6.}{}
+
+
+%\titre{Panis Angelicus}
+
+%\lilypondfile[staffsize=12]{Partitions/PanisAngelicus/PanisAngelicus.ly}
+
+
+%\souspartie{Avant et après les repas}
+
+%\titre{Bénédicité}
+
+%\lilypondfile[staffsize=12]{Partitions/Benedicite/Benedicite.ly}
+
+%%\chanson{Partitions/Benedicite/Benedicite}
+
+
+%\titre{Grâces}
+
+%\lilypondfile[staffsize=12]{Partitions/Graces/Graces.ly}
+
+%%\chanson{Partitions/Graces/Graces}
+
+
+%\souspartie{Prières du soir}
+
+
+%\titre{Prière à la Nuit}
+
+%\lilypondfile[staffsize=12]{Partitions/PriereALaNuit/PriereALaNuit.ly}
+
+%\chanson{Partitions/PriereALaNuit/PriereALaNuit}
+
+
+%\titre{Demeurez avec nous, bon Maître}
+
+%\lilypondfile[staffsize=12]{Partitions/DemeurezAvecNousBonMaitre/DemeurezAvecNousBonMaitre.ly}
+
+%\chanson{Partitions/DemeurezAvecNousBonMaitre/DemeurezAvecNousBonMaitre}
+
+
+%\titre[table=Bergers rentrent leurs troupeaux (les)]{Les Bergers rentrent leurs troupeaux}
+
+%\lilypondfile[staffsize=12]{Partitions/LesBergersRentrentLeursTroupeaux/LesBergersRentrentLeursTroupeaux.ly}
+
+%\chanson{Partitions/LesBergersRentrentLeursTroupeaux/LesBergersRentrentLeursTroupeaux}
+
+
+%\titre[table=Cantique des Patrouilles (le)]{Le cantique des Patrouilles}
+
+%\lilypondfile[staffsize=12]{Partitions/LeCantiqueDesPatrouilles/LeCantiqueDesPatrouilles.ly}
+
+%\chanson{Partitions/LeCantiqueDesPatrouilles/LeCantiqueDesPatrouilles}
+
+
+%\titre{Avant d'aller dormir}
+
+%%TODO:Partition:Avant d'aller dormir%\lilypondfile[staffsize=12]{Partitions/AvantDAllerDormir/AvantDAllerDormir.ly}
+
+%\chanson[numero=1]{Partitions/AvantDAllerDormir/AvantDAllerDormir}
+
+
+%\titre{Complies rustiques}
+
+%\lilypondfile[staffsize=12]{Partitions/CompliesRustiques/CompliesRustiques.ly}
+
+%%\chanson{Partitions/CompliesRustiques/CompliesRustiques}
+
+
+%\titre{Te lucis ante terminum}
+
+%\cantus{Hymne}{TeLucis}{8.}{}
+
+%\needspace{3\baselineskip}
+
+%\cantus{Hymne}{TeLucis-FR}{8.}{}
+
+
+%\titre{In manus tuas}
+
+%\cantus{Repons}{InManus}{6.}{}
+
+%\cantus{Verset}{CustodiNos}{}{}
+
+
+%\needspace{.6\paperheight}
+
+%\titre{Entre vos mains}
+
+%\cantus{Repons}{InManus-FR}{6.}{}
+
+%\cantus{Verset}{CustodiNos-FR}{}{}
+
+
+%\titre{In manus tuas - TP}
+
+%\cantus{Repons}{InManus-TP}{6.}{}
+
+%\cantus{Verset}{CustodiNos-TP}{}{}
+
+
+%\titre{C'est la nuit}
+
+%\lilypondfile[staffsize=12]{Partitions/CEstLaNuit/CEstLaNuit.ly}
+
+
+%\souspartie{À la Vierge Marie}
+
+%\titre{Notre-Dame du Matin}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDuMatin/NotreDameDuMatin.ly}
+
+%\chanson{Partitions/NotreDameDuMatin/NotreDameDuMatin}
+
+
+%\titre{Notre-Dame de Joie}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDeJoie/NotreDameDeJoie.ly}
+
+%\chanson{Partitions/NotreDameDeJoie/NotreDameDeJoie}
+
+
+%\titre{Notre-Dame du Chemin}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDuChemin/NotreDameDuChemin.ly}
+
+%\chanson{Partitions/NotreDameDuChemin/NotreDameDuChemin}
+
+
+%\titre{Notre-Dame de la Paix}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDeLaPaix/NotreDameDeLaPaix.ly}
+
+%\chanson{Partitions/NotreDameDeLaPaix/NotreDameDeLaPaix}
+
+
+%\titre{Notre-Dame des Bois}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDesBois/NotreDameDesBois.ly}
+
+%\chanson{Partitions/NotreDameDesBois/NotreDameDesBois}
+
+
+%\titre{Notre-Dame des Éclaireurs}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDesEclaireurs/NotreDameDesEclaireurs.ly}
+
+%\chanson{Partitions/NotreDameDesEclaireurs/NotreDameDesEclaireurs}
+
+
+%\titre{Notre-Dame de la Jeunesse}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameDeLaJeunesse/NotreDameDeLaJeunesse.ly}
+
+%%\chanson{Partitions/NotreDameDeLaJeunesse/NotreDameDeLaJeunesse}
+
+
+%\titre{Notre-Dame Angevine}
+
+%\lilypondfile[staffsize=12]{Partitions/NotreDameAngevine/NotreDameAngevine.ly}
+
+%\chanson[position=2col]{Partitions/NotreDameAngevine/NotreDameAngevine}
+
+
+%\titre{Bénissez Marie}
+
+%{\renewcommand{\thefootnote}{}\footnotetext{Le refrain a été fait pour être chanté à bouche fermée ; on peut cependant, si l'on préfère, y adapter les paroles \emph{Ave María} comme indiqué sur la partition.}}
+
+%\lilypondfile[staffsize=12]{Partitions/BenissezMarie/BenissezMarie.ly}
+
+%\vspace{-1\baselineskip}
+%\chanson[position=2col]{Partitions/BenissezMarie/BenissezMarie}
+
+
+%\titre{Venez, venez, Vierge Marie}
+
+%\lilypondfile[staffsize=12]{Partitions/VenezVenezViergeMarie/VenezVenezViergeMarie.ly}
+
+
+%\titre{Ô Mère de Jésus-Christ}
+
+%\lilypondfile[staffsize=12]{Partitions/OMereDeJesusChrist/OMereDeJesusChrist.ly}
+
+%\chanson{Partitions/OMereDeJesusChrist/OMereDeJesusChrist}
+
+
+%\titre{Je mets ma confiance}
+
+%%TODO:Partition:Je mets ma confiance%\lilypondfile[staffsize=12]{Partitions/JeMetsMaConfiance/JeMetsMaConfiance.ly}
+
+%\chanson[numero=1]{Partitions/JeMetsMaConfiance/JeMetsMaConfiance}
+
+
+%\souspartie{Aux Saints}
+
+%\titre[table=Bon Guide (le)]{Le bon Guide}
+
+%\lilypondfile[staffsize=12]{Partitions/LeBonGuide/LeBonGuide.ly}
+
+%\chanson[position=2col]{Partitions/LeBonGuide/LeBonGuide}
+
+
+%\titre[table=Chemin de Saint-Jacques (le)]{Le Chemin de Saint-Jacques}
+
+%\lilypondfile[staffsize=12]{Partitions/LeCheminDeSaintJacques/LeCheminDeSaintJacques.ly}
+
+%\chanson{Partitions/LeCheminDeSaintJacques/LeCheminDeSaintJacques}
+
+
+%\titre{Saint Georges des Scouts}
+
+%\lilypondfile[staffsize=12]{Partitions/SaintGeorgesDesScouts/SaintGeorgesDesScouts.ly}
+
+%\enlargethispage{3\baselineskip}\vspace{-1\baselineskip plus \baselineskip}
+%\parbox{\linewidth}{%
+%\chanson[position=2col]{Partitions/SaintGeorgesDesScouts/SaintGeorgesDesScouts}%
+%}
+
+
+%\titre{Saint Louis, Monseigneur de France}
+
+%\vspace{0\baselineskip minus 2\baselineskip}
+%\lilypondfile[staffsize=12]{Partitions/SaintLouisMonseigneurDeFrance/SaintLouisMonseigneurDeFrance.ly}
+%\pagebreak[3]
+
+%\chanson{Partitions/SaintLouisMonseigneurDeFrance/SaintLouisMonseigneurDeFrance}
+
+
+%\titre{Prière à Sainte Jeanne d'Arc}
+
+%\lilypondfile[staffsize=12]{Partitions/PriereASteJeanneDArc/PriereASteJeanneDArc.ly}
+
+%\chanson{Partitions/PriereASteJeanneDArc/PriereASteJeanneDArc}
+
+
+%\titre{Ô petite Sainte bénie}
+
+%\lilypondfile[staffsize=12]{Partitions/OPetiteSainteBenie/OPetiteSainteBenie.ly}
+
+%\chanson{Partitions/OPetiteSainteBenie/OPetiteSainteBenie}
+
+
+%\titre{Rentrés à la Maison}
+
+%\lilypondfile[staffsize=12]{Partitions/RentresALaMaison/RentresALaMaison.ly}
+
+%\chanson{Partitions/RentresALaMaison/RentresALaMaison}
+
+
+%\titre[table=Joyeux au-revoir (le)]{Le joyeux au-revoir\footnotemark}\label{AuRevoir}
+
+%\footnotetext{L'au-revoir scout n'est pas une cérémonie funèbre : éviter de le rendre trop émouvant. Le rythme est joyeux et rapide, plus encore au refrain.
+
+%Former le cercle, croiser les mains, chacun saisissant de sa main gauche la main droite de son voisin. Aucun mouvement des bras pendant le couplet ; scander le \emph{refrain seul} par un mouvement des bras \emph{de haut en bas}, les bras retombant sur la première note de chaque mesure.}
+
+%\lilypondfile[staffsize=11]{Partitions/LeJoyeuxAuRevoir/LeJoyeuxAuRevoir.ly}
+
+%\chanson{Partitions/LeJoyeuxAuRevoir/LeJoyeuxAuRevoir}
+
+
+%\partie[table=Chants vendéens et contre-révolutionnaires]{Chants vendéens\\\ \\
+%	et\\\ \\
+%	contre-révolutionnaires}
+
+%\titre{Chant de Monsieur Henri}
+
+%%TODO:Partition:Chant de Monsieur Henri%\lilypondfile[staffsize=12]{Partitions/ChantDeMonsieurHenri/ChantDeMonsieurHenri.ly}
+
+%\chanson[numero=1]{Partitions/ChantDeMonsieurHenri/ChantDeMonsieurHenri}
+
+
+%\titre[table=Bleus sont là (les)]{Les Bleus sont là}
+
+%%TODO:Partition:Les Bleus sont là%\lilypondfile[staffsize=12]{Partitions/LesBleusSontLa/LesBleusSontLa.ly}
+
+%\chanson[numero=1]{Partitions/LesBleusSontLa/LesBleusSontLa}
+
+
+%\titre[table=Mouchoirs de Cholet (les),espace=15]{Les mouchoirs de Cholet\footnotemark}
+%\footnotetext{Voir la mélodie p. \pageref{foulardvert}.}
+
+%%\lilypondfile[staffsize=12]{Partitions/LesMouchoirsDeCholet/LesMouchoirsDeCholet.ly}
+
+%\chanson[numero=1]{Partitions/LesMouchoirsDeCholet/LesMouchoirsDeCholet}
+
+
+\titre[table=Ligue noire (la)]{La ligue noire}
+
+%TODO:Partition:La ligue noire%\lilypondfile[staffsize=12]{Partitions/LaLigueNoire/LaLigueNoire.ly}
+
+\chanson[numero=1]{Partitions/LaLigueNoire/LaLigueNoire}
+
+
+\titre[table=Partisans blancs (les)]{Les partisans blancs}
+
+%TODO:Partition:Les partisans blancs%\lilypondfile[staffsize=12]{Partitions/LesPartisansBlancs/LesPartisansBlancs.ly}
+
+\chanson[numero=1]{Partitions/LesPartisansBlancs/LesPartisansBlancs}
+
+
+\titre[espace=15]{Claquez, bannières}
+
+%TODO:Partition:Claquez, bannières:\lilypondfile[staffsize=12]{Partitions/ClaquezBannieres/ClaquezBannieres.ly}
+
+\chanson[numero=1]{Partitions/ClaquezBannieres/ClaquezBannieres}
+
+
+%\titre[espace=15,table=France bouge (la)]{La France bouge}
+
+%%TODO:Partition:La France bouge%\lilypondfile[staffsize=12]{Partitions/LaFranceBouge/LaFranceBouge.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/LaFranceBouge/LaFranceBouge}
+
+
+\titre{Les Lansquenets}
+
+%TODO:Partition:Les Lansquenets:\lilypondfile[staffsize=12]{Partitions/LesLansquenets/LesLansquenets.ly}
+
+\chanson[numero=1]{Partitions/LesLansquenets/LesLansquenets}
+
+
+
+
+%\partie{Chants de tradition}
+
+
+%\titre{File la laine}
+
+%%TODO:Partition:File la laine:\lilypondfile[staffsize=12]{Partitions/FileLaLaine/FileLaLaine.ly}
+
+%\chanson[numero=1]{Partitions/FileLaLaine/FileLaLaine}
+
+
+\columnbreak
+\titre[table=Strasbourgeoise (la)]{La strasbourgeoise}
+
+%TODO:Partition:La strasbourgeoise%\lilypondfile[staffsize=12]{Partitions/LEnfantDeStrasbourg/LEnfantDeStrasbourg.ly}
+
+\chanson[numero=1]{Partitions/LEnfantDeStrasbourg/LEnfantDeStrasbourg}
+
+
+%\titre{Je t'aime, ô ma Patrie}
+
+%%TODO:Partition:Je t'aime, ô ma Patrie:\lilypondfile[staffsize=12]{Partitions/JeTAimeOMaPatrie/JeTAimeOMaPatrie.ly}
+
+%\chanson[numero=1]{Partitions/JeTAimeOMaPatrie/JeTAimeOMaPatrie}
+
+
+%\titre{En passant par la Lorraine}
+
+%%TODO:Partition:En passant par la Lorraine%\lilypondfile[staffsize=12]{Partitions/EnPassantParLaLorraine/EnPassantParLaLorraine.ly}
+
+%\chanson[numero=1]{Partitions/EnPassantParLaLorraine/EnPassantParLaLorraine}
+
+
+%\titre[table=Roi Louis (le),espace=20]{Le roi Louis}
+
+%%TODO:Partition:Le roi Louis\lilypondfile[staffsize=12]{Partitions/LeRoiLouis/LeRoiLouis.ly}
+
+%\chanson[numero=1]{Partitions/LeRoiLouis/LeRoiLouis}
+
+
+
+%\souspartie{Chants militaires}
+
+
+%\titre[table=Africains (les),espace=15]{Les Africains}
+
+%%TODO:Partition:Les Africains%\lilypondfile[staffsize=12]{Partitions/LesAfricains/LesAfricains.ly}
+
+%\chanson[numero=1]{Partitions/LesAfricains/LesAfricains}
+
+
+\titre[table=Combat de demain (le)]{Le combat de demain}
+
+%TODO:Partition:Le combat de demain%\lilypondfile[staffsize=12]{Partitions/LeCombatDeDemain/LeCombatDeDemain.ly}
+
+\chanson[numero=1]{Partitions/LeCombatDeDemain/LeCombatDeDemain}
+
+
+%\titre[table=Commandos (les)]{Les commandos}
+
+%%TODO:Partition:Les commandos%\lilypondfile[staffsize=12]{Partitions/LesCommandos/LesCommandos.ly}
+
+%\chanson[numero=1]{Partitions/LesCommandos/LesCommandos}
+
+
+%\titre{En passant par la portière}
+
+%%TODO:Partition:En passant par la portière%\lilypondfile[staffsize=12]{Partitions/EnPassantParLaPortiere/EnPassantParLaPortiere.ly}
+
+%\chanson[numero=1]{Partitions/EnPassantParLaPortiere/EnPassantParLaPortiere}
+
+
+%\titre[table=Dragons de Noailles (les)]{Les dragons de Noailles}
+
+%%TODO:Partition:Les dragons de Noailles%\lilypondfile[staffsize=12]{Partitions/LesDragonsDeNoailles/LesDragonsDeNoailles.ly}
+
+%\chanson[numero=1]{Partitions/LesDragonsDeNoailles/LesDragonsDeNoailles}
+
+
+
+%\souspartie{Chants populaires}
+
+
+%\titre{Malbrough}
+
+%%TODO:Partition:Malbrough:\lilypondfile[staffsize=12]{Partitions/Malbrough/Malbrough.ly}
+
+%\chanson[numero=1]{Partitions/Malbrough/Malbrough}
+
+
+%\titre{Trois jeunes tambours}
+%\vspace{0\baselineskip minus \baselineskip}
+
+%%TODO:Partition:Trois jeunes tambours%\lilypondfile[staffsize=12]{Partitions/TroisJeunesTambours/TroisJeunesTambours.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/TroisJeunesTambours/TroisJeunesTambours}
+
+
+%\titre{À la claire fontaine}
+
+%%TODO:Partition:À la claire fontaine%\lilypondfile[staffsize=12]{Partitions/ALaClaireFontaine/ALaClaireFontaine.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/ALaClaireFontaine/ALaClaireFontaine}
+
+
+%\titre{Au clair de la lune}
+
+%\lilypondfile[staffsize=12]{Partitions/AuClairDeLaLune/AuClairDeLaLune.ly}
+
+%\chanson{Partitions/AuClairDeLaLune/AuClairDeLaLune}
+
+
+%\titre[espace=15]{Au pied d'un rosier}
+
+%%TODO:Partition:Au pied d'un rosier:\lilypondfile[staffsize=12]{Partitions/AuPiedDUnRosier/AuPiedDUnRosier.ly}
+
+%\chanson[numero=1]{Partitions/AuPiedDUnRosier/AuPiedDUnRosier}
+
+
+%\titre{Auprès de ma blonde}
+
+%%TODO:Partition:Auprès de ma blonde:\lilypondfile[staffsize=12]{Partitions/AupresDeMaBlonde/AupresDeMaBlonde.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/AupresDeMaBlonde/AupresDeMaBlonde}
+
+
+%\titre{Cadet Rousselle}
+
+%%TODO:Partition:Cadet Rousselle:\lilypondfile[staffsize=12]{Partitions/CadetRousselle/CadetRousselle.ly}
+
+%\chanson[numero=1]{Partitions/CadetRousselle/CadetRousselle}
+
+
+%\titre{J'ai perdu le do de ma clarinette}
+
+%%TODO:Partition:J'ai perdu le do de ma clarinette:\lilypondfile[staffsize=12]{Partitions/JAiPerduLeDoDeMaClarinette/JAiPerduLeDoDeMaClarinette.ly}
+
+%\chanson[numero=1]{Partitions/JAiPerduLeDoDeMaClarinette/JAiPerduLeDoDeMaClarinette}
+
+
+%\titre[table=Mère Michel (la)]{La mère Michel}
+
+%%TODO:Partition:La mère Michel:\lilypondfile[staffsize=12]{Partitions/LaMereMichel/LaMereMichel.ly}
+
+%\chanson[numero=1]{Partitions/LaMereMichel/LaMereMichel}
+
+
+%\titre{Ne pleure pas, Jeannette}
+
+%%TODO:Partition:Ne pleure pas, Jeannette:\lilypondfile[staffsize=12]{Partitions/NePleurePasJeannette/NePleurePasJeannette.ly}
+
+%\chanson[numero=1]{Partitions/NePleurePasJeannette/NePleurePasJeannette}
+
+
+%\titre{Quand j'étais chez mon père}
+
+%%TODO:Partition:Quand j'étais chez mon père:\lilypondfile[staffsize=12]{Partitions/QuandJEtaisChezMonPere/QuandJEtaisChezMonPere.ly}
+
+%\chanson[numero=1]{Partitions/QuandJEtaisChezMonPere/QuandJEtaisChezMonPere}
+
+
+%\titre[table=Vieux chalet (le)]{Le vieux chalet}
+
+%%TODO:Partition:Le vieux chalet:\lilypondfile[staffsize=12]{Partitions/LeVieuxChalet/LeVieuxChalet.ly}
+
+%\chanson[numero=1]{Partitions/LeVieuxChalet/LeVieuxChalet}
+
+
+%\titre[espace=15]{Se Canto}
+
+%%TODO:Partition:Se Canto:\lilypondfile[staffsize=12]{Partitions/SeCanto/SeCanto.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/SeCanto/SeCanto}
+
+
+
+%\partie{Chants marins}
+
+
+%\titre{Matelots, puisqu'il fait bon vent}
+
+%%TODO:Partition:Matelots, puisqu'il fait bon vent%\lilypondfile[staffsize=12]{Partitions/MatelotsPuisquIlFaitBonVent/MatelotsPuisquIlFaitBonVent.ly}
+
+%\chanson[numero=1]{Partitions/MatelotsPuisquIlFaitBonVent/MatelotsPuisquIlFaitBonVent}
+
+
+%\titre{Guerre Guerre}
+
+%%TODO:Partition:Guerre guerre%\lilypondfile[staffsize=12]{Partitions/GuerreGuerre/GuerreGuerre.ly}
+
+%\chanson[numero=1,position=2col]{Partitions/GuerreGuerre/GuerreGuerre}
+
+
+\titre{Santiano}
+
+%TODO:Partition:Santiano%\lilypondfile[staffsize=12]{Partitions/Santiano/Santiano.ly}
+
+\chanson[numero=1]{Partitions/Santiano/Santiano}
+
+
+\columnbreak
+\titre[table=Honneur\, Fidélité]{Honneur, Fidélité !}
+
+%TODO:Partition:Honneur, fidélité !:\lilypondfile[staffsize=12]{Partitions/HonneurFidelite/HonneurFidelite.ly}
+
+\chanson[numero=1]{Partitions/HonneurFidelite/HonneurFidelite}
+
+
+\titre[table=Hé\, garçon]{Hé, garçon !}
+
+%TODO:Partition:Hé, garçon !%\lilypondfile[staffsize=12]{Partitions/HeGarcon/HeGarcon.ly}
+
+\chanson[numero=1,position=2col]{Partitions/HeGarcon/HeGarcon}
+
+
+\titre{Au 31 du mois d'août}
+
+%TODO:Partition:Au 31 du mois d'août%\lilypondfile[staffsize=12]{Partitions/Au31DuMoisDAout/Au31DuMoisDAout.ly}
+
+\chanson[numero=1]{Partitions/Au31DuMoisDAout/Au31DuMoisDAout}
+
+
+%\partie{Chansons à boire}
+
+\titre[table=Ah\, que nos pères]{Ah ! que nos pères}
+
+%TODO:Partition:Ah ! que nos pères%\lilypondfile[staffsize=12]{Partitions/AhQueNosPeres/AhQueNosPeres.ly}
+
+\chanson[numero=1]{Partitions/AhQueNosPeres/AhQueNosPeres}
+
+
+\titre{Chevaliers de la table ronde}
+
+%TODO:Partition:Chevaliers de la table ronde%\lilypondfile[staffsize=12]{Partitions/ChevaliersDeLaTableRonde/ChevaliersDeLaTableRonde.ly}
+
+\chanson[numero=1]{Partitions/ChevaliersDeLaTableRonde/ChevaliersDeLaTableRonde}
+
+
+\columnbreak
+\titre{Fanchon}
+
+%TODO:Partition:Fanchon%\lilypondfile[staffsize=12]{Partitions/Fanchon/Fanchon.ly}
+
+\chanson[numero=1]{Partitions/Fanchon/Fanchon}
+
+
+\titre{Miserere de la mer}
+
+%TODO:Partition:Misere de la mer%\lilypondfile[staffsize=12]{Partitions/MiserereDeLaMer/MiserereDeLaMer.ly}
+
+\chanson[numero=1]{Partitions/MiserereDeLaMer/MiserereDeLaMer}
+
+
+%\printindex
+
+%\tableofcontents
+
+\end{multicols}
 
 \end{document}
