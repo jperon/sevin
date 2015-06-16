@@ -2,7 +2,7 @@
 %Apercu:evince LeChefDeTroupeADit.pdf
 %Esclaves:timidity -ia LeChefDeTroupeADit.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

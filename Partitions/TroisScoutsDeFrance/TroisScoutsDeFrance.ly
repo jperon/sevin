@@ -2,7 +2,7 @@
 %Apercu:evince TroisScoutsDeFrance.pdf
 %Esclaves:timidity -ia TroisScoutsDeFrance.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

@@ -2,7 +2,7 @@
 %Apercu:evince AuCheminBlanc.pdf
 %Esclaves:timidity -ia AuCheminBlanc.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

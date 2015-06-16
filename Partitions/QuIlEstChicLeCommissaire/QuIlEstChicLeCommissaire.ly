@@ -2,7 +2,7 @@
 %Apercu:evince .pdf
 %Esclaves:timidity -ia .midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

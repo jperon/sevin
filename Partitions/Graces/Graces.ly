@@ -2,7 +2,7 @@
 %Apercu:evince Graces.pdf
 %Esclaves:timidity -ia Graces.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

@@ -2,7 +2,7 @@
 %Apercu:evince GribouilleSEstFaitBoyScoute.pdf
 %Esclaves:timidity -ia GribouilleSEstFaitBoyScoute.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

@@ -2,7 +2,7 @@
 %Apercu:evince RondeDesBatons.pdf
 %Esclaves:timidity -ia RondeDesBatons.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

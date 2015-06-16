@@ -2,7 +2,7 @@
 %Apercu:evince EloquenceScoute.pdf
 %Esclaves:timidity -ia EloquenceScoute.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

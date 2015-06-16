@@ -2,7 +2,7 @@
 %Apercu:evince LaGardeAuClairDeLune.pdf
 %Esclaves:timidity -ia LaGardeAuClairDeLune.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

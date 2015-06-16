@@ -1,6 +1,6 @@
 %Compilation:lilypond LeVieuxLoup.ly
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

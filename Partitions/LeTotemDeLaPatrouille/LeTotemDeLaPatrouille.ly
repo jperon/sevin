@@ -2,7 +2,7 @@
 %Apercu:evince LeTotemDeLaPatrouille.pdf
 %Esclaves:timidity -ia LeTotemDeLaPatrouille.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

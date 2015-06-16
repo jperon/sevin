@@ -2,7 +2,7 @@
 %Apercu:evince LesFoulardsNoirs.pdf
 %Esclaves:timidity -ia LesFoulardsNoirs.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

@@ -2,7 +2,7 @@
 %Apercu:evince CEstLeVent.pdf
 %Esclaves:timidity -ia CEstLeVent.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

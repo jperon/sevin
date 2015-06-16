@@ -2,7 +2,7 @@
 %Apercu:evince VoiciLeCampDEte.pdf
 %Esclaves:timidity -ia VoiciLeCampDEte.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

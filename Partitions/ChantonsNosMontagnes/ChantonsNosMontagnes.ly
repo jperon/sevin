@@ -2,7 +2,7 @@
 %Apercu:evince ChantonsNosMontagnes.pdf
 %Esclaves:timidity -ia ChantonsNosMontagnes.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

@@ -2,7 +2,7 @@
 %Apercu:evince ChantProvincialDeFlandre.pdf
 %Esclaves:timidity -ia ChantProvincialDeFlandre.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

@@ -1,5 +1,5 @@
 \version "2.16"
-\include "italiano.ly"
+\language "français"
 \include "gregorian.ly"
 
 \header {

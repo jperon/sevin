@@ -2,7 +2,7 @@
 %Apercu:evince LeVieuxChalet.pdf
 %Esclaves:timidity -ia LeVieuxChalet.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

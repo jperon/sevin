@@ -2,7 +2,7 @@
 %Apercu:evince Voix_des_Allongés.pdf
 %Esclaves:timidity -ia Voix_des_Allongés.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""

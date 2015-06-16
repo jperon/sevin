@@ -2,7 +2,7 @@
 %Apercu:evince ConnaisTuLaIXe.pdf
 %Esclaves:timidity -ia ConnaisTuLaIXe.midi
 \version "2.12.1"
-\include "italiano.ly"
+\language "français"
 
 \header {
   tagline = ""
