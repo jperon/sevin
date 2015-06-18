@@ -1,4 +1,4 @@
-Fait/*
+tmp_ly/
 *.pdf
 *.ps
 *.midi
@@ -12,3 +12,9 @@ Fait/*
 *.ind
 *.backup
 *.bak
+*.gtex
+*.out
+*.synctex.gz
+*.toc
+*.old
+
