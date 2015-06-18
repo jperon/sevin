@@ -1,7 +1,7 @@
 %Compilation:lilypond .ly
 %Apercu:evince .pdf
 %Esclaves:timidity -ia .midi
-\version "2.12.1"
+\version "2.18"
 \language "français"
 
 \header {
@@ -33,6 +33,7 @@ MusiqueTheme = \relative do' {
 	sib4. la8 sol do
 	sib2 la4
 	sib4.\fermata
+	\bar "|."
 }
 
 Paroles = \lyricmode {
