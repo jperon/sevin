@@ -64,11 +64,11 @@
 \RequirePackage{needspace}
 \RequirePackage{graphicx}
 \RequirePackage[table]{xcolor}
-\RequirePackage{keycommand,ifthen,calc,etoolbox}
+\RequirePackage{keycommand,ifthen,calc}
 \RequirePackage{lettrine}
 
 %%% KOMA - Options de titres, de numéros de pages...
-\RequirePackage[automark]{scrpage2}
+\RequirePackage[automark]{scrlayer-scrpage}
 \pagestyle{scrheadings}
 \setcounter{secnumdepth}{0}
 \renewcommand*{\partformat}{}
@@ -81,13 +81,9 @@
 \renewcommand*{\partpagestyle}{empty}
 \renewcommand*{\chapterpagestyle}{empty}
 \renewcommand*{\indexpagestyle}{empty}
-\makeatletter                                                                                                            
-\apptocmd{\@part}{\chaptermark{Chants scouts}}{}{}
-\apptocmd{\@spart}{\chaptermark{Chants scouts}}{}{}
-\makeatother
 \clearscrheadfoot
 \automark[chapter]{part}
-\ohead[\pagemark]{\pagemark}\ihead[\headmark]{\headmark}
+\ohead[\pagemark]{\pagemark}\ihead{\ifthenelse{\equal{\headmark}{}}{Chants scouts}{\headmark}}
 \newcommand{\sectionbreak}{\vspace{0\baselineskip plus 2\baselineskip}\pagebreak[3]\needspace{3\baselineskip}}
 \newcommand{\subsectionbreak}{\vspace{0\baselineskip plus 1\baselineskip}\pagebreak[3]\needspace{1\baselineskip}}
 \newcommand{\paginarectavacua}{\ifthispageodd{\thispagestyle{plain}}{}}

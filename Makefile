@@ -20,8 +20,8 @@ sevin:
 	($(EXPORTS) ; $(LATEX_CMD) $(SEVIN) ; grep '(rerunfilecheck)' $(SEVIN).log && echo 'Relancez la compilation pour obtenir le document définitif.')
 
 todo:
-       grep -R '%TODO' [!README]*[!Fait]*[!.sh] | grep -v \~ | sed s/'%TODO'//g | sed s/'%\\lilypondfile'/\:/g > TODO
+	grep -R '%TODO' [!README]*[!Fait]*[!.sh] | grep -v \~ | sed s/'%TODO'//g | sed s/'%\\lilypondfile'/\:/g > TODO
 
 midi:
-       cd Partitions ; ./midi.sh
+	cd Partitions ; ./midi.sh
 

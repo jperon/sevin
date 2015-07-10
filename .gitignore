@@ -5,7 +5,7 @@ tmp_ly/
 *.mid
 *.log
 *~
-*.aux
+*.*aux
 *.djvu
 *.idx
 *.ilg
