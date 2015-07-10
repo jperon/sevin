@@ -1,18 +1,18 @@
-%Apercu:qpdfview Fait/tmp.pdf:
+%Apercu:evince Fait/tmp.pdf:
 %Cible:tmp:
 \documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
 \include{chantsscouts}
 \include{gredoc}
-\providecommand{\cantus}[4]{\partition{#1}{#2}{#3 #4}}
-\renewcommand{\numtitre}{}
+\providecommand{\\cantus}[4]{\\partition{#1}{#2}{#3 #4}}
+\renewcommand{\\numtitre}{}
 \pagestyle{empty}
 
 \begin{document}
 
-\titre{Test}
+\titre{Notre-Dame du oui}
 
-%TODO:\lilypondfile[staffsize=12]{Partitions/Test/Test.ly}
-\chanson[numero=1]{Partitions/Test/Test}
+%TODO:\lilypondfile[staffsize=12]{Partitions/NotreDameDuOui/NotreDameDuOui.ly}
+\chanson[numero=1]{Partitions/NotreDameDuOui/NotreDameDuOui}
 
 \end{document}
