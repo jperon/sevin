@@ -36,7 +36,8 @@ end
 
 function inclure_ly(entree, largeur, facteur)
     nom = splitext(entree, 'ly')
-    entree = nom..'.ly'
+    print('\n'..lfs.currentdir())
+    entree = kpse.find_file(nom..'.ly')
     facteur = calcul_facteur(facteur)
     if not lfs.isfile(entree) then err("Le fichier %s n'existe pas.", entree) end
     sortie = TMP..'/' ..string.gsub(nom..'-'..facteur..'-'..largeur, '%.', '-')..'.ly'
@@ -45,27 +46,25 @@ function inclure_ly(entree, largeur, facteur)
         not lfs.isfile(sortie..'-systems.tex')
         or lfs.attributes(sortie..'-systems.tex').modification < lfs.attributes(entree).modification
     then
-        i = io.open(entree, 'r')
+        local i = io.open(entree, 'r')
         ly = i:read('*a')
         i:close()
-        compiler_ly(entete_lilypond(facteur, largeur - 10)..'\n'..ly, sortie)
+        compiler_ly(entete_lilypond(facteur, largeur - 10)..'\n'..ly, sortie, dirname(entree))
     end
     retour_tex(sortie)
 end
 
 
-function compiler_ly(ly, sortie)
+function compiler_ly(ly, sortie, include)
     mkdirs(dirname(sortie))
-    local p = io.popen(
-        LILYPOND.." "
-        .."-dno-point-and-click "
-        .."-dbackend=eps "
-        .."-djob-count=2 "
-        .."-ddelete-intermediate-files "
-        .."-o "..sortie
-        .." -",
-        'w'
-    )
+    local commande = LILYPOND.." "..
+        "-dno-point-and-click "..
+        "-dbackend=eps "..
+        "-djob-count=2 "..
+        "-ddelete-intermediate-files "
+    if include then commande = commande.."-I "..lfs.currentdir()..'/'..include.." " end
+    commande = commande.."-o "..sortie.." -"
+    local p = io.popen(commande, 'w')
     p:write(ly)
     p:close()
 end
@@ -98,8 +97,6 @@ function entete_lilypond(facteur, largeur)
 
 #(set-global-staff-size %s)
 
-#(ly:set-option 'safe '#t)
-
 
 %%Paramètres de la partition
 \paper{
@@ -122,7 +119,7 @@ end
 
 
 function retour_tex(sortie)
-    i = io.open(sortie..'-systems.tex', 'r')
+    local i = io.open(sortie..'-systems.tex', 'r')
     contenu = i:read("*all")
     i:close()
     texoutput, _ = string.gsub(

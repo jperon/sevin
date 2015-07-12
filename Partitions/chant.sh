@@ -5,4 +5,4 @@ cd ../..
 ./chant.sh "$FICHIER" "$TITRE"
 
 cd -
-cp ../../Fait/tmp.pdf ./$FICHIER.pdf
+mv ../../tmp.pdf ./$FICHIER.pdf

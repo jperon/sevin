@@ -1,18 +1,15 @@
-%Apercu:evince Fait/tmp.pdf:
-%Cible:tmp:
 \documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
-\include{chantsscouts}
-\include{gredoc}
-\providecommand{\\cantus}[4]{\\partition{#1}{#2}{#3 #4}}
-\renewcommand{\\numtitre}{}
+\usepackage{mudoc}
+\usepackage{currfile}
+\def\staffsize{12}
 \pagestyle{empty}
 
 \begin{document}
 
 \titre{Notre-Dame du oui}
 
-%TODO:\lilypondfile[staffsize=12]{Partitions/NotreDameDuOui/NotreDameDuOui.ly}
+\lilypondfile{Partitions/NotreDameDuOui/NotreDameDuOui.ly}
 \chanson[numero=1]{Partitions/NotreDameDuOui/NotreDameDuOui}
 
 \end{document}

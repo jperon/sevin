@@ -26,7 +26,6 @@
 % Commandes principales
 % Inclusion d'un fichier ly
 \newkeycommand*\includely[staffsize=\staffsize][autres][1]{%
-\widowpenalty=0 \clubpenalty=0
 \directlua{%
     inclure_ly(
         "\luatexluaescapestring{#1}",
