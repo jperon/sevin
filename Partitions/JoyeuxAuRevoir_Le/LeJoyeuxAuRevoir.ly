@@ -39,7 +39,7 @@ MusiqueRefrainI = \relative do'' {
   re8. si16 si8 sol
   la8. sol16 la8 si
   sol8. mi16 mi8 re
-  sol4. \bar ":|"
+  sol4. \bar "|."
 }
 
 MusiqueRefrainII = \relative do' {
@@ -72,146 +72,147 @@ MusiqueRefrainIII = \relative do {
   s8      |
   s8      |
   re8     |
-  
+
   %Bar2
   sol8.  sol16  sol8  si  |
   si4           re8   re  |
   re4           re8   sol |
   sol,4         si8   sol |
-  
+
   %Bar3
   la8.^\prall   sol16  la8   si        |
   re4.                      <re fad>8  |
   fad8.         mi16   fad8  fad       |
   re'4.                      si8       |
-  
+
   %Bar4
   <mi, sol>8.\<  sol16  si8   re\!   |
   si4                   sol'         |
   sol4.                       si8    |
   mi4.                        re8    |
-  
+
   %Bar5
   mi4   s8   \bar "|:" sol8  |
   sol4   r8            sol   |
   do4    r8            do    |
   do4    s8            mi    |
-  
+
   %Bar6
   re8.   si16   si8   sol   |
   sol4.               re8   |
   si8.   re16   re8   la    |
   sol4.               fad8  |
-  
+
   %Bar7
   \acciaccatura si8 la8.   sol16  la8   si         |
                     re4.                fad8       |
                     do8.   si16   la8   re         |
                     re4.                <re, si'>8 |
-  
+
   %Bar8
   sol8.  mi16\>   mi8        re\!         |
   mi8.   do16     do8        do           |
   r8     sol,8    sol        la           |
   <do~ mi'~>4    <do mi'>8  <re re' fad>  |
-  
+
   %Bar9
   sol4        s8   re\p    |
   <si re>4    r8   s       |
   sol4        r8   s       |
   <sol, sol'>4 s8   re''   |
-  
+
   %Bar10
   sol4  sol  |
   si4   re   |
   re4   si'  |
   sol,4 sol' |
-  
+
   %Bar11
   la8.   sol16  fad8   re   |
   do4.                 re8  |
   fad8.  sol16  la8    fad  |
   re4.                 re8~ |
-  
+
   %Bar12
   sol4.         sol8~   |
   si4.          re8     |
   sol4.         si8     |
   <sol, re'>4.  sol'8   |
-  
+
   %Bar13
   sol4.         sol8~    |
   mi4.          <do mi>8 |
   do4.          sol8     |
   do,4.         do8      |
-  
+
   %Bar14
   sol4      sol   |
   <si re>4  re    |
   sol4      si    |
   sol4      sol'  |
-  
+
   %Bar15
   la8.   mi16   fad8   re   |
   re4           re          |
   la8.   sol16  la8    fad  |
   re4~          re          |
-  
+
   %Bar16
   sol8.  mi16~  mi8    re~  |
   si4           do8    la   |
   sol4          sol8   fad  |
   mi4           do8    re~  |
-  
+
   %Bar17
   re4.  \bar "||"  mi'8       |
   si4.             <mi sol>8  |
   sol4.            do8        |
   <sol, re'>4.     do8        |
-  
+
   %Bar18
   re8(   si)  si(          sol)  |
   sol4~       sol8         re    |
   si8(   re)  re           si    |
   sol'4        <sol, sol'>       |
-  
+
   %Bar19
   \acciaccatura la,8 la'8.   sol16  do8   si   |
                      re4            re         |
                      fad8.   mi16   fad8  sol  |
                      re'4~          re8   sol  |
-  
+
   %Bar 20
   re8   si8   si   <fa sol re'>  |
   re4~        re4                |
   la8.  si16  sol8  sol          |
   fad8. si16  sol8  si,          |
-  
+
   %Bar21
   mi'4.            sol8        |
   <mi sol>4.       mi'8        |
   sol4.            sol16. la32 |
   do4.             do8         |
-  
+
   %Bar22
   re8.(   si16)   <sol si>8   sol      |
   sol,4.                      dod,8    |
   la8.    re16    re8         si16 sol |
   fad4(           sol8)       mi       |
-  
+
   %Bar23
   \acciaccatura {la16[ si]} la8.      sol16  la8   si   |
                             <la re>4.             re8  |
                             fad8.     mi16   fad8  fad  |
                             re4~             re8   si   |
-  
+
   %Bar24
   sol8.  mi16    mi8        re            |
   mi8.   do16    do8        do            |
   mi8    sol     sol        <fad la>      |
   do4~           <do, do'>8 <mi re'>      |
-  
+
   %Bar25
+  \set Score.measureLength = #(ly:make-moment 3 8)
   sol4.         |
   <si re>4.     |
   sol4.         |
