@@ -10,16 +10,12 @@ echo $NomFichier $TitreChant
 echo '\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
 
 \usepackage{mudoc}
-\usepackage{currfile}
 \def\staffsize{12}
 \pagestyle{empty}
 
 \begin{document}
 
-\titre{'"$TitreChant"'}
-
-\lilypondfile{'"$Partitions/$NomFichiers/$NomFichiers"'.ly}
-\chanson[numero=1]{'"$Partitions/$NomFichiers/$NomFichiers"'}
+\input{'"$Partitions/$NomFichiers/Chant"'}
 
 \end{document}' > tmp.tex
 

@@ -1,5 +1,6 @@
 \RequirePackage{gredoc}
 \RequirePackage{lyluatex}
+\RequirePackage{currfile}
 \RequirePackage{makeidx}
 \RequirePackage{pbox}
 
@@ -17,7 +18,9 @@
 \newlength{\dcbis}
 \newlength{\avanttitre}
 
-\newkeycommand{\chanson}[%
+\newcommand{\chant}[1]{\input{Partitions/#1/Chant}}
+
+\newkeycommand{\paroles}[%
                          position=defaut%
                          ,decalage=5mm%
                          ,premiercouplet=1,numero=2%
@@ -31,11 +34,11 @@
     \setlength{\complement}{\linewidth-\decalage}%
     \begin{multicols}{2}
     {%
-    \input{#1}%
+    \input{\currfiledir #1}%
     }
     \end{multicols}%
   }{%
-    {\input{#1}}%
+    {\input{\currfiledir #1}}%
   }
 }
 
