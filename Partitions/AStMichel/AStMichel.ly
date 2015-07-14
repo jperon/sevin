@@ -1,20 +1,5 @@
 % Lily was here -- automatically converted by /usr/bin/midi2ly from canon de la paix.mid
-\version "2.12.3"
-
-\header{
-	title="À Saint Michel Archange"
-	tagline = ""
-}
-
-\paper {
-	paper-width = 21\cm
-	paper-height = 29.7\cm
-	%top-margin = 2.2\cm
-	make-footer=##f
-}
-
-
-#(set-global-staff-size 19)
+\version "2.18"
 
 
 
@@ -56,7 +41,7 @@ VoixDeux = \relative c' {
 	g4 e8. f16 g4 bes |
 	d a f2 |
 	g4 g8. a16 bes4 c |
-	cis2 d\fermata |	
+	cis2 d\fermata |
 }
 
 VoixTrois = \relative c {
@@ -148,7 +133,7 @@ ParolesVoixQuatre = \lyricmode {
 	la la la la la
 	la la la la
 	la la la la
-	la la la la 
+	la la la la
 }
 
 
@@ -204,7 +189,7 @@ ParolesVoixQuatre = \lyricmode {
 			\set Staff.midiMinimumVolume = #0.7
 			\set Staff.midiMaximumVolume = #0.9
 			\tempo 4=100
-			\new Voice = "VoixUn" {s1\mf 
+			\new Voice = "VoixUn" {s1\mf
 				s1*8
 				s1*8
 				\VoixUn
@@ -218,7 +203,7 @@ ParolesVoixQuatre = \lyricmode {
 			\set Staff.midiInstrument = "flute"
 			\set Staff.midiMinimumVolume = #0.75
 			\set Staff.midiMaximumVolume = #0.95
-			\new Voice = "VoixDeux" {s1\mf 
+			\new Voice = "VoixDeux" {s1\mf
 				s1*8
 				s1*8
 				s1*8
@@ -233,7 +218,7 @@ ParolesVoixQuatre = \lyricmode {
 		\new Staff { <<
 			\set Staff.midiMinimumVolume = #0.4
 			\set Staff.midiMaximumVolume = #0.6
-			\new Voice = "VoixTrois" {s1\mf 
+			\new Voice = "VoixTrois" {s1\mf
 				\VoixTrois
 				\VoixTrois
 				\VoixTrois
@@ -246,7 +231,7 @@ ParolesVoixQuatre = \lyricmode {
 		\new Staff { <<
 			\set Staff.midiMinimumVolume = #0.5
 			\set Staff.midiMaximumVolume = #0.7
-			\new Voice = "VoixQuatre" {s1\mf 
+			\new Voice = "VoixQuatre" {s1\mf
 				s1*8
 				\VoixQuatre
 				\VoixQuatre

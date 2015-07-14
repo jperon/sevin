@@ -13,6 +13,10 @@ tmp:
 debug:
 	($(EXPORTS) ; lualatex -shell-restricted -synctex=1 -file-line-error $(FICHIER))
 
+alpha:
+	./alpha.sh
+	($(EXPORTS) ; $(LATEX_CMD) Alpha)
+
 final:
 	($(EXPORTS) ; $(LATEX_CMD) $(FICHIER) ; $(LATEX_CMD) $(FICHIER))
 

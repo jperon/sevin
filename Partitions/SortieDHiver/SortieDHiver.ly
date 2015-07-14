@@ -1,13 +1,10 @@
-%Compilation:lilypond SortieDHiver.ly
-%Apercu:evince SortieDHiver.pdf
-%Esclaves:padsp timidity -ia SortieDHiver.midi
-\version "2.12.1"
+\version "2.18"
 \language "français"
 
 \header {
   tagline = ""
   composer = ""
-}                                        
+}
 
 MetriqueArmure = {
   \tempo 4=100
@@ -35,7 +32,7 @@ Paroles = \lyricmode {
 	C'est une a -- ven -- tu -- re_!
 	É -- tant don -- née la ri -- gueur
 	De la tem -- pé -- ra -- tu -- re_!
-	
+
 	\italique
 	Tout au bord de la ri -- viè -- re,
 	Lais -- sez_- moi vous dire qu'il fai -- sait gla_- gla_!
@@ -54,7 +51,7 @@ Paroles = \lyricmode {
       }
       \new Lyrics \lyricsto theme {
 	\Paroles
-      }                       
+      }
     >>
 \layout{}
 \midi{}
