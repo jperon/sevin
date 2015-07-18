@@ -16,7 +16,7 @@ if [ ! -e "$Partitions/$NomFichiers" ] ; then
 
 \includely{Partition}
 
-\input{Paroles}' > "$Partitions/$NomFichiers/Chant.tex"
+\paroles{Paroles}' > "$Partitions/$NomFichiers/Chant.tex"
 fi
 
 geany "$Partitions/$NomFichiers/infos.txt"

@@ -7,11 +7,7 @@ NomFichiers="$1"
 
 echo $NomFichier $TitreChant
 
-echo '\documentclass[a6paper,latin,french,fontsize=9pt]{scrbook}
-
-\usepackage{mudoc}
-\def\staffsize{12}
-\pagestyle{empty}
+echo '\input{entete}
 
 \begin{document}
 

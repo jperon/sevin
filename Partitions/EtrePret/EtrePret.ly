@@ -7,11 +7,11 @@
 \header {
   tagline = ""
   composer = ""
-}                                        
+}
 
 MetriqueArmure = {
-  \tempo 4=100
-  \time 2/4
+  \tempo 4.=80
+  \time 12/8
   \key do \major
 }
 
@@ -19,12 +19,21 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
-MusiqueTheme = \relative do'' {
-	
+MusiqueTheme = \relative do' {
+  r8 re8 re8
+  fa8 mi re fa8. fa16 fa8
+  sol8 fa sol la8.\fermata re,16 re8
+  fa8 mi re fa8. fa16 fa8
+  sol8 fa sol la8.\fermata la16 la8
+  sol8 la sol fa mi re
+  do8 mi do re4.
+  \bar "|."
 }
 
 Paroles = \lyricmode {
-	
+  Il faut sa -- voir d’a -- bord a -- fin d’a -- gir a -- près.
+  De -- puis qu’un jour j’ai dit aux Dou -- ze_: «_Soy -- ez prêts_»,
+  Rien ne sert l’i -- gno -- rance ou le \italique pas_- fait_- ex -- près.
 }
 
 \score{
@@ -38,7 +47,7 @@ Paroles = \lyricmode {
       }
       \new Lyrics \lyricsto theme {
 	\Paroles
-      }                       
+      }
     >>
 \layout{}
 \midi{}
