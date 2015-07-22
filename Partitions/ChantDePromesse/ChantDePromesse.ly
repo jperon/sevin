@@ -4,7 +4,7 @@
 \header {
   tagline = ""
   composer = ""
-}                                        
+}
 
 MetriqueArmure = {
   \tempo 4.=70
@@ -59,7 +59,7 @@ Paroles = \lyricmode {
         Sur mon hon -- neur,
         Et je te fais hom -- ma -- ge
         De moi, Sei -- gneur.
-        
+
         Je veux t'ai -- mer sans ces -- se,
         De plus en plus,
         Pro -- tè -- ge ma Pro -- mes -- se,
@@ -70,19 +70,22 @@ Paroles = \lyricmode {
     \new Staff <<
       \set Staff.midiInstrument = "flute"
       \autoBeamOff
-      \new Voice = "theme" {\voiceOne
-	\override Score.PaperColumn #'keep-inside-line = ##t
-	\MetriqueArmure
-	\MusiqueCouplet
-        \ThemeRefrain
-      }
-      \new Voice = "accompagnement" {\voiceTwo
-        s8*48
-        \AccompagnementRefrain
+      \new Voice = "theme" {
+        \override Score.PaperColumn #'keep-inside-line = ##t
+        \MetriqueArmure
+        \MusiqueCouplet
+        <<
+          {\voiceOne
+            \ThemeRefrain
+          }
+          \new Voice {\voiceTwo
+            \AccompagnementRefrain
+          }
+        >>
       }
       \new Lyrics \lyricsto theme {
-	\Paroles
-      }                       
+        \Paroles
+      }
     >>
 \layout{}
 \midi{}

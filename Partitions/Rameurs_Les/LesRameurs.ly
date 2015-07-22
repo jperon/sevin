@@ -7,7 +7,7 @@
 \header {
   tagline = ""
   composer = ""
-}                                        
+}
 
 MetriqueArmure = {
   \tempo 4=80
@@ -40,10 +40,10 @@ Quatre = \relative do'' {
 }
 
 Paroles = \lyricmode {
-	Ra, ra, ra -- me donc,
-	Vo -- gue, le ca -- not_!
-	Jo -- li -- ment, jo -- li -- ment, jo -- li -- ment,
-	At -- ta -- quons le flot_!
+	\set stanza = "1." Ra, ra, ra -- me donc,
+	\set stanza = "2." Vo -- gue, le ca -- not_!
+	\set stanza = "3." Jo -- li -- ment, jo -- li -- ment, jo -- li -- ment,
+	\set stanza = "4." At -- ta -- quons le flot_!
 }
 
 \score{
@@ -57,7 +57,7 @@ Paroles = \lyricmode {
       }
       \new Lyrics \lyricsto theme {
 	\Paroles
-      }                       
+      }
     >>
 \layout{}
 \midi{}

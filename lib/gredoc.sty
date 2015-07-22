@@ -19,10 +19,9 @@
 %%% Prévention des veuves et orphelines. Vous pouvez augmenter ces paramètres,
 %%% mais attendez-vous à des aberrations.
 %\usepackage[defaultlines=2,all]{nowidow}
-\usepackage{nowidow}
 \flushbottom
-\widowpenalties 3 3000 0 0
-\clubpenalties 3 9999 50 0
+\widowpenalty=3000
+\clubpenalty=9999
 %%% Taille (proportionnelle) de la première colonne dans les textes en
 %%% parallèle, et taille de l'espace inter-colonnes.
 \def\ratio{.48}
@@ -84,8 +83,8 @@
 \clearscrheadfoot
 \automark[chapter]{part}
 \ohead[\pagemark]{\pagemark}\ihead{\ifthenelse{\equal{\headmark}{}}{Chants scouts}{\headmark}}
-\newcommand{\sectionbreak}{\vspace{0\baselineskip plus 2\baselineskip}\pagebreak[3]\needspace{3\baselineskip}}
-\newcommand{\subsectionbreak}{\vspace{0\baselineskip plus 1\baselineskip}\pagebreak[3]\needspace{1\baselineskip}}
+\newcommand{\sectionbreak}{\vspace{0\baselineskip plus 4\baselineskip}\penalty-9000 \needspace{3\baselineskip}}
+\newcommand{\subsectionbreak}{\vspace{0\baselineskip plus 2\baselineskip}\penalty-9000 \needspace{1\baselineskip}}
 \newcommand{\paginarectavacua}{\ifthispageodd{\thispagestyle{plain}}{}}
 
 \RequirePackage{imakeidx}
@@ -301,7 +300,7 @@
 \newcommand{\cantus}[4]{{%
 	\greannotation{{\rubrum\scriptsize \textsc{#3}}}
 	\greannotation{\raisebox{.5mm}{\rubrum\scriptsize \textsc{#4}}}
-	{\widowpenalties 3 0 0 0 \clubpenalties 3 0 0 0%\nowidow[1]\noclub[1]
+	{\widowpenalty=0 \clubpenalty=0
 		\gregorioscore{Partitions/Gregorien/#1/#2}%
 	}
 }

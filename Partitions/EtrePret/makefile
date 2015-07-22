@@ -2,4 +2,4 @@ pdf:
 	../chant.sh
 
 ly:
-	lilypond EtrePret.ly
+	lilypond *.ly

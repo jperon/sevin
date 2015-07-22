@@ -54,22 +54,13 @@ ParolesII = \lyricmode {
       \new Voice = "I" {
         \override Score.PaperColumn #'keep-inside-line = ##t
         \MetriqueArmure
-        \partial 4 \MusiqueI
+        \partial 4
+        \MusiqueI \bar "||"
+        \MusiqueII
       }
     >>
     \new Lyrics \lyricsto I {
       \ParolesI
-    }
-    \new Staff <<
-      \set Staff.midiInstrument = "flute"
-      \set Staff.autoBeaming = ##f
-      \new Voice = "II" {
-        \override Score.PaperColumn #'keep-inside-line = ##t
-        \MetriqueArmure
-        \MusiqueII
-      }
-    >>
-    \new Lyrics \lyricsto II {
       \ParolesII
     }
   >>

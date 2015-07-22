@@ -1,5 +1,5 @@
-partition:
-	./partition.sh
+pdf:
+	../chant.sh
 
 ly:
 	lilypond *.ly

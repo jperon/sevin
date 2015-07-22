@@ -16,15 +16,13 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
-MusiqueTheme = \relative do'' {
-
+MusiqueI = \relative do'' {
 }
 
-%MusiqueAcc = \relative do'' {
+%MusiqueII = \relative do'' {
 %}
 
-Paroles = \lyricmode {
-
+ParolesI = \lyricmode {
 }
 
 \score{
@@ -32,19 +30,17 @@ Paroles = \lyricmode {
     \new Staff <<
       \set Staff.midiInstrument = "flute"
       \set Staff.autoBeaming = ##f
-      \new Voice = "theme" {%\voiceOne
-        \override Score.PaperColumn #'keep-inside-line = ##t
-        \MetriqueArmure
-        \MusiqueTheme
+      \override Score.PaperColumn #'keep-inside-line = ##t
+      \MetriqueArmure
+      \new Voice = "I" {%\voiceOne
+        \MusiqueI
       }
-%      \new Voice = "acc" {\voiceTwo
-%        \override Score.PaperColumn #'keep-inside-line = ##t
-%        \MetriqueArmure
-%        \MusiqueAcc
+      \new Lyrics \lyricsto I {
+        \ParolesI
+      }
+%      \new Voice = "II" {\voiceTwo
+%        \MusiqueII
 %      }
-      \new Lyrics \lyricsto theme {
-        \Paroles
-      }
     >>
   >>
   \layout{}

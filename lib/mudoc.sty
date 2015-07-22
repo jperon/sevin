@@ -52,13 +52,13 @@
                    0cm\linewidth
                    \decalage\complement}%
       {#2\par}
-      \vspace{1ex plus 2ex}
+      \vspace{.5\baselineskip plus 1.8\baselineskip minus .2\baselineskip}
     }{%
       \ifthenelse{\equal{\commandkey{position}}{defaut} \AND \equal{#1}{VIDE}}{%
         \def\position{centre}%
       }{%
         \def\position{}%
-        \vspace{0ex plus 2\baselineskip}\par
+        \vspace{0ex plus \baselineskip}\par
         {\parindent=0pt
          \begin{paracol}{2}
          \raggedright%
@@ -68,15 +68,15 @@
           \switchcolumn
           #1
          \end{paracol}%
-        \vspace{1ex plus 2ex}
+        \vspace{.5ex plus 1.5\baselineskip minus .2ex}
         }%
       }
       \ifthenelse{\equal{\commandkey{position}}{centre}%
                   \OR \equal{\position}{centre}}{%
-        {\vspace{0ex plus 2\baselineskip}\par
-        \pagebreak[1]
+        {\vspace{0ex plus \baselineskip}\par
+        \pagebreak[0]
         \centering #2\par}
-        \vspace{1ex plus 2ex}
+        \vspace{.5ex plus 1\baselineskip minus .2ex}
       }{}%
     }
 }}
@@ -128,7 +128,8 @@
 \newkeycommand{\titre}[espace=8,table=idem][][1]{%
 	\setlength{\avanttitre}{\baselineskip}
 	\multiply\avanttitre by \commandkey{espace}
-	\vspace{1em plus 6\baselineskip}\needspace{\avanttitre}%
+	\vspace{1em plus 6\baselineskip}\needspace{\avanttitre}
+	\penalty-160
 	\def\letitre{\commandkey{table}}%
 	\ifthenelse{\equal{\letitre}{idem}}{%
 		\index{#1}%
