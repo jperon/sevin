@@ -4,7 +4,7 @@
 \header {
   tagline = ""
   composer = ""
-}                                        
+}
 
 MetriqueArmure = {
   \tempo 4.=70
@@ -16,7 +16,7 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
-MusiqueTheme = \relative do' {
+MusiqueCouplet = \relative do' {
 	\partial 8 mib8
 	lab8 mib lab sib do reb
 	do4. mib4 reb16 reb
@@ -26,7 +26,10 @@ MusiqueTheme = \relative do' {
 	do4. mib4 do16 do
 	do8 lab do sib fa lab
 	sib4. r4 \bar "||"
-	mib,16 mib mib'4 fa8 mib do sib
+}
+
+MusiqueRefrain = \relative do' {
+	mib16 mib mib'4 fa8 mib do sib
 	lab4. lab4 lab8
 	reb4 do8 sib[ lab] fa
 	mib4.~ mib4 mib8
@@ -37,7 +40,6 @@ MusiqueTheme = \relative do' {
 }
 
 VoixDeux = \relative do' {
-	s8*48
 	mib16 mib
 	mib8[ lab] lab lab do mib,
 	lab4 sol8 fa4 mib8
@@ -54,7 +56,7 @@ Paroles = \lyricmode {
 	Les Vieux Loups, de -- ve -- nus Pe -- tits Loups,
 	Sont fon -- dus en u -- ne Meute im -- men -- se,
 	Blancs et Gris, Fau -- ves, Noirs, Bruns et Roux.
-	
+
 	\italique Bien plus doux que rose ou la -- van -- de
 	S'é -- pand sur la fo -- rêt
 	Le cher par -- fum de Cha -- ma -- ran -- de
@@ -64,19 +66,18 @@ Paroles = \lyricmode {
 \score{
     \new Staff <<
       \set Staff.midiInstrument = "flute"
+      \MetriqueArmure
       \new Voice = "theme" {
-	\autoBeamOff
-	\MetriqueArmure
-	\voiceOne\MusiqueTheme
-      }
-      \new Voice = "voix2" {
-	\autoBeamOff
-	\MetriqueArmure
-	\voiceTwo\VoixDeux
+        \autoBeamOff
+        \MusiqueCouplet
+        <<
+          {\voiceOne \MusiqueRefrain}
+          \new Voice {\autoBeamOff \voiceTwo \VoixDeux}
+        >>
       }
       \new Lyrics \lyricsto theme {
-	\Paroles
-      }                       
+        \Paroles
+      }
     >>
 \layout{}
 \midi{}

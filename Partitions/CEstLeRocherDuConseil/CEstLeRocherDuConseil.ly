@@ -1,42 +1,30 @@
-\version "2.16"
-\language "français"
+\version "2.18"
 
-\header {
-  tagline = ""
-  composer = ""
-}
-
-MetriqueArmure = {
-  \tempo 4=100
-  \time 2/4
-  \key do \major
-}
-
-italique = { \override Score . LyricText #'font-shape = #'italic }
-
-roman = { \override Score . LyricText #'font-shape = #'roman }
-
-MusiqueTheme = \relative do'' {
-  
-}
-
-Paroles = \lyricmode {
-  
-}
-
-\score{
-  <<
-    \new Staff <<
-      \set Staff.midiInstrument = "flute"
-      \set Staff.autoBeaming = ##f
-      \new Voice = "theme" {
-        \override Score.PaperColumn #'keep-inside-line = ##t
-        \MetriqueArmure
-        \MusiqueTheme
-      }
-    >>
-    \new Lyrics \lyricsto theme {
-      \Paroles
+\score {
+  \new Staff <<
+    \set Staff.midiInstrument = "flute"
+    \relative c' {
+      \key es \major
+      \time 2/2
+      \tempo 2=100
+      \autoBeamOff
+      es4 es8 es es4 c8 es8 | aes2.
+      aes4 | bes bes bes aes8 bes | c2 aes4
+      aes4 | bes bes bes aes8 bes | c2 aes2
+      es4 es8 es es4 c8 es8 | aes2.
+      es8 aes | bes4 bes8 bes bes4 c8 bes | aes2 r^"Fin" \bar "||"
+      bes4 bes8 bes c4 bes8 aes | bes4 bes8 bes c4 bes8 aes | bes4
+      bes8 bes c4 bes8 aes8 | <bes es>2^"D.C." \bar "|."
+    }
+    \addlyrics {
+      C'est le ro -- cher du Con -- seil,
+      Où le vieux loup vous ap -- pel -- le,
+      Al -- lons, mon -- trez vo -- tre zè -- le,
+      C'est le ro -- cher du Con -- seil,
+      Le ro -- cher, le ro -- cher du Con -- seil.
+      Les si -- ze -- niers aux a -- guets
+      Nous font -- vit' ras -- sem -- bler,
+      É -- cou -- tez nous hur -- ler.
     }
   >>
   \layout{}
