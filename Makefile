@@ -5,7 +5,7 @@ LATEX_CMD = lualatex -interaction=batchmode -shell-restricted -synctex=1
 EXPORTS = export TEXINPUTS="lib:" ; export shell_escape_commands=bibtex,bibtex8,kpsewhich,makeindex,mpost,repstopdf,gregorio,lilypond
 
 document:
-	($(EXPORTS) ; $(LATEX_CMD) $(FICHIER) ; grep '(rerunfilecheck)' $(FICHIER).log && echo 'Relancez la compilation pour obtenir le document définitif.' || cp $(FICHIER).pdf $(FICHIER)-fini.pdf)
+	($(EXPORTS) ; $(LATEX_CMD) -draftmode $(FICHIER) ; $(LATEX_CMD) $(FICHIER) ; cp $(FICHIER).pdf $(FICHIER)-fini.pdf)
 
 tmp:
 	($(EXPORTS) ; $(LATEX_CMD) $(TMP))
