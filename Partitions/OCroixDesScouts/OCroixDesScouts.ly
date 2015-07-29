@@ -7,8 +7,8 @@
 }
 
 MetriqueArmure = {
-  \tempo 4=100
-  \time 4/4
+  \tempo 4=110
+  \time 2/4
   \key fa \major
 }
 
@@ -16,34 +16,29 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
-MusiqueTheme = \relative do' {
-  \partial 4 do4
-  fa4. fa8 mi8. fa16 sol8. fa16
-  la4 sol r sol
-  sol4. mi8 do8. sol'16 sol8. sol16
-  fa2 r4 do4
-  fa4. fa8 mi8. fa16 sol8. fa16
-  la4 sol r sol
-  sol4. mi8 do8. sol'16 sol8. sol16
-  fa2 r4 \bar "||" do'8[(^"Refrain" sib])
-  la8 la la4. la8 sol la
-  do4 sib r sib8[( la])
-  sol8 sol sol4. do8 do do
-  la2 r4 do8[( sib])
-  la8 la la4. la8 sol la
-  do4 sib r sib8[( la])
-  sol8 sol sol4. do8 do do
-  fa,2 r4
+Couplet = \relative do' {
+  do4 | fa4. fa8 | mi fa sol fa | la4 sol~ | sol8 r
+  sol4 | sol4. mi8 | do sol' sol sol | fa8 do' do do | do8 r
+  do,4 | fa4. fa8 | mi fa sol fa | la4 sol~ | sol8 r
+  sol4 | sol4. mi8 | do sol' sol sol | fa8 <la do> <la do> <la do> | <la do>8 r
+  \bar "||"
+}
+
+Refrain = \relative do'' {
+  do8[(^"Refrain" sib]) | la8 la la4~ | la8 la sol la | do4 sib~ | sib8 r
+  sib8[( la]) | sol8 sol sol4~ | sol8 do do do | la2~ | la8 r
+  do8[( sib]) | la8 la la4~ | la8 la sol la | do4 sib r
+  sib8[( la]) | sol8 sol sol4~ | sol8 do do do | fa,2~ | fa8 r
   \bar "|."
 }
 
 Paroles = \lyricmode {
   Quand il par -- tait pour la croi -- sa -- de,
-  Pour dé -- li -- vrer le saint tom -- beau,
+  Pour dé -- li -- vrer le saint tom -- beau, le saint tom -- beau,
   Le che -- va -- lier, fier sans bra -- va -- de,
-  A -- vait la croix pour son dra -- peau.
+  A -- vait la croix pour son dra -- peau, pour son dra -- peau.
 
-  Ô Croix des scouts, Croix glo -- ri -- eu -- se,
+  Ô croix des scouts, croix glo -- ri -- eu -- se,
 	Croix des hé -- ros des an -- ciens jours,
 	À l'â -- me haute et gé -- né -- reu -- se,
 	Tu res -- te -- ras chè -- re tou -- jours.
@@ -57,7 +52,8 @@ Paroles = \lyricmode {
       \new Voice = "theme" {
         \override Score.PaperColumn #'keep-inside-line = ##t
         \MetriqueArmure
-        \MusiqueTheme
+        \partial 4
+        \Couplet \Refrain
       }
     >>
     \new Lyrics \lyricsto theme {
@@ -65,5 +61,28 @@ Paroles = \lyricmode {
     }
   >>
   \layout{}
+}
+
+\score{
+  <<
+    \new Staff <<
+      \set Staff.midiInstrument = "flute"
+      \set Staff.autoBeaming = ##f
+      \new Voice = "theme" {
+        \override Score.PaperColumn #'keep-inside-line = ##t
+        \MetriqueArmure
+        \partial 4
+        \Couplet \Refrain \Couplet
+        <<
+          {\Refrain \Couplet}
+          {\Couplet \Refrain}
+        >>
+      }
+    >>
+    \new Lyrics \lyricsto theme {
+      \Paroles
+    }
+  >>
   \midi{}
 }
+
