@@ -114,7 +114,7 @@
 }
 \SetTracking{encoding={*}, shape=sc}{0}
 \newlength{\tailletemp} \newlength{\taillepolice}
-\setlength{\tailletemp}{\grefactor pt} \setlength{\taillepolice}{1\tailletemp}
+\setlength{\tailletemp}{\value{facteur} pt} \setlength{\taillepolice}{1\tailletemp}
 \newfontfamily\lettrines[Scale=.7]{l800.ttf}
 \def\gretextformat#1{{\fontsize{\taillepolice}{\taillepolice}\selectfont #1}}
 \grechangestyle{initial}{\lettrines}
