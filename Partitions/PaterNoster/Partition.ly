@@ -9,7 +9,7 @@
 MetriqueArmure = {
   \tempo 2=50
   \time 2/2
-  \key do \major
+  \key fa \major
 }
 
 italique = { \override Score . LyricText #'font-shape = #'italic }
@@ -26,7 +26,7 @@ MusiqueI = \relative do'' {
   fa,4 fa8 sol la4 do | sol2 la4 la8 sib |
   la8 sol fa4 mi mi8 re | sol4 sol fa fa8 mi |
   re8 re re mi fa4 re8 mi | fa8[( sol]) la sib do2 |
-  do4 do8 sib la4 la8 sol | la4 re8 mi fa sol fa[( sol]) |
+  do4 do8 sib la4 la8 sol | la4 re,8 mi fa sol fa[( sol]) |
   la4 la8[( sol]) re4 fa8 sol | fa4 sol la la |
   mi2 re \bar "|."
 }
