@@ -20,14 +20,14 @@ MusiqueI = \relative do' {
   re4 re8 mi fa[( mi]) re4 sol8 fa mi4 fa re |
   fa4 fa8 sol la4 fa sib8 la sol[( sib]) la[( sol]) la4 |
   sib4 sol4 mi la la8[( fa]) re2 |
-  sib2 do4 sib la4.( sib8) la2 |
+  sib'2 do4 sib la4.( sib8) la2 |
   sol2 mi fa mi |
   re2 fa4( sol) la2 la ||
   \key do \major
   la4 la8 si do4 la re si do8[( si]) la4 |
   fa4 fa8 sol la4 si fa fa8[( mi]) fa sol fa4 |
   re2 fa4 mi la( sol) la2 |
-  re2 fa4( sol) la4 la8[( sib]) do4 la \bar "|."
+  re,2 fa4( sol) la4 la8[( sib]) do4 la \bar "|."
 }
 
 %MusiqueII = \relative do'' {
