@@ -65,5 +65,25 @@ ParolesI = \lyricmode {
     >>
   >>
   \layout{}
+}
+
+\score{
+  <<
+    \new Staff <<
+      \set Staff.midiInstrument = "flute"
+      \set Staff.autoBeaming = ##f
+      \override Score.PaperColumn #'keep-inside-line = ##t
+      \MetriqueArmure
+      \new Voice = "I" {%\voiceOne
+        \MusiqueI
+      }
+      \new Lyrics \lyricsto I {
+        \ParolesI
+      }
+      \new Voice = "II" {\voiceTwo
+        s2*4 \MusiqueI
+      }
+    >>
+  >>
   \midi{}
 }
