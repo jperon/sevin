@@ -81,6 +81,9 @@ ParolesI = \lyricmode {
         \ParolesI
       }
       \new Voice = "II" {\voiceTwo
+        s2*2 \MusiqueI
+      }
+      \new Voice = "III" {\voiceThree
         s2*4 \MusiqueI
       }
     >>
