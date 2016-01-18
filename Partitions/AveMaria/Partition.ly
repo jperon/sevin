@@ -22,7 +22,7 @@ MusiqueI = \relative do' {
   sib2 sol4 mi la la8[( fa]) re2 |
   sib'2 do4 sib la4.( sib8) la2 |
   sol2 mi fa mi |
-  re2 fa4( sol) la2 la ||
+  re2 fa4( sol) la2 la \bar "||"
   \key do \major
   la4 la8 si do4 la re si do8[( si]) la4 |
   fa4 fa8 sol la4 si fa fa8[( mi]) fa sol fa4 |
