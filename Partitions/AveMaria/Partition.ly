@@ -37,7 +37,7 @@ ParolesI = \lyricmode {
   A -- ve Ma -- rí -- a, grá -- ti -- a ple -- na,
   Dó -- mi -- nus te -- cum, be -- ne -- dí -- cta tu
   in mu -- li -- é -- ri -- bus
-  et be -- ne -- di -- ctus
+  et be -- ne -- dí -- ctus
   fru -- ctus ven -- tris
   tu -- i Ie -- sus.
   San -- cta Ma -- rí -- a, Ma -- ter De -- i,
