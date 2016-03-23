@@ -17,7 +17,7 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
 MusiqueI = \relative do' {
-  fa8[( do]) la'2 | sol8[( do]) sib'2 | la4( sol) fa | fa4 mi2 |
+  fa8[( do]) la'2 | sol8[( do,]) sib'2 | la4( sol) fa | fa4 mi2 |
   re'4( do8[ sib]) la[( sol]) | do4.( sib8) la4 | la8[( sol] fa4 mi | fa2. |
   \bar "||"
   
