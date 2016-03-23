@@ -50,10 +50,10 @@ Paroles = \lyricmode {
         \MetriqueArmure
         \MusiqueTheme
       }
+      \new Lyrics \lyricsto theme {
+        \Paroles
+      }
     >>
-    \new Lyrics \lyricsto theme {
-      \Paroles
-    }
   >>
   \layout{}
   \midi{}
