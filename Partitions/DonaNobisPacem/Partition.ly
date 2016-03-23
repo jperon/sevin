@@ -79,7 +79,10 @@ ParolesI = \lyricmode {
         \ParolesI
       }
       \new Voice = "II" {\voiceTwo
-        s2*4 \MusiqueI
+        s2.*8 \MusiqueI
+      }
+      \new Voice = "III" {\voiceThree
+        s2.*16 \MusiqueI
       }
     >>
   >>
