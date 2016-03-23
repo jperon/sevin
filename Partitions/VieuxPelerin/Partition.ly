@@ -29,6 +29,7 @@ MusiqueTheme = \relative do' {
 }
 
 Paroles = \lyricmode {
+  \set stanza = "1."
   Vieux pè -- le -- rin qui va -- ga -- bon -- de,
   Je suis par -- tout un é -- tran -- ger,
   Mais je suis sûr qu'en l'au -- tre mon -- de
