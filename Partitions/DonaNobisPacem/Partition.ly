@@ -22,7 +22,7 @@ MusiqueI = \relative do' {
   \bar "||"
   
   do'2. | do2. | do4( sib) la | la4 sol2 |
-  re'4 re2 | do4 do2 | do8[( sib] la4 sol | fa2. |
+  re'4 re2 | do4 do2 | do8[( sib] la4 sol) | fa2. |
   \bar "||"
   
   fa2. | mi2. | fa4.( sol8) la[( sib]) | do4 do,2 |
