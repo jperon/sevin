@@ -23,7 +23,7 @@ MusiqueI = \relative do' {
   mi8 | mi8[( la]) si do[( si]) do | re8
   do8 si la4 si16[( la] | sol4.) mi~ | mi4.~ mi8 r
   mi8 | mi8[( la]) si do[( si]) do | re4.~ re8
-  do4 | la4 si16[( la]) sol4. | la4.\fermata r4 \bar "|."
+  do4 | la4 si16[( la] sol4.) | la4.\fermata r4 \bar "|."
 }
 
 %MusiqueII = \relative do'' {
