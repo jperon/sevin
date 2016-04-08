@@ -34,7 +34,7 @@ ParolesI = \lyricmode {
   Vos en -- fants de -- vant vous.
   Ils vien -- nent vous pri -- er,
   \italique
-  Gra -- ti -- a ple -- na :
+  Gra -- ti -- a ple -- na_:
   \roman
   Vous les é -- cou -- te -- rez,
   \italique
