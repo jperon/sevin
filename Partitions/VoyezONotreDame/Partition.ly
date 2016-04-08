@@ -36,7 +36,7 @@ ParolesI = \lyricmode {
   \italique
   Gra -- ti -- a ple -- na :
   \roman
-  vous les écouterez,
+  vous les é -- cou -- te -- rez,
   \italique
   Ma -- ter al -- ma.
 }
