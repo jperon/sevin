@@ -31,12 +31,12 @@ MusiqueI = \relative do' {
 
 ParolesI = \lyricmode {
   Vo -- yez, ô No -- tre_- Da -- me,
-  vos en -- fants de -- vant vous.
+  Vos en -- fants de -- vant vous.
   Ils vien -- nent vous pri -- er,
   \italique
   Gra -- ti -- a ple -- na :
   \roman
-  vous les é -- cou -- te -- rez,
+  Vous les é -- cou -- te -- rez,
   \italique
   Ma -- ter al -- ma.
 }
