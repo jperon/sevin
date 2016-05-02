@@ -44,7 +44,7 @@ MusiqueIII = \relative do' {
   lab4( mib8) do4 mib8 | lab4. lab4 \breathe
   lab8 | lab4 do,8 reb4 do8 | do4 do8 fa4 \breathe
   
-  sib,8 | lab4( reb8) do4( mib8) | lab4.~ lab4
+  sib,8 | lab4( reb8) do4( mib8) | lab,4.~ lab4
   lab8 | mib'4 mib8 lab,4 sib8 | mib4. mib4 \breathe
   do8 | do4 lab8 reb4 mib8 | do4. lab4 \breathe
   sib8 | fa'4( reb8 do[ reb sib]) | lab4.~\fermata lab4
@@ -100,7 +100,6 @@ ParolesIII = \lyricmode {
     \new Staff <<
       \set Staff.midiInstrument = "flute"
       \set Staff.autoBeaming = ##f
-      \override Score.PaperColumn #'keep-inside-line = ##t
       \MetriqueArmure
       \clef bass
       \new Voice = "III" {%\voiceOne
