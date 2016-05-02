@@ -40,7 +40,7 @@ MusiqueII = \relative do' {
 }
 
 MusiqueIII = \relative do' {
-  lab8 | lab4 lab8 lab4 lab8 | sol4 sol8 lab4 |
+  lab8 | lab4 lab8 lab4 lab8 | sol4 sol8 lab4. |
   lab4( mib8) do4 mib8 | lab4. lab4 \breathe
   lab8 | lab4 do,8 reb4 do8 | do4 do8 fa4 \breathe
   
