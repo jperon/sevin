@@ -2,8 +2,9 @@
 \language "français"
 
 \header {
+  title = "Regína cæli, iúbila"
   tagline = ""
-  composer = ""
+  composer = "M. Prætorius (1571 - 1621)"
 }
 
 MetriqueArmure = {
