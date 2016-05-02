@@ -24,7 +24,7 @@ MusiqueI = \relative do'' {
   reb8 | do4( sib8) lab4( sib8) | lab4.~ lab4
   do8 | sib4 sol8 lab4 fa8 | sol4. sol4 \breathe
   mib'8 | mib4 mib8 fa4 mib8 | mib4. do4 \breathe
-  reb8 | do4( fa8 mib[ fa reb] | do4.)~\fermata do4 \bar "|."
+  reb8 | do4( fa8 mib[ fa reb]) | do4.~\fermata do4 \bar "|."
 }
 
 MusiqueII = \relative do'' {
