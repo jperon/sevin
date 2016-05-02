@@ -34,7 +34,7 @@ MusiqueII = \relative do' {
   do8 | do4 lab8 lab4 lab8 | sol4 sol8 lab4
   
   fa8 | lab4( fa8) mib4( sol8) | lab4.~ lab4
-  mib8 | sol4 mib8 fa4 re8 | mib4 mib4
+  mib8 | sol4 mib8 fa4 re8 | mib4. mib4
   sol8 | lab4 do8 sib4 sol8 | lab4. lab4
   fa8 | lab4( lab8 lab4 sol8) | lab4.~ lab4
 }
