@@ -80,7 +80,7 @@ ParolesIII = \lyricmode {
       \set Staff.autoBeaming = ##f
       \override Score.PaperColumn #'keep-inside-line = ##t
       \MetriqueArmure
-      \clef treble_8
+      \clef "treble_8"
       \new Voice = "I" {\voiceOne
         \MusiqueI
       }
