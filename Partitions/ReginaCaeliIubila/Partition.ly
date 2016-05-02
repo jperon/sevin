@@ -108,5 +108,41 @@ ParolesIII = \lyricmode {
     >>
   >>
   \layout{}
+}
+
+\score{\transpose do do'
+  \new ChoirStaff <<
+    \new Staff <<
+      \set Staff.midiInstrument = "flute"
+      \set Staff.autoBeaming = ##f
+      \override Score.PaperColumn #'keep-inside-line = ##t
+      \MetriqueArmure
+      \clef "treble_8"
+      \new Voice = "I" {\voiceOne
+        \MusiqueI
+      }
+      \new Lyrics \lyricsto I {
+        \ParolesI
+      }
+      \new Lyrics \lyricsto I {
+        \ParolesII
+      }
+      \new Lyrics \lyricsto I {
+        \ParolesIII
+      }
+      \new Voice = "II" {\voiceTwo
+        \MusiqueII
+      }
+    >>
+    \new Staff <<
+      \set Staff.midiInstrument = "flute"
+      \set Staff.autoBeaming = ##f
+      \MetriqueArmure
+      \clef bass
+      \new Voice = "III" {%\voiceOne
+        \MusiqueIII
+      }
+    >>
+  >>
   \midi{}
 }
