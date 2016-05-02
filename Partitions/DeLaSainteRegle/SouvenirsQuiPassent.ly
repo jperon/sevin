@@ -36,13 +36,14 @@ MusiqueTheme = \relative do' {
 }
 
 Paroles = \lyricmode {
-  Sou -- ve -- nirs qui pas -- sent,
-	A -- dieu l’é -- cole et l’a -- te -- lier,
-	Le camp les rem -- pla -- ce
-	A -- vec ses feux à la veil -- lée.
-
-	Ne tour -- ne pas la tê -- te,
-	Un scout re -- garde en a -- vant.
+  De la sain -- te Rè -- gle
+  Re -- çois, mon fils, l'en -- sei -- gne -- ment ;
+  Mon -- te com -- me l'ai -- gle
+  Vers Dieu qui t'a fait son en -- fant.
+  
+  \italique
+  Ne tour -- ne pas la tê -- te,
+  Qu'en tout Dieu soit glo -- ri -- fié !
 }
 
 \score{
