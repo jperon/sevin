@@ -18,10 +18,10 @@ roman = { \override Score . LyricText #'font-shape = #'roman }
 
 MusiqueI = \relative do'' {
   \partial 8
-  mib8 | mib4 mib8 fa4 mib8 | mib4 mib8 do4. |
+  mib8\pp | mib4 mib8 fa4 mib8 | mib4 mib8 do4. |
   do4( sib8) lab4 sib8 | do4. do4 \breathe
   mib8 | mib4 mib8 fa4 mib8 | mib4 mib8 do4 \breathe
-  reb8 | do4( sib8) lab4( sib8) | lab4.~ lab4
+  reb8\f | do4( sib8) lab4( sib8) | lab4.~ lab4
   do8 | sib4 sol8 lab4 fa8 | sol4. sol4 \breathe
   mib'8 | mib4 mib8 fa4 mib8 | mib4. do4 \breathe
   reb8 | do4( fa8 mib[ fa reb]) | do4.~\fermata do4 \bar "|."
