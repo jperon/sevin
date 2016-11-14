@@ -15,7 +15,7 @@ italique = { \override Score . LyricText #'font-shape = #'italic }
 
 roman = { \override Score . LyricText #'font-shape = #'roman }
 
-MusiqueI = \relative do''' {
+MusiqueI = \relative do'' {
   \key fa \major
   \partial 2
   la4 la8 la | sol4 sol fa fa8 fa | mi4 mi
