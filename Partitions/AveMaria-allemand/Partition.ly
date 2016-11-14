@@ -22,7 +22,7 @@ MusiqueI = \relative do'' {
   re4 re8 mi | fa4 do la' la | sol4 sol
   fa4 sol | la4 fa sib la | la4 r
   re,4 re8[ do] | re4 re8[ do] re4
-  mi8 fa | do2 sol'4 sol |
+  mi8[ fa] | do2 sol'4 sol |
   sol4 sol sol( fa8[ sol]) | la4 r
   la4 la8 la | sol4 sol fa fa | mi4 mi
   re4 re8 mi | fa4 do re re | re4 do8[ sib] do2 |
