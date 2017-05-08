@@ -117,7 +117,8 @@
 \setlength{\tailletemp}{\value{facteur} pt} \setlength{\taillepolice}{1\tailletemp}
 \newfontfamily\lettrines[Scale=.7]{l800.ttf}
 \def\gretextformat#1{{\fontsize{\taillepolice}{\taillepolice}\selectfont #1}}
-\def\greinitialformat#1{{\lettrines #1}}
+\grechangestyle{initial}{\lettrines}
+%\def\greinitialformat#1{{\lettrines #1}}
 %\font\lettrinetexte=l800.ttf at 4\baselineskip
 %\renewcommand{\LettrineFont}{\lettrinetexte}
 \setlength{\DefaultFindent}{-2em}
