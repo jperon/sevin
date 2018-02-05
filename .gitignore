@@ -5,6 +5,7 @@ tmp_ly/
 *.midi
 *.mid
 *.log
+*.glog
 *~
 *.*aux
 *.djvu

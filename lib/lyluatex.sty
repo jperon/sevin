@@ -1,69 +1,134 @@
 \ProvidesPackage{lyluatex}
 
-% Dépendances
+% Dependencies
+\RequirePackage{luatexbase}
+\RequirePackage{luaotfload}
 \RequirePackage{kvoptions}
 \RequirePackage{graphicx}
 \RequirePackage{keycommand}
 \RequirePackage{environ}
 \RequirePackage{currfile}
+\RequirePackage{pdfpages}
+
+\RequirePackage{metalogo}
+\newcommand{\lyluatex}{\textit{ly}\LuaTeX}
+
 % Options
-\DeclareStringOption[lilypond]{program}[lilypond]
-\ProcessKeyvalOptions*
-% Script lua
-\directlua{dofile(kpse.find_file("lyluatex.lua"))}
-\directlua{ly_definir_programme('\lyluatex@program')}
+\catcode`-=11
+\directlua{
+  ly = require(kpse.find_file("lyluatex.lua"))
+  ly.declare_package_options({
+    ['cleantmp'] = {'false', 'true', ''},
+    ['current-font-as-main'] = {'true', 'false', ''},
+    ['debug'] = {'false', 'true', ''},
+    ['extra-bottom-margin'] = {'0', ly.is_dim},
+    ['extra-top-margin'] = {'0', ly.is_dim},
+    ['fullpagealign'] = {'staffline', 'crop'},
+    ['fullpagestyle'] = {''},
+    ['includepaths'] = {'./'},
+    ['insert'] = {'systems', 'fullpage', 'inline'},
+    ['labelprefix'] = {'ly_'},
+    ['line-width'] = {'', ly.is_dim},
+    ['optimize-pdf'] = {'false', 'true', ''},
+    ['paperwidth'] = {'', ly.is_dim},
+    ['paperheight'] = {'', ly.is_dim},
+    ['pass-fonts'] = {'true', 'false', ''},
+    ['print-page-number'] = {'false', 'true', ''},
+    ['program'] = {'lilypond'},
+    ['ragged-right'] = {'default', 'true', 'false', ''},
+    ['noragged-right'] = {'default'},
+    ['showfailed'] = {'false', 'true' ,''},
+    ['staffsize'] = {'0', ly.is_dim},
+    ['tmpdir'] = {'tmp_ly'},
+  })
+  ly.set_default_options()
+}
+\directlua{
+  if ly.get_option('cleantmp') == 'true' then
+    luatexbase.add_to_callback('stop_run', ly.clean_tmp_dir, 'lyluatex cleantmp')
+    luatexbase.add_to_callback('stop_run', ly.conclusion_text, 'lyluatex cleantmp')
+  end
+}
+\catcode`-=12
 
-% Une tricherie un peu sale pour récupérer la largeur de ligne
-\let\bs\textbackslash
-{\catcode`p=12 \catcode`t=12 \gdef\un#1pt{#1}}
-\newcommand*{\largeur}{\expandafter\un\the\linewidth}
-% Taille des partitions
-% Si la valeur est 0, elle sera automatiquement calculée
-% à partir de la taille de police.
-\def\staffsize{0}
-\let\localstaffsize\staffsize
+\newcommand{\pt}{pt}
+\newcommand{\mm}{mm}
+\newcommand{\cm}{cm}
 
-
-% Commandes principales
-% Inclusion d'un fichier ly
-\newkeycommand*\includely[staffsize=\staffsize][autres][1]{%
-\directlua{%
-    inclure_ly(
-        "\luatexluaescapestring{#1}",
-        "\luatexluaescapestring{\currfiledir}",
-        \luatexluaescapestring{\largeur},
-        \luatexluaescapestring{\commandkey{staffsize}}
-    )%
-}%
+% Command to change options during the document
+\newcommand{\lysetoption}[2]{%
+  \directlua{ly.set_property('#1', '#2')}
 }
 
-% Inclusion d'un fragment intégré au document (environnement de base)
-\NewEnviron{compilerly}{%
-\directlua{%
-    direct_ly(
-        "\luatexluaescapestring{\unexpanded\expandafter{\BODY}}",
-        \luatexluaescapestring{\largeur},
-        \luatexluaescapestring{\localstaffsize}
-    )%
-}%
+% Line width is calculated if set to 'default'
+\def\ly@page{\directlua{ly.PAGE = \thepage}}
+
+% Retrieve the three main font families (rm, sf, tt)
+% and store them as options. Additionally store the
+% *current* font for optional use.
+\newcommand{\ly@currentfonts}{%
+\begingroup%
+    \directlua{ly.set_property('current-font', ly.get_font_family(font.current()))}
+    \rmfamily \edef\rmfamilyid{\fontid\font}%
+    \sffamily \edef\sffamilyid{\fontid\font}%
+    \ttfamily \edef\ttfamilyid{\fontid\font}%
+    \directlua{
+        ly.set_property('rmfamily', ly.get_font_family(\rmfamilyid))
+        ly.set_property('sffamily', ly.get_font_family(\sffamilyid))
+        ly.set_property('ttfamily', ly.get_font_family(\ttfamilyid))
+    }%
+\endgroup%
 }
 
-% Commande et environnement avec paramètres
-\newkeycommand{\lily}[staffsize=\staffsize][autres][1]{%
-\def\localstaffsize{\commandkey{staffsize}}%
-\begin{compilerly}%
-#1
-\end{compilerly}%
+% Main commands
+% Inclusion of a .ly file
+\newkeycommand*\includely[][options][1]{%
+\directlua{
+  ly.CURRFILEDIR = '\currfiledir'
+  ly.file('\luatexluaescapestring{#1}', '\commandkey{options}')
+  ly.newpage_if_fullpage()
+}
+\ly@page
+\ly@currentfonts
+\directlua{ly.score:process()}
 }
 
-\newkeyenvironment{ly}[staffsize=\staffsize][autres]{%
-\def\localstaffsize{\commandkey{staffsize}}%
-\compilerly%
-}{
-\endcompilerly%
+% Base environment to include a LilyPond fragment integrated into
+% the document.
+\NewEnviron{ly@compilely}{%
+\directlua{
+  ly.CURRFILEDIR = '\currfiledir'
+  ly.fragment(
+    '\luatexluaescapestring{\unexpanded\expandafter{\BODY}}',
+    '\commandkey{options}'
+  )
+  ly.newpage_if_fullpage()
+}
+\ly@page
+\ly@currentfonts
+\directlua{ly.score:process()}%
 }
 
-% Commandes pour la compatibilité avec lilypond-book
-\let\lilypondfile\includely
-\let\lilypond\ly
+% Parametrized command and environment for included LilyPond fragment
+\newkeycommand{\lily}[][options][1]{%
+\let\ly@oldrepeat\repeat\def\repeat{}% Fix #51
+\begin{ly@compilely}%
+{#1}
+\end{ly@compilely}%
+\let\repeat\ly@oldrepeat%
+}
+
+\newkeyenvironment{ly}[][options]{%
+\let\ly@oldrepeat\repeat\def\repeat{}% Fix #51
+\ly@compilely%
+}{%
+\endly@compilely%
+\let\repeat\ly@oldrepeat%
+}
+
+% Commands for compatibility with lilypond-book
+\let\lilypondfile\includely%
+\protected\def\lilypond{\def\reserved@a{lilypond}%
+  \ifx\reserved@a\@currenvir\expandafter\ly%
+  \else\expandafter\lily\fi}
 \let\endlilypond\endly

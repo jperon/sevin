@@ -1,8 +1,8 @@
 FICHIER = "Carnet"
 SEVIN = "Sevin"
 TMP = "tmp"
-LATEX_CMD = lualatex -interaction=batchmode -shell-restricted -synctex=1
-EXPORTS = export TEXINPUTS="lib:" ; export shell_escape_commands=bibtex,bibtex8,kpsewhich,makeindex,mpost,repstopdf,gregorio,lilypond
+LATEX_CMD = lualatex -shell-restricted -synctex=1
+EXPORTS = export TEXINPUTS="lib:" ; export shell_escape_commands=bibtex,bibtex8,kpsewhich,makeindex,mpost,repstopdf,gregorio,gregorio-5_0_2,lilypond
 
 document:
 	($(EXPORTS) ; $(LATEX_CMD) -draftmode $(FICHIER) ; $(LATEX_CMD) $(FICHIER) ; cp $(FICHIER).pdf $(FICHIER)-fini.pdf)
