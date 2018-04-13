@@ -36,7 +36,7 @@ MusiqueI = \relative do' {
 ParolesI = \lyricmode {
   Je vous sa -- lue, Ma -- rie, plei -- ne de grâ -- ce,
   le Sei -- gneur est a -- vec vous,
-  vous ê -- tes bé -- nie en -- tre tou -- tes les fem -- mes
+  vous ê -- tes bé -- nie en -- tre tou -- tes les femmes
   et Jé -- sus, votre en -- fant est bé -- ni.
   
   Sain -- te Ma -- rie, Mè -- re de Dieu,
