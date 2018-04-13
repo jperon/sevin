@@ -17,7 +17,7 @@ roman = { \override Score . LyricText #'font-shape = #'roman }
 
 MusiqueI = \relative do' {
   \key fa \major
-  \partial 3*8 re8 re mi |
+  \partial 8*3 re8 re mi |
   fa8. sol16 fa8 mi re do re4 la8 |
   re4 mi8 fa4 fa8 sol fa sol la4 \breathe la8 |
   la8 sib do sol la sol fa fa la mi4 r8 |
