@@ -23,7 +23,7 @@ MusiqueI = \relative do' {
   la8 sib do sol la sol fa fa la mi4 r8 |
   re4 fa8 sol8. fa16 mi8 fa fa mi re4 r8 |
   la'8 fa sol la4. do8 sib la sol4 r8 |
-  fa4 re mi fa4. la8 sol fa mi4 r8 |
+  fa8 re mi fa4. la8 sol fa mi4 r8 |
   la8 fa sol la la la do sib la sol4 r8 |
   re4 fa8 sol4 mi8 \breathe fa fa mi re4.
   \bar "|."
