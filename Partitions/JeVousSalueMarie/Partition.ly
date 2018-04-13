@@ -21,10 +21,11 @@ MusiqueI = \relative do' {
   fa8. sol16 fa8 mi re do re4 la8 |
   re4 mi8 fa4 fa8 sol fa sol la4 \breathe la8 |
   la8 sib do sol la sol fa fa la mi4 r8 |
-  re4 fa8 sol8. fa16 mi8 fa fa mi re4 r8 |
+  re4 fa8 sol8. fa16 mi8 fa fa mi re4 r8 \bar "||"
+  
   la'8 fa sol la4. do8 sib la sol4 r8 |
   fa8 re mi fa4. la8 sol fa mi4 r8 |
-  la8 fa sol la la la do sib la sol4 r8 |
+  la8([ fa]) sol la la la do sib la sol4 r8 |
   re4 fa8 sol4 mi8 \breathe fa fa mi re4.
   \bar "|."
 }
@@ -37,6 +38,7 @@ ParolesI = \lyricmode {
   le Sei -- gneur est a -- vec vous,
   vous ê -- tes bé -- nie en -- tre tou -- tes les fem -- mes
   et Jé -- sus, votre en -- fant est bé -- ni.
+  
   Sain -- te Ma -- rie, Mè -- re de Dieu,
   pri -- ez pour nous, pau -- vres pé -- cheurs,
   main -- te -- nant et à l'heure de la mort.
