@@ -79,7 +79,7 @@ Paroles = \lyricmode {
   Qui sou -- rit et par -- don -- ne
   Chez nous, chez nous.
   
-  Nous a -- vons votre im -- ma -- ge
+  Nous a -- vons votre i -- ma -- ge
   Chez nous sur nos au -- tels,
   Et vo -- tre doux vi -- sa -- ge
   Est un re -- flet du ciel.
