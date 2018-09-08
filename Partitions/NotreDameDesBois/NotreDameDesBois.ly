@@ -45,7 +45,7 @@ MusiqueTheme = \relative do' {
 
 Paroles = \lyricmode {
   Las -- sés du jour et de leur tâche,
-  Sous les grand ar -- bres, d'or cri -- blés,
+  Sous les grands ar -- bres, d'or cri -- blés,
   Quit -- tant le bâ -- ton ou la hache,
   Tous les cam -- peurs sont ras -- sem -- blés,
   Voi -- ci la troupe à vos ge -- noux,
