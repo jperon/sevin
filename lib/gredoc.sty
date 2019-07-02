@@ -220,9 +220,9 @@
 	\begin{paracol}{2}
 	\ensurevspace{#1\baselineskip}
 	\switchcolumn\switchcolumn*
- 	\begin{latin} #2\looseness=-1 \end{latin}
+ 	\begin{otherlanguage}{latin} #2\looseness=-1 \end{otherlanguage}
 	\switchcolumn
-	\begin{french} #3\looseness=-1 \end{french}
+	#3\looseness=-1
 	\end{paracol}%
 	}%
 }
@@ -270,12 +270,10 @@
 }
 
 \newenvironment{priere}{%
-	\begin{french}%
 	\addtolength{\parskip}{.3\baselineskip}
 }{%
 	\hfill \mbox{℟.~Ainsi soit-il.}\par
 	\addtolength{\parskip}{-.3\baselineskip}
-	\end{french}%
 }
 
 % Rubriques propres au temps pascal.
